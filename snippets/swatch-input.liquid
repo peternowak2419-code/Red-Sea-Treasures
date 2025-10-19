@@ -1,0 +1,46 @@
+{% comment %}
+  Renders a swatch component.
+  Accepts:
+  - swatch: {Object} a swatch object
+  - shape: {String} swatch shape. Accepts 'square', defaults to circle.
+
+  Usage:
+  {% render 'swatch',
+    swatch: value.swatch
+    shape: 'square'
+  %}
+{% endcomment %}
+
+<input
+    type="{{ type | default: 'radio' }}"
+    id="{{ id }}"
+    name="{{ name }}"
+    value="{{ value | escape }}"
+    form="{{ product_form_id }}"
+    class="swatch-input__input{% if visually_disabled %} disabled{% endif %}"
+    {% if checked %}
+      checked
+    {% endif %}
+    {% if disabled %}
+      disabled
+    {% endif %}
+    {% if additional_props %}
+      {{ additional_props }}
+    {% endif %}
+  >
+  {% if show_colorswatch == true %}
+    <label
+        for="{{ id }}"
+        title="{{ value }}"
+        value="{{ value }}"
+        class="color-swatchimg color-swatch"
+      >
+        {% render 'swatch', swatch: swatch, shape: shape %}
+        {{ help_text }}
+      </label>  
+{% else %}
+      <label for="{{ id }}" class="{% if option.selected_value == value %}active{% endif %}" {% if option.selected_value == value %} tabindex="0" {% endif %} data-value="{{ value }}">
+      {{ value -}}
+      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+    </label>
+  {% endif %}

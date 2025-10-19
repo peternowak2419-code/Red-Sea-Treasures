@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-account",
+      "settings": {
+        "color_scheme": "inverse",
+        "head_space": true,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
