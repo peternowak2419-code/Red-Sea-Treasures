@@ -2563,10 +2563,6 @@ header.header .link--text:hover svg.icon.icon-arrow path,
 .header__icon--cart .icon {
     padding: 0;
 }
-
-.header__icon:hover {
-    stroke: #8B0000;
-}
 .header__icon--cart {
     position: relative;
     text-align: center;
