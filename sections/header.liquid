@@ -1624,10 +1624,10 @@
                             {%- endif -%}
                           </account-icon>
                         </span>
-                        <span class="text-left wbhuserleft">
+                        {% comment %} <span class="text-left wbhuserleft">
                             <span>{% if customer %}{{ 'wbcustomlabel.wballtext.login_hello' | t }} {{ customer.first_name }}{% else %}{{ 'wbcustomlabel.wballtext.login_hello' | t }} {{ 'wbcustomlabel.wballtext.log__in' | t }}{% endif %}</span>
                             <strong>{{ 'wbcustomlabel.wballtext.account_login' | t }}</strong>
-                        </span>
+                        </span> {% endcomment %}
                       {% endif %}
                     </button>
                   </div>
