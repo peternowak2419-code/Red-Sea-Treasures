@@ -51,10 +51,9 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
   
-  .icon-card .icon {
-    font-size: 28px;
-    color: #a30000;
-    display: block;
+  .icon-img {
+    width: 60px;
+    height: auto;
     margin-bottom: 10px;
   }
   
