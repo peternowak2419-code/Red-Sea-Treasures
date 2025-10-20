@@ -300,6 +300,20 @@
           "link_hover": "#0062ee",
           "shadow": "#121212"
         }
+      },
+      "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#8b0000",
+          "button": "#0062ee",
+          "button_label": "#ffffff",
+          "button_hover": "#011f2d",
+          "button_label_hover": "#ffffff",
+          "secondary_button_label": "#000000",
+          "link_hover": "#0062ee",
+          "shadow": "#121212"
+        }
       }
     }
   },

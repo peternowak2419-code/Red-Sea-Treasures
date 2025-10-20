@@ -153,6 +153,53 @@
         "padding_bottom": 0
       }
     },
+    "red_sea_profile_3czazb": {
+      "type": "red-sea-profile",
+      "blocks": {
+        "icon_item_MhFKi4": {
+          "type": "icon_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/leaf-svgrepo-com.svg",
+            "label": "100% Natural Products"
+          }
+        },
+        "icon_item_dzQJ6J": {
+          "type": "icon_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/award-alt-svgrepo-com.svg",
+            "label": "100% Natural Products"
+          }
+        },
+        "icon_item_HqDMzy": {
+          "type": "icon_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/shipping-truck-svgrepo-com.svg",
+            "label": "100% Natural Products"
+          }
+        },
+        "icon_item_7YcKYH": {
+          "type": "icon_item",
+          "settings": {
+            "icon_image": "shopify://shop_images/hand-heart-valentine-svgrepo-com.svg",
+            "label": "100% Natural Products"
+          }
+        }
+      },
+      "block_order": [
+        "icon_item_MhFKi4",
+        "icon_item_dzQJ6J",
+        "icon_item_HqDMzy",
+        "icon_item_7YcKYH"
+      ],
+      "name": "Red Sea Profile Section",
+      "settings": {
+        "heading": "Our Profile: Red Sea Treasures",
+        "paragraph1": "At Red Sea Treasures, we are not just a store, but a journey to explore the rarest and finest authentic Yemeni and Arabian products. Each piece of Yemeni honey, coffee bean, or thread in heritage garments carries a story from history. Our commitment is to present these treasures to you with global quality and modern design that preserves their value.",
+        "paragraph2": "We ensure direct communication with artisans and farmers to guarantee the highest levels of authenticity and purity.",
+        "button_text": "Read the Full Story",
+        "button_link": ""
+      }
+    },
     "7ff50e69-760a-4d45-ae67-4ede3191d751": {
       "type": "collection-list",
       "blocks": {
@@ -274,7 +321,7 @@
         "title": "Shop By Categories",
         "heading_size": "h1",
         "head_align": "left",
-        "heading_color_scheme": "scheme-abe3bc68-5409-41dd-abcf-8f9ac474947a",
+        "heading_color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
         "head_space": true,
         "description": "",
         "description_style": "body",
@@ -1241,6 +1288,7 @@
   "order": [
     "rich_text_B7E8LA",
     "f4fc861e-a8e9-4733-8984-e73213d48588",
+    "red_sea_profile_3czazb",
     "7ff50e69-760a-4d45-ae67-4ede3191d751",
     "featured_collection_D8P9jY",
     "collage_FXfDCd",
