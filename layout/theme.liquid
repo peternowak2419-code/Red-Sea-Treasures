@@ -8,6 +8,9 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
+    {{ 'red-sea-profile.css' | asset_url | stylesheet_tag }}
+    {{ 'hero.css' | asset_url | stylesheet_tag }}
+
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -114,6 +117,12 @@
       }
 
       :root {
+      --primary-color: #8B0000;
+      --secondary-color: #D4AF37;
+      --text-color: #333;
+      --light-bg: #FFFFFF;
+
+
       --color-wbprogscolor: {{ settings.wbprogscolor }};
       --border--color: #818181; 
       --border-width: 1px;

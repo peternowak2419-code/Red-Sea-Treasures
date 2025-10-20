@@ -9,10 +9,10 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Photo_2025-10-18_11_34_32_PM_6.png",
-    "logo_width": 100,
-    "mobile_logo": "shopify://shop_images/Photo_2025-10-18_11_34_32_PM_6.png",
-    "mobile_logo_width": 80,
+    "logo": "shopify://shop_images/Photo_2025-10-18_11_34_32_PM.jpg",
+    "logo_width": 80,
+    "mobile_logo": "shopify://shop_images/Photo_2025-10-18_11_34_32_PM.jpg",
+    "mobile_logo_width": 60,
     "favicon": "",
     "type_header_font": "cabin_n6",
     "type_body_font": "cabin_n4",
@@ -295,6 +295,48 @@
           "button": "#0062ee",
           "button_label": "#ffffff",
           "button_hover": "#000000",
+          "button_label_hover": "#ffffff",
+          "secondary_button_label": "#000000",
+          "link_hover": "#0062ee",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#333333",
+          "button": "#8b0000",
+          "button_label": "#ffffff",
+          "button_hover": "#d4af37",
+          "button_label_hover": "#ffffff",
+          "secondary_button_label": "#000000",
+          "link_hover": "#8b0000",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-fe404675-b857-47d9-beb8-3438200d0cbe": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#8b0000",
+          "button": "#0062ee",
+          "button_label": "#ffffff",
+          "button_hover": "#011f2d",
+          "button_label_hover": "#ffffff",
+          "secondary_button_label": "#000000",
+          "link_hover": "#0062ee",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26": {
+        "settings": {
+          "background": "#8b0000",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#8b0000",
+          "button_label": "#ffffff",
+          "button_hover": "#d4af37",
           "button_label_hover": "#ffffff",
           "secondary_button_label": "#000000",
           "link_hover": "#0062ee",

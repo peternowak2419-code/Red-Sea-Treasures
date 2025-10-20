@@ -2,19 +2,19 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 {%- style -%}
-  #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    #Banner-{{ section.id }}::after {
+      opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    }
+    .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
-  .section-{{ section.id }}-padding {
-  padding-top: {{ section.settings.padding_top }}px;
-  padding-bottom: {{ section.settings.padding_bottom }}px;
-} 
-@media screen and (max-width: 991px) {
-   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+  @media screen and (max-width: 991px) {
+     .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+    }
   }
-}
 {%- endstyle -%}
 {%- if section.settings.image_height == 'adapt-image' and section.settings.image != blank -%}
   {%- style -%}
@@ -24,8 +24,8 @@
       content: '';
       display: block;
     }
-    {%- endstyle -%}
-  {%- endif -%}
+  {%- endstyle -%}
+{%- endif -%}
 {%- if section.settings.image_height == 'adapt-image' and section.settings.mobile_image != blank -%}
   {%- style -%}
     @media screen and (max-width: 767px) {
@@ -49,10 +49,16 @@
     }
   {%- endstyle -%}
 {%- endif -%}
-<div class="hero-banner-main {% if section.settings.full_width == false %}page-width{% endif %} section-{{ section.id }}-padding">
-  <div id="Banner-{{ section.id }}"
-    class="hero-banner newsletter banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.image_height == 'adapt-image' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_box == false %} banner--transparent{% endif %}">
-      <div class="banner__media global-media-settings{% if section.settings.image != blank %} media{% endif %} {%- if section.settings.mobile_image != blank -%}  hidden-slider-image-mobile {%- endif -%}">
+<div
+  style="background: #8B0000;"
+  class="hero-banner-main {% if section.settings.full_width == false %}page-width{% endif %} section-{{ section.id }}-padding"
+>
+  <div
+    id="Banner-{{ section.id }}"
+    class="hero-banner newsletter banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.image_height == 'adapt-image' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_box == false %} banner--transparent{% endif %}"
+  >
+    <div class="banner__media global-media-settings{% if section.settings.image != blank %} media{% endif %} {%- if section.settings.mobile_image != blank -%}  hidden-slider-image-mobile {%- endif -%}">
+      {% comment %}
         {%- if section.settings.image != blank -%}
           <img
             srcset="
@@ -76,7 +82,8 @@
         {% else %}
           {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
-      </div>
+      {% endcomment %}
+    </div>
     {%- if section.settings.mobile_image != blank -%}
       <div class="banner__media{% if section.settings.mobile_image != blank %} media hidden_desktop{% endif %} ">
         {%- if section.settings.mobile_image != blank -%}
@@ -103,41 +110,55 @@
       </div>
     {%- endif -%}
     <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
-        {% if section.blocks.size > 0 %}
-            <div class="hero-banner-wrapper email-signup-banner__box banner__box newsletter newsletter__wrapper isolate {% if section.settings.show_text_box == true %} content-container {% endif %} color-{{ section.settings.color_scheme }} gradient content-container--full-width-mobile{% if section.settings.image == blank %} content-box{% endif %}">
-            {%- for block in section.blocks -%}
+      {% if section.blocks.size > 0 %}
+        <div class="hero-banner-wrapper email-signup-banner__box banner__box newsletter newsletter__wrapper isolate {% if section.settings.show_text_box == true %} content-container {% endif %} color-{{ section.settings.color_scheme }} gradient content-container--full-width-mobile{% if section.settings.image == blank %} content-box{% endif %}">
+          {%- for block in section.blocks -%}
             {%- case block.type -%}
-                {%- when 'subheading' -%}
-                    <div class="newsletter__subheading rte {{ block.settings.subheading_style }}" {{ block.shopify_attributes }}>
-                    {{ block.settings.subtext }}
-                    </div>
-                {%- when 'heading' -%}
-                <h2 class="email-signup-banner__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
-                    {{ block.settings.heading | escape }}
-                </h2>
-                {%- when 'paragraph' -%}
-                <div class="newsletter__subtext rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
-                    {{ block.settings.text }}   
+              {%- when 'subheading' -%}
+                <div
+                  class="newsletter__subheading rte {{ block.settings.subheading_style }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.subtext }}
                 </div>
-                {%- when 'button' -%}
-                <div class="{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
-                    {%- if block.settings.button_label != blank -%}
+              {%- when 'heading' -%}
+                <h2
+                  style="color: #D4AF37;"
+                  class="email-signup-banner__heading {{ block.settings.heading_size }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.heading | escape }}
+                </h2>
+              {%- when 'paragraph' -%}
+                <div class="newsletter__subtext rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+                  {{ block.settings.text }}
+                </div>
+              {%- when 'button' -%}
+                <div
+                  class="{% if block.settings.button_label != blank and block.settings.button_label_2 != blank %} rich-text__buttons--multiple{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {%- if block.settings.button_label != blank -%}
                     <a
-                        {% if block.settings.button_link == blank %}
+                      class="hero-shop-btn"
+                      {% if block.settings.button_link == blank %}
                         role="link" aria-disabled="true"
-                        {% else %}
+                      {% else %}
                         href="{{ block.settings.button_link }}"
-                        {% endif %}
-                        {% if block.settings.link_window %} target="_blank" {% endif %}
-                            class="{% if block.settings.button_style_secondary == 'link' %} link link underlined-link{% elsif block.settings.button_style_secondary == 'solid' %}button{% else %}button button--secondary{% endif %}">
-                            <span>{{- block.settings.button_label | escape -}}</span>
+                      {% endif %}
+                      {% if block.settings.link_window %}
+                        target="_blank"
+                      {% endif %}
+                      class="{% if block.settings.button_style_secondary == 'link' %} link link underlined-link{% elsif block.settings.button_style_secondary == 'solid' %}button{% else %}button button--secondary{% endif %}"
+                    >
+                      <span>{{- block.settings.button_label | escape -}}</span>
                     </a>
-                    {%- endif -%}
+                  {%- endif -%}
                 </div>
             {%- endcase -%}
-            {%- endfor -%}
-            </div>
-        {% endif %}
+          {%- endfor -%}
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -147,11 +168,7 @@
   "tag": "section",
   "class": "section",
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer",
-      "custom.overlay"
-    ]
+    "groups": ["header", "footer", "custom.overlay"]
   },
   "settings": [
     {

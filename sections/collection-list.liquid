@@ -41,7 +41,7 @@
       <div class="{{ section.settings.head_align }} {% if section.settings.title != blank or section.blocks.size > collection_to_show and section.settings.arrow_position == 'top' or section.settings.description != blank %} content-container title-wrapper-with-link title-wrapper {% endif %} color-{{ section.settings.heading_color_scheme }}">
           <div class="{% if section.settings.title != blank or section.settings.description != blank %} heading {% endif %} inline-richtext">
             {%- if section.settings.title != blank -%}
-              <h2 class="{{ section.settings.heading_size }}">
+              <h2 style="color: #8B0000" class="{{ section.settings.heading_size }}">
                   {{ section.settings.title }}
               </h2>
             {%- endif %}
@@ -106,12 +106,12 @@
             </button>
           </div>
         {% endif %} 
-        <div class="ul-columns grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--3-col-tablet collection-list contains-card contains-card--collection{% if settings.collection_card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_mobile }}-col-tablet-down  slider  slider--desktop slider--tablet collection-list--{{ section.blocks.size }}-items{% if section.settings.card_flex_direction == 'row' %} coll--direction-row{% endif %}" id="Slider-{{ section.id }}">
+        <div style="padding: 28px;" class="ul-columns grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--3-col-tablet collection-list contains-card contains-card--collection{% if settings.collection_card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_mobile }}-col-tablet-down  slider  slider--desktop slider--tablet collection-list--{{ section.blocks.size }}-items{% if section.settings.card_flex_direction == 'row' %} coll--direction-row{% endif %}" id="Slider-{{ section.id }}">
           {% assign num_row = section.settings.rows | times: 1 %}
           {% assign temp = 0 %}
           {%- for block in section.blocks -%}
             {% if temp == 0 %}
-              <ul tabindex="0" class="{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} grid__item collection-list__item grid__item{% if block.settings.collection.featured_image == null %} collection-list__item--no-media{% endif %} slider__slide{% if section.settings.card_flex_direction == 'row' %} coll-direction-row{% endif %}" id="Slide-{{ section.id }}-{{ forloop.index }}"
+              <ul tabindex="0" class="collection-card {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %} grid__item collection-list__item grid__item{% if block.settings.collection.featured_image == null %} collection-list__item--no-media{% endif %} slider__slide{% if section.settings.card_flex_direction == 'row' %} coll-direction-row{% endif %}" id="Slide-{{ section.id }}-{{ forloop.index }}"
               {% if settings.animations_reveal_on_scroll %}
                 data-cascade
                 style="--animation-order: {{ forloop.index }};"
@@ -168,9 +168,10 @@
                           <h3 class="card__heading {{ section.settings.catheading_size }}">
                             {{ 'onboarding.collection_title' | t }}
                           </h3>
-                          {% if settings.show_item_count == true %}
+                          {% comment %} {% if settings.show_item_count == true %}
                             <p class="wp_itom_count">{{ current }} {{ 'wbcustomlabel.wballtext.cartitem' | t }}</p>
-                          {% endif %}
+                          {% endif %} {% endcomment %}
+                           <p class="category-item-count">All Products</p>
                           {% if block.settings.showtext != blank %}
                             <a {% if block.settings.collection == blank %} role="link" aria-disabled="true" {% else %} href="{{ collection_url }}" {% endif %}
                               class="webcolltop {% if block.settings.customb_style == 'link' %}link underlined-link{% elsif block.settings.customb_style == 'solid' %}button{% else %}button button--secondary{% endif %}" {{ block.shopify_attributes }}>

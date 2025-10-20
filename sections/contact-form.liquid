@@ -17,7 +17,7 @@
 }
 {%- endstyle -%}
 <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
-  <div class="page-width">
+  <div class="page-width contact-block">
     <div class="heading inline-richtext contact-form">
       {%- unless section.settings.title == blank -%}
         <div class="{{ section.settings.head_align }} title-wrapper-with-link title-wrapper color-{{ section.settings.heading_color_scheme }} content-container">
@@ -305,8 +305,8 @@
                 {%- endif -%}
               </div>
           </div>
-        {%- elsif section.settings.enable_all == 'text' -%}
-          <div class="text-with-icon_card__info">
+        {% comment %} {%- elsif section.settings.enable_all == 'text' -%}
+          <div class="text-with-icon_card__info"> {% endcomment %}
               <div class="contacttxtmain">
               {%- if section.settings.texttitle != blank -%}
                 <h2>{{ section.settings.texttitle }}</h2>
