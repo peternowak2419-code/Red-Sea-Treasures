@@ -23,14 +23,14 @@
   }
   
   .profile-text p {
-    color: #333;
+    color: var(--text-color);
     margin-bottom: 16px;
     line-height: 1.7;
   }
   
   .btn-read {
-    background: #a30000;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--white-color);
     padding: 10px 24px;
     border-radius: 30px;
     text-decoration: none;
