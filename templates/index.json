@@ -628,7 +628,7 @@
       "type": "featured-collection",
       "settings": {
         "color_scheme": "",
-        "collection": "",
+        "collection": "rings",
         "title": "Todays Popular Product",
         "heading_size": "h2",
         "head_align": "left",
