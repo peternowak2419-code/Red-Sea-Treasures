@@ -1,5 +1,5 @@
 .red-sea-profile-section {
-    background: #fff;
+    background: var(--light-bg);
     padding: 60px 0;
   }
   
