@@ -59,6 +59,6 @@
   
   .icon-card p {
     font-weight: 600;
-    color: #a30000;
+    color: var(--primary-color);
   }
   
