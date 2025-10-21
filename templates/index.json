@@ -299,58 +299,6 @@
             "showtext": "",
             "customb_style": "link"
           }
-        },
-        "featured_collection_tqbACq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "Toaster",
-            "url": "",
-            "showtext": "",
-            "customb_style": "link"
-          }
-        },
-        "featured_collection_LM6Vnq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "Charger",
-            "url": "",
-            "showtext": "",
-            "customb_style": "link"
-          }
-        },
-        "featured_collection_eQbrRa": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "Television",
-            "url": "",
-            "showtext": "",
-            "customb_style": "link"
-          }
-        },
-        "featured_collection_dz6nhT": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "title": "Speaker",
-            "url": "",
-            "showtext": "",
-            "customb_style": "link"
-          }
-        },
-        "featured_collection_Wyrbwx": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "title": "Appliances",
-            "url": "",
-            "showtext": "",
-            "customb_style": "link"
-          }
         }
       },
       "block_order": [
@@ -358,12 +306,7 @@
         "template--16209783881785__7ff50e69-760a-4d45-ae67-4ede3191d751-featured_collection-1",
         "featured_collection_XTmTbd",
         "featured_collection_eMHBBC",
-        "featured_collection_bFiRwb",
-        "featured_collection_tqbACq",
-        "featured_collection_LM6Vnq",
-        "featured_collection_eQbrRa",
-        "featured_collection_dz6nhT",
-        "featured_collection_Wyrbwx"
+        "featured_collection_bFiRwb"
       ],
       "settings": {
         "color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
@@ -390,85 +333,6 @@
         "catheading_size": "small",
         "blockcolor_scheme": "background-1",
         "columns_mobile": "2",
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
-    },
-    "featured_collection_D8P9jY": {
-      "type": "featured-collection",
-      "blocks": {
-        "heading_yefLVh": {
-          "type": "heading",
-          "settings": {
-            "icon1": "hotdeal",
-            "heading": "Deal Of The Day",
-            "heading_size": "h2",
-            "subheading": ": Ends In"
-          }
-        },
-        "date_zLwgJ9": {
-          "type": "date",
-          "settings": {
-            "wb_enddate": "2025/10/10"
-          }
-        },
-        "button_KgYzKd": {
-          "type": "button",
-          "settings": {
-            "icon2": "flash",
-            "btntxt": "Claim This Offer Now",
-            "link": "",
-            "view_all_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "heading_yefLVh",
-        "date_zLwgJ9",
-        "button_KgYzKd"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
-        "collection": "",
-        "title": "Flash Sales",
-        "heading_size": "h1",
-        "head_align": "center",
-        "heading_color_scheme": "scheme-fe404675-b857-47d9-beb8-3438200d0cbe",
-        "head_space": true,
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "products_to_show": 6,
-        "columns_desktop": 5,
-        "show_row_on_desktop": 1,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "view_button_pos": "top",
-        "enable_desktop_slider": true,
-        "arrow_position": "inline",
-        "card_style": "card",
-        "show_count_timer": true,
-        "banner_position": "left",
-        "box_align": "top",
-        "text_alignment": "center",
-        "show_text_box": false,
-        "imgcolor_scheme": "background-1",
-        "show_banner_timer": false,
-        "wb_bannerdate": "",
-        "text_caption": "Sub text",
-        "outline_text": true,
-        "heading": "Heading",
-        "bnrheading_size": "h2",
-        "sub_heading": "Sub Heading",
-        "button_label": "Button label",
-        "button_link": "",
-        "link_window": true,
-        "button_style_secondary": "link",
-        "card_color_scheme": "",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -682,7 +546,7 @@
       "type": "featured-collection",
       "settings": {
         "color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
-        "collection": "",
+        "collection": "rings",
         "title": "Todays Popular Product",
         "heading_size": "h1",
         "head_align": "center",
@@ -996,6 +860,19 @@
     "testimonial_8JDWjV": {
       "type": "testimonial",
       "blocks": {
+        "quote_KGKm8D": {
+          "type": "quote",
+          "settings": {
+            "rev_title": "",
+            "display_review": true,
+            "display_review_text": true,
+            "star_rating": 5,
+            "quote": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "author": "Add author name",
+            "authorsub": "Author Designation",
+            "color_scheme": "background-1"
+          }
+        },
         "quote_jxWgth": {
           "type": "quote",
           "settings": {
@@ -1063,6 +940,7 @@
         }
       },
       "block_order": [
+        "quote_KGKm8D",
         "quote_jxWgth",
         "quote_ihniPz",
         "quote_Piwcgb",
@@ -1340,7 +1218,6 @@
         "collapsible_row_txBVJC",
         "collapsible_row_6GXkPB"
       ],
-      "disabled": true,
       "settings": {
         "heading": "FAQs",
         "heading_size": "h2",
@@ -1350,7 +1227,7 @@
         "description": "",
         "description_style": "body",
         "layout": "section",
-        "color_scheme": "",
+        "color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
         "secondary_background": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
@@ -1392,7 +1269,6 @@
         "image_UjiA6L",
         "image_hLYH7y"
       ],
-      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h2",
@@ -1403,7 +1279,7 @@
         "iconwidth": 28,
         "column_alignment": "left",
         "flex_direction": "row",
-        "color_scheme": "",
+        "color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
         "margin_top": 60,
         "margin_bottom": 0,
         "padding_top": 60,
@@ -1417,7 +1293,6 @@
     "hero_banner_LDhejg",
     "red_sea_profile_3czazb",
     "7ff50e69-760a-4d45-ae67-4ede3191d751",
-    "featured_collection_D8P9jY",
     "collage_FXfDCd",
     "3f381c47-733a-4027-b7cc-15a524815a39",
     "featured_collection_B9Xn9U",
