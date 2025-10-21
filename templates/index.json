@@ -189,7 +189,6 @@
       "name": "t:sections.hero-banner.presets.name",
       "settings": {
         "full_width": true,
-        "image": "shopify://shop_images/DSC_3930_copy.jpg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
