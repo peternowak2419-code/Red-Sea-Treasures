@@ -364,7 +364,7 @@
             "view_all_style1": "solid",
             "show_text_box": false,
             "container_overlay_opacity": 40,
-            "desktop_content_position": "top-center",
+            "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center",
             "color_scheme": "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26",
             "image_behavior": "none"
