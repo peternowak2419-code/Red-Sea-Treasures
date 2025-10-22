@@ -12,8 +12,8 @@
 }
 
 .profile-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     align-items: center;
 }
@@ -76,73 +76,4 @@
     font-weight: 600;
     color: var(--primary-color);
 }
-
-@media screen and (max-width: 768px) {
-    .profile-grid {
-        grid-template-columns: auto;
-    }
-}
-.red-sea-profile-section {
-    background: var(--light-bg);
-    padding: 60px 0;
-  }
-  
-  .red-sea-profile-section .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .profile-grid {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 40px;
-    align-items: center;
-  }
-  
-  .profile-text h2 {
-    color: var(--primary-color);
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .profile-text p {
-    color: var(--text-color);
-    margin-bottom: 16px;
-    line-height: 1.7;
-  }
-  
-  .btn-read {
-    background: var(--primary-color);
-    color: var(--white-color);
-    padding: 10px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-  
-  .profile-icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  
-  .icon-card {
-    background: var(--light-bg);
-    border-radius: 10px;
-    padding: 24px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  
-  .icon-img {
-    width: 60px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .icon-card p {
-    font-weight: 600;
-    color: var(--primary-color);
-  }
   
