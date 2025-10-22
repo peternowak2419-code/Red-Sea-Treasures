@@ -12,8 +12,8 @@
 }
 
 .profile-grid {
-    display: flex;
-    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
     gap: 40px;
     align-items: center;
 }
@@ -82,5 +82,8 @@
   @media (max-width: 600px) {
     .red-sea-profile-section .container{
       padding: 20px
+    }
+    .profile-grid {
+      flex-wrap: wrap;
     }
   }
