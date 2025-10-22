@@ -58,6 +58,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: 0.3s;
     cursor: auto;
+    min-width: 220px;
 }
 
 .icon-card:hover {
