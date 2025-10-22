@@ -5,12 +5,16 @@
 
 }
 
-.contact-block .heading{
+.contact-block .heading.inline-richtext.contact-form{
   padding: 40px;
 }
 
 @media (max-width: 600px) {
   .contact-block{
+  }
+
+  .contact-block .heading.inline-richtext.contact-form{
+    padding: 0px;
   }
 }
 
