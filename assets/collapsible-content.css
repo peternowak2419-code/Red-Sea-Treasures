@@ -3,6 +3,13 @@
   z-index: 0;
   padding: 0px 40px;
 }
+
+@media (max-width: 600px){
+  .collapsible-content {
+    padding: 0px 20px;
+  }
+}
+
 .collapsible-content .accordion:not(.content-container):first-child{
   border-top: none;
 }
