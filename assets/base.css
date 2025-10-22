@@ -2351,6 +2351,14 @@ sticky-header.header-wrapper {
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center; 
 }
+
+@media (max-width: 600px){
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .header *[tabindex='-1']:focus {
     outline: none;
 }
