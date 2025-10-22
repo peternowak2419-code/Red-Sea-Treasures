@@ -1037,7 +1037,7 @@
         "contactfollow": "Follow us",
         "color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
         "padding_top": 60,
-        "padding_bottom": 60
+        "padding_bottom": 40
       }
     },
     "logo_bar_aEDqVj": {
@@ -1233,8 +1233,8 @@
         "secondary_background": false,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 60,
-        "padding_bottom": 0
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "iconbanner_wGw94X": {
@@ -1271,6 +1271,7 @@
         "image_UjiA6L",
         "image_hLYH7y"
       ],
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h2",
