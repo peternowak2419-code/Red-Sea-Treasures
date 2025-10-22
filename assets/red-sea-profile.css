@@ -76,4 +76,10 @@
     font-weight: 600;
     color: var(--primary-color);
 }
-  
+
+
+  @media (max-width: 600px) {
+    .red-sea-profile-section .container{
+      padding: 20px
+    }
+  }
