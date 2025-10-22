@@ -168,9 +168,8 @@
 }
 
 .footer__content-top {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   display: block;
+  padding: 24px 20px;
 }
 
 .footer .footer_localization_separator:after {
