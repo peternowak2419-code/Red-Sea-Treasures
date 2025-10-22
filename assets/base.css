@@ -2477,6 +2477,14 @@ sticky-header.header-wrapper {
     column-gap: 20px;
     align-items: center;
 }
+
+@media (max-width: 600px){
+    .header__icons{
+        width: 100%;
+        justify-content: end;
+    }
+}
+
 .header__icons .shopify-app-block {
     max-width: 4.4rem;
     max-height: 4.4rem;
