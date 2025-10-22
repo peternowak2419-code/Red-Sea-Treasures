@@ -6,6 +6,7 @@
 
 .contact-block .heading{
   margin: 0px 40px;
+  padding: 40px
 }
 
 @media (max-width: 600px) {
