@@ -67,8 +67,6 @@ html.no-js .no-js-hidden {
 .container, .page-width {
     max-width: var(--page-width);
     margin: 0 auto;
-    padding-right: 40px;
-    padding-left: 40px;
 }
 .page-width-desktop {
     padding: 0;
