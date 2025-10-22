@@ -424,6 +424,7 @@ wb-card-variant {
 .card__information {
   grid-row-start: 1;
   margin-bottom: 0;
+  margin: 10px 0px;
 }
 
 .card:not(.ratio)>.card__content {
