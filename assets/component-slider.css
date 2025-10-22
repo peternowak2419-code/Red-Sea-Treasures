@@ -137,7 +137,7 @@ button.slider-button.slider-button--next.slider-top--next::before[disabled],
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(var(--color-button),var(--alpha-button-background));
+  background: #8b0000;
   color: rgb(var(--color-button-text));
   border-radius: var(--buttons-radius);
   transition: .3s ease;
