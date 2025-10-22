@@ -3676,7 +3676,7 @@ a {
     transition: all var(--duration-long) ease;
 }
 a:hover {
-    color: rgb(var(--color-link-hover));
+    color: #8b0000;
 }
 .footer a.list-menu__item,
 .wb_gap_image a:not([class]),
