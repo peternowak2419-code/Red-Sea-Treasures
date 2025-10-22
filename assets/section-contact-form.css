@@ -2,15 +2,16 @@
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  margin: 0px 40px;
+
 }
 
 .contact-block .heading{
-  margin: 0px 40px;
   padding: 40px;
 }
 
 @media (max-width: 600px) {
-  .contact-block .heading{
+  .contact-block{
     margin: 0px 20px;
   }
 }
