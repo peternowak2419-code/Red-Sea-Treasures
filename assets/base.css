@@ -1355,7 +1355,7 @@ button.shopify-payment-button__button--unbranded {
     transition: var(--duration-long) ease;
     text-transform: capitalize;
     /* background-color: rgba(var(--color-button),var(--alpha-button-background)); */
-    background: linear-gradient(to right, rgb(var(--color-bg-button-hover)) 50%, rgb(var(--color-button)) 50%);
+    background: #8b0000;
     background-size: 200% 100%;
     background-position: right bottom;
     /* transition: all .5s ease-out; */
