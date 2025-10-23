@@ -32,9 +32,20 @@
           "settings": {
             "heading": "Available Offers",
             "icon": "tag",
-            "content": "<p>Instant 10% Discount On Winter Banks Credit/Debit Cards EMI and CreditCard</p>",
+            "content": "<p>Enjoy <strong>Free Delivery</strong> on Your First Order</p>",
             "icon2": "tag",
-            "content2": "<p>Fastest Delivery Tomorrow With Vip DealOrder within 1 hr 8 mins.</p>",
+            "content2": "<p>Get <strong>10% Off</strong> Your Next Purchase</p>",
+            "icon_color": "#dd1d1d"
+          }
+        },
+        "offer_UjFL7A": {
+          "type": "offer",
+          "settings": {
+            "heading": "",
+            "icon": "tag",
+            "content": "<p>Experience <strong>Fast, Secure Shipping</strong> Across Canada and the USA</p>",
+            "icon2": "none",
+            "content2": "",
             "icon_color": "#17af40"
           }
         },
@@ -160,6 +171,7 @@
         "title",
         "price",
         "6334601c-bd31-449a-8cf9-0021eef3d9fa",
+        "offer_UjFL7A",
         "9c089a03-57b4-47ec-9cee-287b7a879611",
         "variant_picker",
         "4cd2d0c0-c935-4cc8-a56e-fd40a599db48",
