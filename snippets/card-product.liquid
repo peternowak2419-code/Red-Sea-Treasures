@@ -49,7 +49,7 @@
                 <div class="product__media-item" data-media-id="{{ section.id }}-{{ card_product.id }}-{{ media.id }}">
                   <a href="{{ card_product.url | append: '?variant=' | append: card_product.selected_or_first_available_variant.id | default: '#' }}"
                     title="{{ card_product.title | escape }}"
-                    class="media media--transparent media--{{ media_size }} media--hover-effect" {% if media_size == 'adapt' and card_product.featured_media %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}>
+                    class="media media--transparent media--{{ media_size }} media--hover-effect" {% if media_size == 'adapt' and card_product.featured_media %} style="height:180px; padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}>
                   
                   <img class="img-fluid mx-auto lazyload"
                       srcset="{%- if media.preview_image.width >= 165 -%}{{ media.preview_image | image_url: width: 165 }} 165w,{%- endif -%}
