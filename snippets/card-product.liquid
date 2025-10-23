@@ -37,7 +37,7 @@
           {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
           {% if extend_height %} card--extend-height{% endif %}
           {% if horizontal_class %} card--horizontal{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
-        <div class="card__inner {% if card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %} wbimgblock {% if card_product.featured_media or card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+        <div style="height:180px" class="card__inner {% if card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %} wbimgblock {% if card_product.featured_media or card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
           {%- if card_product.featured_media -%}
             {% comment %} Variants Wise Change Product Image {% endcomment %}
             <div id="webipro-{{ section.id }}-{{ card_product.id }}" class="card__media {% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
