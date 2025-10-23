@@ -1521,7 +1521,7 @@ product-form .button:hover:not([disabled]) svg path{
     width: 0;
     border-radius: var(--buttons-radius);
     height: 100%;
-    background: #d4af37;
+    background: #8b0000;
     transition: all .35s;
 }
 .button:hover, button.button:hover, a.button:hover{
