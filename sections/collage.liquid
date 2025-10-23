@@ -316,7 +316,7 @@
                           {% else %}
                           href="{{ block.settings.button_link_1 }}"
                           {% endif %}
-                          {% if block.settings.link_window %} target="_blank" {% endif %}
+                          {% comment %} {% if block.settings.link_window %} target="_blank" {% endif %} {% endcomment %}
                           class="{% if block.settings.view_all_style == 'link' %} link underlined-link{% elsif block.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}">
                           <span>{{- block.settings.button_label_1 | escape -}}</span>
                         </a>
@@ -332,7 +332,7 @@
                           {% else %}
                           href="{{ block.settings.button_link_11 }}"
                           {% endif %}
-                          {% if block.settings.link_window1 %} target="_blank" {% endif %}
+                          {% comment %} {% if block.settings.link_window1 %} target="_blank" {% endif %} {% endcomment %}
                           class="{% if block.settings.view_all_style1 == 'link' %} link underlined-link{% elsif block.settings.view_all_style1 == 'solid' %}button{% else %}button button--secondary{% endif %}">
                           <span>{{- block.settings.button_label_11 | escape -}}</span>
                         </a>
