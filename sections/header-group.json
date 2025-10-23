@@ -31,6 +31,7 @@
         "bb5e6f3d-a11a-4482-9e0f-7aba68edd82a",
         "3db8a92a-5d1f-4f00-8648-d8e5f1c7bc4b"
       ],
+      "disabled": true,
       "settings": {
         "show_line_separator": true,
         "show_home_only": false,
@@ -209,7 +210,7 @@
         "main_drop_menu": "click",
         "color_schememenu": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
         "color__dropmenu": "background-1",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "always",
         "head_shadow": "head_shadow_all",
         "margin_bottom": 0,
         "enable_country_selector": true,
