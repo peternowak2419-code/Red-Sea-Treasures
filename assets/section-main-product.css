@@ -1148,7 +1148,7 @@ product-recommendations .wbvariantbadges{
     font-size: calc(var(--font-body-scale) * 16px);
     text-transform: capitalize;
     z-index: 0;
-    background-color: rgba(var(--color-bg-button-hover),1);
+    background-color: #d4af37;
     border-color: rgba(var(--color-bg-button-hover),1);
     color: rgb(var(--color-button-hover-text));
     transition: all var(--duration-long) ease;
