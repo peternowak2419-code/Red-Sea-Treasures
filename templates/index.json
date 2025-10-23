@@ -1177,9 +1177,9 @@
           "type": "collapsible_row",
           "settings": {
             "default_open": true,
-            "heading": "What are tablets, and how do they differ from smartphones and laptops?",
+            "heading": "What types of products do you offer?",
             "icon": "chat",
-            "row_content": "<p>Tablets are portable touchscreen devices that are larger than smartphones but more compact than laptops. They are primarily used for browsing, media consumption, and light productivity tasks.</p>",
+            "row_content": "<p>At Red Sea Treasures, we offer a unique collection of authentic Arabic products that blend tradition and quality — including premium Yemeni Sidr honey, Hawr coffee, traditional Jambiyas, men’s rings, elegant shawls, and distinctive Arabic souvenirs.</p>",
             "page": ""
           }
         },
@@ -1187,9 +1187,9 @@
           "type": "collapsible_row",
           "settings": {
             "default_open": false,
-            "heading": "What types of electronics products do you offer?",
+            "heading": "Are your products authentic?",
             "icon": "chat",
-            "row_content": "<p>We offer a diverse range of electronics products, including but not limited to smartphones, laptops, televisions, audio equipment, home appliances, electronic components, and accessories.</p>",
+            "row_content": "<p>Yes, all our products are 100% authentic and sourced directly from trusted suppliers in Yemen and across the Arab world to ensure quality and authenticity.</p>",
             "page": ""
           }
         },
@@ -1199,7 +1199,7 @@
             "default_open": false,
             "heading": "What payment methods do you accept?",
             "icon": "chat",
-            "row_content": "<p>We accept various payment methods, including credit/debit cards, PayPal, and other secure online payment options. You can find the full list during the checkout process.</p>",
+            "row_content": "<p>We accept all major payment methods, including Visa, MasterCard, PayPal, and other secure online payment options.</p>",
             "page": ""
           }
         },
@@ -1207,9 +1207,19 @@
           "type": "collapsible_row",
           "settings": {
             "default_open": false,
-            "heading": "Do you offer warranties on your products?",
+            "heading": "Where do you deliver?",
             "icon": "chat",
             "row_content": "<p>Many of our products come with manufacturer warranties. Warranty information is provided on the product pages. You can also contact our customer support for warranty details.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tmNeyN": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": false,
+            "heading": "Do you offer warranties or refunds?",
+            "icon": "chat",
+            "row_content": "<p>We ensure all our products meet high-quality standards. If your order arrives damaged or incorrect, please contact us within 7 days for an exchange or refund.</p>",
             "page": ""
           }
         }
@@ -1218,7 +1228,8 @@
         "collapsible_row_T8rhaY",
         "collapsible_row_izcPeR",
         "collapsible_row_txBVJC",
-        "collapsible_row_6GXkPB"
+        "collapsible_row_6GXkPB",
+        "collapsible_row_tmNeyN"
       ],
       "settings": {
         "heading": "FAQs",
