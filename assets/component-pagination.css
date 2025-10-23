@@ -35,7 +35,7 @@
     background: rgba(var(--color-foreground),.04);
 }
 .pagination__item.pagination__item--current {
-    color: rgb(var(--color-link-hover));
+    color: #8b0000;
     opacity: 1;
 }
 .pagination-wrapper .blog-count {
