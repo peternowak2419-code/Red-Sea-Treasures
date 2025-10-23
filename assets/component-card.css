@@ -640,8 +640,8 @@ wb-card-variant {
 .product-form__input input[type="radio"]:checked+label,
 .product__info-wrapper .product-form__input input[type="radio"]:checked+label {
   background-color: transparent;
-  color: rgb(var(--color-button));
-  border-color: rgb(var(--color-link-hover));
+  color: #8b0000;
+  border-color: #8b0000;
 }
 
 .product-form__input label.disabled,
