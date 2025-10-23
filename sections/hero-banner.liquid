@@ -121,9 +121,6 @@
                       {% else %}
                         href="{{ block.settings.button_link }}"
                       {% endif %}
-                      {% if block.settings.link_window %}
-                        target="_blank"
-                      {% endif %}
                       class="{% if block.settings.button_style_secondary == 'link' %} link link underlined-link{% elsif block.settings.button_style_secondary == 'solid' %}button{% else %}button button--secondary{% endif %}"
                     >
                       <span>{{- block.settings.button_label | escape -}}</span>
