@@ -4245,7 +4245,7 @@ h1.heading{
 }
 .price--on-sale .price__badge-sale,
 .amount__badge-sale{
-    background: var(--sale-bg-color);
+    background: #8b0000;
     color: var(--sale-text-color);
 }
 .new_product_badge{
