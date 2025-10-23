@@ -175,7 +175,7 @@
           "type": "button",
           "settings": {
             "button_label": "Discover Our Collection Now",
-            "button_link": "shopify://collections",
+            "button_link": "shopify://collections/all",
             "button_style_secondary": "solid",
             "link_window": true
           }
