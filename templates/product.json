@@ -135,6 +135,7 @@
         },
         "3f2119c3-4c6a-43f7-b988-831ab0996550": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Product Details",
             "icon": "flashsale",
@@ -149,7 +150,7 @@
             "heading": "Shipping And Return",
             "icon": "check_mark",
             "default_open": false,
-            "content": "<p>For all orders exceeding a value of 100USD shipping is offered for free.</p><p>Returns will be accepted for up to 10 days of Customer’s receipt or tracking number on unworn items. You, as a Customer, are obliged to inform us via email before you return the item.</p><p>Otherwise, standard shipping charges apply. Check out our delivery Terms & Conditions for more details.</p>",
+            "content": "<ul><li>Orders are processed within 2–4 business days</li><li>Enjoy free delivery on your first order</li><li>Returns are accepted within 10 days of delivery, provided the item is unused and in original packaging</li><li>For returns or exchanges, please contact us at <a href=\"mailto:info@redseatreasures.ca\" target=\"_blank\">info@redseatreasures.ca</a> before sending your item back</li></ul>",
             "page": ""
           }
         }
