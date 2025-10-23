@@ -427,7 +427,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 }
 .drawer__header {
   display: block;
-  background: rgba(var(--color-button),var(--alpha-button-background));
+  background: #610707;
   color: rgb(var(--color-button-text));
   padding: 15px 20px 15px;
 }
