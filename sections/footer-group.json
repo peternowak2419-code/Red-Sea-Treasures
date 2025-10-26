@@ -72,7 +72,7 @@
         "show_social": true,
         "show_bg": false,
         "footer-logo_width": 110,
-        "contact_number": "Call us: <a href=\"tel: 01234 56789\" target=\"_blank\" title=\"tel: 01234 56789\"><strong>+01234 56789</strong></a>",
+        "contact_number": "",
         "localization_heading": "",
         "enable_country_selector": true,
         "enable_language_selector": true,
