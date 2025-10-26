@@ -123,26 +123,26 @@
                       {{ block.settings.subtext }}
                     </div>
                     <ul class="social-icons">
-                      <li>
+                      {% comment %} <li>
                         <a>
                           {% render 'icon-facebook' %}
                         </a>
-                      </li>
-                      <li>
+                      </li> {% endcomment %}
+                      {% comment %} <li>
                         <a>
                           {% render 'icon-twitter' %}
                         </a>
-                      </li>
+                      </li> {% endcomment %}
                       <li>
                         <a>
                           {% render 'icon-instagram' %}
                         </a>
                       </li>
-                      <li>
+                      {% comment %} <li>
                         <a>
                           {% render 'icon-pinterest' %}
                         </a>
-                      </li>
+                      </li> {% endcomment %}
                     </ul>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
