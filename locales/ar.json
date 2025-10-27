@@ -1448,7 +1448,8 @@
         "free": "مجاناً",
         "free_shipping_discount": "الشحن مجاني",
         "one_time": "شحن لمرة واحدة",
-        "subscription": "الشحن بالاشتراك"
+        "subscription": "الشحن بالاشتراك",
+        "address": "عنوان الشحن"
       },
       "pickup": {
         "pickup": "الاستلام",
@@ -1518,7 +1519,127 @@
       "adjusted_total": "إجمالي معدل",
       "due_on_date": "الموعد النهائي {{date}}",
       "due_on_fulfillment": "يستحق عند الإتمام",
-      "due_on_receipt": "يستحق عند الاستلام"
+      "due_on_receipt": "يستحق عند الاستلام",
+      "shipment_timeline": {
+        "expand_events_label": "عرض التفاصيل",
+        "expand_events_accessibility_label": "عرض تفاصيل شحن الطلب",
+        "hide_events_label": "إخفاء التفاصيل",
+        "hide_events_accessibility_label": "إخفاء تفاصيل شحن الطلب"
+      },
+      "addresses_section_title": "التسوية المالية والشحن",
+      "order_details": "تفاصيل الطلب",
+      "order_details_skeleton_accessibility_label": "سجّل الدخول لعرض تفاصيل الطلب بالكامل.",
+      "billing_address": "عنوان الفوترة",
+      "card_ending_with": "وينتهي بـ {{lastDigits}}",
+      "contact": "اتصل بنا",
+      "contact_information": "معلومات الاتصال",
+      "company": "شركة",
+      "company_and_location": "الشركة والموقع",
+      "fully_refunded_label": "تم استرداد المبلغ",
+      "group_title_label": "جزء من: {{groupTitle}}",
+      "group_title_label_with_parent": "لـ: {{groupTitle}}",
+      "view_controls": {
+        "gallery": "معرض",
+        "list": "قائمة"
+      },
+      "grouped_view_components": {
+        "expand_line_items": "عرض {{count}} عنصرًا",
+        "collapse_line_items": "إخفاء {{count}} عنصرًا",
+        "line_item_summary_list_accessibility_label": "المشتروات المضمنة في حزمة {{productTitle}}"
+      },
+      "discount": "خصم",
+      "hide_items": "إخفاء العناصر",
+      "loading": "جاري تحميل تفاصيل الطلب",
+      "loading_finished_accessibility_message": "تم تحميل تفاصيل الطلب.",
+      "location": "الموقع",
+      "image_gallery": {
+        "next": "عرض العناصر التالية",
+        "previous": "عرض العناصر السابقة",
+        "load_more_items": {
+          "one": "تحميل {{count}} عنصرًا إضافيًا",
+          "other": "تحميل {{count}} عنصرًا إضافيًا"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "عرض ملخص الطلب",
+        "closed": "إخفاء ملخص الطلب"
+      },
+      "no_data": "لا يوجد",
+      "no_data_provided_accessibility_label": "حقل {{fieldName}} فارغ.",
+      "not_applicable": "غير متوفر",
+      "paid_amount": "مدفوع",
+      "partially_refunded_label": "تم استرداد جزء من المبلغ",
+      "payment": {
+        "status_in_review": "يُرجى الدفع بعد المراجعة.",
+        "status_unpaid": "يُرجى تسديد المبلغ المستحق في تاريخ {{date}}",
+        "title": "الدفع",
+        "payment_type": {
+          "gift_card": "بطاقة هدية",
+          "store_credit": "رصيد المتجر",
+          "money_order": "أمر دفع نقدي",
+          "cash_on_delivery": "الدفع عند الاستلام",
+          "bank_deposit": "إيداع مصرفي",
+          "manual": "دليل"
+        },
+        "card_payment_details": "ينتهي بـ {{lastDigits}} - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "ينتهي بـ {{lastDigits}} - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "رصيد المتجر - {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "تم الدفع باستخدام أقساط Shop Pay.",
+          "view_schedule": "عرض الجدول الزمني"
+        },
+        "manual_payment_methods": {
+          "money_order": "أمر دفع نقدي - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "الدفع عند الاستلام - {{formattedTransactionAmount}}",
+          "bank_deposit": "إيداع بنكي - {{formattedTransactionAmount}}",
+          "manual": "يدوي - {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "عرض الكل",
+          "show_less": "عرض أقل",
+          "details": "تفاصيل",
+          "payment_details": "تفاصيل الدفع"
+        },
+        "emv_details": {
+          "auth": "مصرح:",
+          "aid": "المساعدة الإنسانية:",
+          "source": "المصدر:"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "تم الدفع باستخدام أقساط Shop Pay",
+        "description": "ابق على اطلاع دائم بجدول المدفوعات الخاص بك من خلال التذكيرات في تطبيق المتجر.",
+        "payment_reminders_button": "احصل على تذكيرات الدفع",
+        "desktop_qr_code_content": {
+          "title": "ابحث عن التذكيرات",
+          "description": "احصل على تذكيرات بأقساطك مع Shop."
+        }
+      },
+      "refunded_amount": "تم استرداد المبلغ",
+      "request_return_failed": "حدثت مشكلة أثناء معالجة طلبك. يرجى المحاولة مرة أخرى.",
+      "login_card": {
+        "resend_link_and_login": "للاطلاع على تفاصيل طلبك، يرجى تسجيل الدخول أو إرسال رابط جديد إلى عنوان البريد الإلكتروني أو رقم الهاتف المستخدم عند إتمام عملية الشراء.",
+        "resend_link_only": "للاطلاع على تفاصيل طلبك، أرسل رابطًا جديدًا إلى عنوان البريد الإلكتروني أو رقم الهاتف المستخدمين عند الدفع.",
+        "log_in": "تسجيل الدخول",
+        "resend_link": "أرسل رابطًا جديدًا",
+        "link_expired": "انتهت صلاحية الرابط"
+      },
+      "remaining_amount": "المتبقي",
+      "marketing_section_title": "أخبار وعروض",
+      "marketing_description": "ستتلقى رسائل بريد إلكتروني تسويقية. يمكنك إلغاء الاشتراك في أي وقت.",
+      "marketing_checkbox_label": "أرسل لي رسائل البريد الإلكتروني التي تحتوي على الأخبار والعروض.",
+      "marketing_checkmark_label": "أنت مشترك لتلقي الأخبار والعروض عبر البريد الإلكتروني.",
+      "returns": {
+        "expand_events_label": "عرض التفاصيل",
+        "hide_events_label": "إخفاء التفاصيل",
+        "ineligible_return_message": "لا يوجد أي منتجات في هذا الطلب مؤهلة للإرجاع.",
+        "ineligible_return_message_when_returned": "لا يوجد أي منتجات إضافية في هذا الطلب مؤهلة للإرجاع.",
+        "print_shipping_label": "اطبع ملصق الشحن",
+        "return_and_refund_modal_header": "سياسة الاسترداد",
+        "tracking_number": "رقم التتبع:",
+        "exchange_header": "تبادل العناصر",
+        "exchange_subheader": "سيتم إضافة المنتجات التي تم استبدالها إلى الطلب بمجرد اكتمال عملية الإرجاع."
+      }
     },
     "addresses": {
       "add_button": "أضف عنوانًا",
@@ -2239,7 +2360,10 @@
               "may_be_eligible_not_authorized_label": "قد يحق لك المطالبة برصيد تسوق إضافي لأن هذا الطلب وصل متأخراً. سجل الدخول لعرض التفاصيل.",
               "redeemed_label": "لقد قمت بالفعل بطلب استرداد قيمة الشراء نقدًا لأن هذا الطلب وصل متأخرًا.",
               "expired_label": "لا يحق لهذه الطلبية المطالبة بتعويض عن التأخير في التوصيل لأن ضمان الـ 30 يومًا قد انتهى.",
-              "no_shop_cash_label": "لا يحق لهذه الطلبية المطالبة بتعويض عن التأخير في التوصيل لأنها لم يتم دفع ثمنها باستخدام Shop Pay."
+              "no_shop_cash_label": "لا يحق لهذه الطلبية المطالبة بتعويض عن التأخير في التوصيل لأنها لم يتم دفع ثمنها باستخدام Shop Pay.",
+              "no_longer_guaranteed_label": "لم تعد هذه المنتجات مشمولة بضمان التوصيل.",
+              "claim_shop_cash_title": "امسح بالباركود لتستلم {{amount}} في رصيد المتجر",
+              "claim_shop_cash_description": "يمكنك استخدام رصيد Shop Cash الخاص بك في عمليات الشراء المستقبلية في تطبيق Shop."
             }
           }
         }
@@ -2250,7 +2374,15 @@
       "list_title_confirmed_orders_accessibility_label": "الطلبات: مؤكدة",
       "list_title_pending_orders_accessibility_label": "الطلبات: معلقة",
       "switch_order_type_pending_orders_accessibility_label": "غيّر نوع الطلب، أنت تشاهد حاليًا الطلبات المعلقة.",
-      "switch_order_type_confirmed_orders_accessibility_label": "تغيير نوع الطلب، يتم عرض الطلبات المؤكدة حاليًا"
+      "switch_order_type_confirmed_orders_accessibility_label": "تغيير نوع الطلب، يتم عرض الطلبات المؤكدة حاليًا",
+      "status_mark_as_delivered": "اعتبرها مستلمة",
+      "fulfillment_status_title": "حالة الإتمام: {{status}}",
+      "buy_again": "اشترِ مرة أخرى",
+      "buy_again_accessibility_label": "اشترِ مرة أخرى للطلب {{orderId}}",
+      "manage": "إدارة",
+      "manage_accessiblity_label": "إدارة الطلب {{orderId}}",
+      "group_title_label": "جزء من: {{groupTitle}}",
+      "group_title_label_with_parent": "لـ: {{groupTitle}}"
     }
   },
   "sections": {
