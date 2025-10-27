@@ -1113,6 +1113,166 @@
       },
       "address_management": {
         "confirm_address_deletion": "هل أنت متأكد من أنك تريد حذف العنوان {{address}} ؟"
+      },
+      "notice_banner": {
+        "shipping_address_incomplete_title": "عنوان الشحن غير مكتمل.",
+        "calculating_shipping": "لا يزال يتم حساب تكلفة الشحن. حاول مرة أخرى بعد بضع ثوانٍ. لم يتم تحصيل أي رسوم منك.",
+        "calculating_taxes": "لا تزال الضرائب قيد الحساب. حاول مرة أخرى بعد بضع ثوانٍ. لم يتم تحصيل أي رسوم منك.",
+        "generic_processing_error": {
+          "title": "حدثت مشكلة أثناء معالجة طلبك.",
+          "body": "لم يتم تحصيل أي رسوم منك. حاول مرة أخرى أو استخدم طريقة دفع مختلفة."
+        },
+        "payment_method_not_available_with_payment_terms": "طريقة الدفع التي اخترتها لم تعد متاحة لأن دفع ثمن هذه الطلبية أصبح الآن وفقًا لـ {{paymentTerms}} شروط الدفع.",
+        "payment_method_not_available_with_fulfillment_terms": "طريقة الدفع التي اخترتها لم تعد متاحة لأن دفع ثمن هذا الطلب أصبح مستحقاً عند استلام الطلب.",
+        "payment_method_not_available_with_fixed_terms": "طريقة الدفع التي اخترتها لم تعد متاحة لأن موعد سداد قيمة هذه الطلبية لاحقاً.",
+        "payment_method_not_available_with_review_requirement": "طريقة الدفع التي اخترتها لم تعد متاحة لأن الدفع سيكون مستحقاً بمجرد تأكيد طلبك.",
+        "contact_information": {
+          "title": "معلومات الاتصال غير صالحة.",
+          "header": "لتحديث معلوماتك، {{emailLink}} .",
+          "email_link": "تواصل معنا"
+        }
+      },
+      "review_address_modal": {
+        "title": "راجع العنوان",
+        "subtitle": {
+          "one": "سيتم شحن هذه الطلبية إلى العنوان الذي قدمه {{merchant}} .",
+          "other": "سيتم شحن هذه الطلبية إلى عنوان يوفره {{merchant}} . يرجى اختيار عنوان الشحن."
+        },
+        "subtitle_no_match": "هذا العنوان لا يتطابق مع أي من عناوينك المحفوظة.",
+        "subtitle_must_use": "سيتم شحن طلبك إلى هذا العنوان.",
+        "continue": "استمر باستخدام هذا العنوان.",
+        "use_saved_address": "استخدم عنوانًا مختلفًا",
+        "return_to_cart": "العودة إلى السلة"
+      },
+      "marketplaces": {
+        "legal_notice": {
+          "legal_text": "مراجعة",
+          "link_label": "شروط وأحكام {{partnerDisplayName}}"
+        }
+      },
+      "online_store_chat": {
+        "title": "هل لديك أسئلة؟ تواصل معنا عبر الدردشة."
+      },
+      "local_pickup": {
+        "location_address_search_label": "العنوان",
+        "location_information": {
+          "one": "يوجد %{count} موقعًا لديه مخزون قريب منك.",
+          "other": "يوجد %{count} موقعًا لديهم مخزون قريب منك."
+        },
+        "toggle_location": "تغيير الموقع",
+        "or": "أو",
+        "cancel": "إلغاء",
+        "your_location": "موقعك",
+        "search_button": "ابحث عن المتاجر",
+        "no_stores_found": "لم يتم العثور على متاجر.",
+        "all_stores_far_away": {
+          "title": "أقرب المواقع تبعد مسافة تزيد عن %{distance}",
+          "description": "اختر موقعًا أو %{ship_to_address_link}",
+          "ship_to_address_link": "عنوان الشحن"
+        },
+        "selected_pickup_option_no_longer_available": {
+          "title": "الموقع الذي قمت بتحديده مسبقًا لم يعد متاحًا.",
+          "description": "اختر موقعًا جديدًا أو %{ship_to_address_link}",
+          "ship_to_address_link": "عنوان الشحن"
+        },
+        "could_not_resolve_address": "تعذر تحديد موقع عنوانك. حاول مرة أخرى أو استخدم عنوانًا مختلفًا.",
+        "paginator": {
+          "accessibility_label": "تصفية حسب موقع الاستلام المحلي",
+          "previous": "الصفحة السابقة",
+          "next": "الصفحة التالية",
+          "label": {
+            "one": "%{first} - %{last} من %{count} متجر",
+            "other": "من %{first} إلى %{last} من %{count} متجرًا"
+          }
+        },
+        "reveal_more_label": {
+          "one": "عرض %{count} موقعًا إضافيًا",
+          "other": "عرض %{count} موقعًا إضافيًا"
+        }
+      },
+      "captcha": {
+        "title": "أكمل اختبار الكلمات المشفرة (CAPTCHA) للمتابعة.",
+        "errors": {
+          "not_solved": "أكمل اختبار الكلمات المشفرة (CAPTCHA) للمتابعة."
+        }
+      },
+      "clipboard": {
+        "copied": "تم النسخ",
+        "failed_to_copy": "تعذر النسخ"
+      },
+      "discount_errors": {
+        "generic_error": "تعذر معالجة طلبك لأن رمز الخصم لم يعد صالحًا. يرجى مراجعة إجمالي طلبك وإعادة المحاولة."
+      },
+      "b2b_errors": {
+        "lost_b2b_purchasing_permissions": "لم يعد لديك إذن لتقديم طلبات بيع بالجملة (B2B).  انتقل إلى %{logout_url} لتقديم طلب شخصي بدلاً من ذلك.",
+        "log_out_link_text": "تسجيل الخروج",
+        "lost_permissions_subtitle": "لم يعد لديك إذن لتقديم طلبات بيع بالجملة (B2B). يرجى تسجيل الخروج لتقديم طلب شخصي.",
+        "lost_permissions_title": "لا توجد أذونات موقع."
+      },
+      "shop_pay_external": {
+        "title": "تسوق ودفع عبر الشراء الفوري",
+        "errors": {
+          "problem_loading": "هناك مشكلة في تحميل Shop Pay.",
+          "try_again_later": "تحقق من اتصالك أو أغلق هذه النافذة وحاول مرة أخرى بعد بضع لحظات.",
+          "checkout_has_expired": "انتهت صلاحية عملية الدفع. يرجى إغلاق هذه النافذة ومحاولة الدفع مرة أخرى من {{shopName}} ."
+        },
+        "return_to_store": "العودة إلى {{shopName}}",
+        "return_to_store_simple": "العودة إلى المتجر"
+      },
+      "wallets": {
+        "return_to_store": "العودة إلى المتجر",
+        "return_to_checkout": "العودة إلى صفحة الدفع",
+        "redirect_hint": "سيتم طلب تسجيل الدخول باستخدام {{walletName}} .",
+        "logged_in": "تمت الاتصال بـ {{email}}",
+        "shipping_line_label": "الشحن",
+        "payment_in_progress_title": "المدفوعات قيد المعالجة",
+        "payment_in_progress_body": "جاري معالجة دفعتك. سيتم إتمام طلبك قريباً.",
+        "call_to_action": "ادفع باستخدام {{walletName}}",
+        "redirection_notice": "بعد الضغط على \" {{buttonLabel}} \"، سيتم تحويلك إلى {{walletName}} لإتمام عملية الشراء بأمان.",
+        "errors": {
+          "unavailable": {
+            "title": "{{walletName}} غير متوفر",
+            "description": "لم يكن {{walletName}} متاحًا. استخدم طريقة دفع مختلفة أو حاول مرة أخرى لاحقًا.",
+            "instructions": "حدثت مشكلة مع {{walletName}} .  ارجع إلى المتجر لتجربة عملية الشراء مرة أخرى أو اختر طريقة دفع مختلفة.",
+            "unavailable_for_country": "{{walletName}} غير متوفرة في {{countryName}} . يرجى اختيار طريقة دفع مختلفة لإتمام عملية الشراء."
+          },
+          "unavailable_terminal": {
+            "instructions": "{{walletName}} غير متاحة حاليًا لطلبك. لإكمال عملية الشراء، يرجى اختيار طريقة دفع أخرى."
+          },
+          "generic": "حدثت مشكلة مع {{walletName}} . حاول مرة أخرى أو استخدم طريقة دفع مختلفة.",
+          "discount_code": "تعذر تطبيق رمز الخصم هذا. يرجى مراجعة الرمز الخاص بك ومحاولة مرة أخرى.",
+          "terminal": "حدثت مشكلة مع {{walletName}} . يرجى استخدام طريقة دفع مختلفة.",
+          "detour": {
+            "stock_problems": "بعض العناصر لم تعد متاحة. أغلق {{walletName}} وحاول مرة أخرى.",
+            "price_change": "لقد تغيرت أسعار بعض المنتجات. أغلق {{walletName}} لمراجعة طلبك وحاول مرة أخرى.",
+            "queue": "لقد تم وضعك في قائمة انتظار لإتمام عملية الشراء. أغلق {{walletName}} للمتابعة.",
+            "currency_change": "لا يمكنك استخدام عنوان مختلف مع {{walletName}} . استخدم العنوان الأصلي، أو جرب طريقة دفع مختلفة."
+          },
+          "unsupported": {
+            "address": "لا يستطيع البائع التوصيل إلى هذا العنوان.",
+            "wallet_is_unavailable": "لا يمكن استخدام {{walletName}} مع هذا العنوان.  اختر عنوانًا مختلفًا أو أغلق {{walletName}} لإكمال عملية الشراء.",
+            "postal_code": "هذا الموقع غير مدعوم."
+          },
+          "outdated": {
+            "shipping_method": "لقد تغيرت خيارات الشحن الخاصة بطلبك. يرجى مراجعة اختيارك.",
+            "payment_terms": "لقد تغيرت شروط الدفع. يرجى مراجعة طلبك."
+          },
+          "invalid": {
+            "shipping_address": "أدخل عنوان شحن صالحًا",
+            "billing_address": "أدخل عنوانًا صحيحًا للفوترة.",
+            "shipping_option": "اختر خيار شحن صالحًا",
+            "email": "أدخل بريدًا إلكترونيًا صالحًا",
+            "zone": "أدخل ولاية/إقليمًا صالحًا",
+            "billing_zone": "أدخل ولاية/إقليم عنوان الفوترة الصحيح.",
+            "emirate": "أدخل إمارة صالحة",
+            "postal_code": "أدخل رمزًا بريديًا/رمزًا منطقيًا صالحًا.",
+            "phone": "أدخل رقم هاتف صالح.",
+            "billing_phone": "أدخل رقم هاتف عنوان الفوترة الصحيح.",
+            "reduction_code": "أدخل رمز خصم أو بطاقة هدايا صالحة.",
+            "billing_must_match_shipping": "يجب أن يتطابق مع عنوان الشحن.",
+            "billing_zip": "أدخل رمزًا بريديًا/رمزًا منطقيًا صالحًا لعنوان الفوترة."
+          }
+        }
       }
     },
     "notices": {
