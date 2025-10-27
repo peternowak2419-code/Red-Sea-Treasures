@@ -624,6 +624,288 @@
     "address_form": {
       "attention": "انتباه",
       "attention_company": "الشركة/الاهتمام"
+    },
+    "payment_methods": {
+      "card_fields": {
+        "card_expiry_label": "تاريخ الانتهاء (شهر/سنة)",
+        "card_expiry_placeholder": "تاريخ الانتهاء (شهر/سنة)",
+        "card_verification_value_label": "رمز الأمان",
+        "card_verification_value_placeholder": "رمز الأمان",
+        "card_start_label": "تاريخ الإصدار (شهر/سنة)",
+        "card_start_placeholder": "تاريخ الإصدار (شهر/سنة)",
+        "tooltip": {
+          "tooltip_accessibility_label": "المزيد من المعلومات",
+          "card_verification_value_explanation_amex": "رمز الأمان المكون من 4 أرقام الموجود في الجهة الأمامية من بطاقتك",
+          "card_verification_value_explanation_other": "رمز الأمان المكون من 3 أرقام في الجزء الخلفي من بطاقتك",
+          "card_verification_value_explanation": "رمز الأمان المكون من 3 أرقام والذي يوجد عادةً في الجزء الخلفي من بطاقتك. أما بطاقات American Express فتتميز برمز مكون من 4 أرقام يقع في الجهة الأمامية.",
+          "card_security_notice": "جميع المعاملات آمنة ومشفّرة."
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "أدخل اسمك كما هو مكتوب بالضبط على بطاقتك.",
+          "credit_card_number_invalid": "أدخل رقم بطاقة صالح.",
+          "credit_card_expiry_invalid": "أدخل تاريخ انتهاء صلاحية بطاقة صالح.",
+          "credit_card_verification_value_blank": "أدخل رمز CVV أو رمز الأمان الموجود على بطاقتك."
+        },
+        "unavailable": {
+          "text": "لا تتوفر طرق الدفع باستخدام بطاقات الائتمان والخصم حاليًا.",
+          "link_text": "قم بتحديث هذه الصفحة",
+          "suffix": "أو حاول مرة أخرى لاحقًا."
+        }
+      },
+      "payment_delete": {
+        "title": "حذف طريقة الدفع",
+        "description_without_replacement": "لن تكون طريقة الدفع هذه متاحة بعد الآن للشراء في المستقبل.",
+        "description_with_replacement": "سيؤثر حذف طريقة الدفع هذه على المدفوعات المعتمدة مسبقًا. يمكنك اختيار استبدالها بطريقة دفع أخرى لمواصلة استلام الطلبات القادمة.",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "سوف يؤثر حذف طريقة الدفع هذه على المدفوعات المعتمدة مسبقاً. ما لم تقم بتحديد طريقة دفع بديلة، فسيتم احتساب رسوم هذه طريقة الدفع على أي مبالغ مستحقة على الطلبات الحالية. سيسمح لك تحديد طريقة دفع بديلة باستلام طلبات الاشتراك القادمة دون انقطاع.",
+          "with_pending_orders": "حذف طريقة الدفع هذه سيؤدي إلى إزالتها من حسابك ولن تكون متاحة للشراء في المستقبل.  إلا إذا اخترت طريقة دفع بديلة، فسيتم احتساب الرسوم المستحقة على أي أرصدة معلقة في الطلبات الحالية.",
+          "with_subscriptions": "سيؤثر حذف طريقة الدفع هذه على المدفوعات المعتمدة مسبقًا. استبدلها بطريقة دفع بديلة لمواصلة استلام الطلبات القادمة."
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "سيؤثر حذف طريقة الدفع هذه على المدفوعات المعتمدة مسبقًا. سيتم تحصيل رسوم هذه طريقة الدفع مقابل أي مبالغ مستحقة على الطلبات الحالية، ولكنك لن تتلقى طلبات الاشتراك القادمة. أضف طريقة دفع بديلة لمواصلة تلقي طلبات الاشتراك.",
+          "with_pending_orders": "سيؤدي حذف طريقة الدفع هذه إلى إزالتها من حسابك ولن تكون متاحة للشراء في المستقبل. ومع ذلك، سيتم احتساب الرسوم المستحقة على أي أرصدة معلقة في الطلبات الحالية.",
+          "with_subscriptions": "سيؤثر حذف طريقة الدفع هذه على المدفوعات المعتمدة مسبقًا. أضف طريقة دفع بديلة لمواصلة استلام الطلبات القادمة."
+        },
+        "payment_method_selector_placeholder": "اختر طريقة دفع بديلة (اختياري)",
+        "payment_method_selector_no_alternative_payment": "لا توجد طريقة بديلة",
+        "replace_method_with_new_method_description": "سيتم حذف طريقة الدفع الحالية الخاصة بك {{currentPaymentMethodName}} واستبدالها بطريقة {{newPaymentMethodName}} .",
+        "error_when_deleting": "نعتذر، لكن حدث خطأ ما ولم نتمكن من حذف طريقة الدفع هذه. يرجى المحاولة مرة أخرى لاحقاً أو تحديث الصفحة.",
+        "delete_and_replace_button": "احذف واستبدل",
+        "delete_and_replace_button_accessibility_label": "احذف {{currentPaymentMethodName}} واستبدله بـ {{newPaymentMethodName}} .",
+        "deleted_successfully": "تم حذف طريقة الدفع بنجاح.",
+        "loading_available_payment_methods_accessibility_label": "جاري تحميل طرق الدفع المتاحة"
+      },
+      "add_payment_method": {
+        "title": "أضف طريقة الدفع",
+        "payment_method_added_confirmation": "تمت إضافة طريقة الدفع",
+        "replace_mode_warning": "سيؤثر حذف طريقة الدفع هذه على الاشتراكات أو الطلبات المسبقة. استبدلها بطريقة دفع بديلة لمواصلة استلام الطلبات القادمة.",
+        "choose_from_list": "اختر من القائمة",
+        "add_new_button": "أضف جديدًا",
+        "billing_address": {
+          "title": "عنوان الفوترة",
+          "add_billing_address_button": "أضف جديدًا",
+          "add_billing_address_button_accessibility_label": "أضف عنوانًا جديدًا للفواتير",
+          "choose_billing_address_from_list_button": "اختر من القائمة",
+          "choose_billing_address_from_list_button_accessibility_label": "اختر عنوان الفوترة من القائمة.",
+          "missing_billing_address_error_message": "يرجى تحديد عنوان الفوترة.",
+          "default_checkbox": "تعيين كطريقة دفع افتراضية"
+        }
+      },
+      "three_d_secure": {
+        "title": "3D Secure (أو) 3-D Secure"
+      }
+    },
+    "payment_method_brands": {
+      "visa": "فيزا",
+      "mastercard": "ماستركارد",
+      "americanexpress": "أمريكان إكسبريس",
+      "discover": "اكتشف",
+      "dinersclub": "دينرز كلوب",
+      "jcb": "جيه سي بي",
+      "elo": "إيلو",
+      "visaelectron": "فيزا إلكترون",
+      "maestro": "مايسترو",
+      "forbrugsforeningen": "جمعية المستهلكين",
+      "dankort": "داني كورت",
+      "hipercard": "هايبر كارد",
+      "unionpay": "يونيون باي",
+      "laser": "ليزر",
+      "shoppay": "تسوق عبر باي",
+      "applepay": "آبل باي",
+      "googlepay": "جوجل باي",
+      "paypal": "باي بال",
+      "storecredit": "رصيد المتجر",
+      "bogus": "مغلوط"
+    },
+    "privacy_banner": {
+      "cookie_preferences_link": "تفضيلات ملفات تعريف الارتباط"
+    },
+    "ui_components": {
+      "clear": "واضح",
+      "clipboardCopied": "تم النسخ",
+      "clipboardFailedToCopy": "تعذر النسخ",
+      "closeNotification": "إغلاق",
+      "expandNotification": "عرض المزيد",
+      "closeModal": "إغلاق",
+      "submit": "إرسال",
+      "processing": "جاري المعالجة...",
+      "increase": "زيادة {{type}}",
+      "decrease": "أقلل {{type}}",
+      "minimumReached": "تم الوصول إلى الحد الأدنى من {{value}}",
+      "maximumReached": "تم الوصول إلى الحد الأقصى لـ {{value}}",
+      "january": "يناير",
+      "february": "فبراير",
+      "march": "مارس",
+      "april": "أبريل",
+      "may": "مايو",
+      "june": "يونيو",
+      "july": "يوليو",
+      "august": "أغسطس",
+      "september": "سبتمبر",
+      "october": "أكتوبر",
+      "november": "نوفمبر",
+      "december": "ديسمبر",
+      "monday": "الاثنين",
+      "tuesday": "الثلاثاء",
+      "wednesday": "الأربعاء",
+      "thursday": "الخميس",
+      "friday": "الجمعة",
+      "saturday": "يوم السبت",
+      "sunday": "يوم الأحد",
+      "mondayAbbreviation": "مو",
+      "tuesdayAbbreviation": "أنتِ",
+      "wednesdayAbbreviation": "نحن",
+      "thursdayAbbreviation": "ث",
+      "fridayAbbreviation": "فر",
+      "saturdayAbbreviation": "سا",
+      "sundayAbbreviation": "سو",
+      "showNextMonth": "عرض الشهر القادم، {{month}} {{year}}",
+      "showPreviousMonth": "عرض الشهر السابق، {{month}} {{year}}",
+      "rangeStart": "بداية النطاق",
+      "inRange": "في المدى",
+      "rangeEnd": "نهاية النطاق",
+      "autocompleteOptionsAvailable": {
+        "one": "متوفر {{count}} منتج",
+        "other": "متوفر {{count}} منتج(ات)"
+      },
+      "removeItem": "احذف {{label}}",
+      "removeTag": "إزالة العلامة",
+      "month": {
+        "one": "شهر",
+        "other": "أشهر"
+      },
+      "mapClusterTitle": {
+        "one": "مجموعة من {{number}} علامات",
+        "other": "مجموعة من {{number}} علامات"
+      },
+      "expandSheet": "توسيع",
+      "qrCode": "رمز الاستجابة السريعة (QR code)",
+      "addFile": "أضف ملفًا",
+      "dropzoneInvalidFileType": "نوع الملف غير مدعوم.",
+      "dropzoneDraggedOver": "اسحب الملف هنا لتحميله"
+    },
+    "profile_preview_bar": {
+      "customize_button": "تخصيص",
+      "hide_bar": "إخفاء الشريط",
+      "navigate_to_admin": "انتقل إلى لوحة التحكم",
+      "close_preview": "إغلاق المعاينة",
+      "previewing": "أنت تشاهد معاينة لـ:",
+      "saved_at": "تمت الحفظة في {{date}} الساعة {{time}}",
+      "viewing": "أنت تشاهد:",
+      "not_available": "بيانات الملف الشخصي غير متوفرة.",
+      "actions_button": "أفعال"
+    },
+    "active_inspector": {
+      "extension": {
+        "select": "اختر الإضافة المسمّاة {{extensionName}}",
+        "unselect": "إلغاء تحديد الاختيار الخاص بالامتداد المسمى {{extensionName}}",
+        "move_down": "انقل الإضافة إلى الموضع التالي.",
+        "move_up": "انقل الإضافة إلى الموقع السابق.",
+        "remove": "إزالة الامتداد",
+        "move_down_tooltip": "انتقل إلى الموضع التالي",
+        "move_up_tooltip": "انتقل إلى الموقع السابق",
+        "remove_tooltip": "إزالة"
+      }
+    },
+    "editor": {
+      "link_new_tab_confirmation": "لا يمكن فتح هذا الرابط داخل المحرر. سيتم فتحه في نافذة جديدة ( {{resolved_to_link}} ). انقر فوق موافق للمتابعة."
+    },
+    "settings": {
+      "title": "إعدادات",
+      "loading_accessibility_message": "جاري تحميل صفحة الإعدادات",
+      "log_out_everywhere": {
+        "title": "تسجيل الخروج من كل مكان",
+        "description": "إذا فقدت جهازًا أو لديك مخاوف أمنية، فقم بتسجيل الخروج من كل مكان لضمان أمان حسابك.",
+        "button": "تسجيل الخروج من كل مكان",
+        "warning_message": "سيتم أيضًا تسجيل خروجك من هذا الجهاز."
+      }
+    },
+    "shop_ads": {
+      "title": "عروض حصرية من المتجر",
+      "subtitle": "متوفر لفترة محدودة.",
+      "button": "استكشف في المتجر",
+      "previous_button": "السابق",
+      "next_button": "التالي"
+    },
+    "knowledge_base": {
+      "self_serve_returns": {
+        "enabled": "يمكن للعملاء طلب الإرجاع وإدارته بأنفسهم.",
+        "disabled": "يجب على العملاء الاتصال بالتاجر لطلب الإرجاع."
+      }
+    },
+    "subscriptions": {
+      "update_payment_instrument": {
+        "title": "استبدال طريقة الدفع",
+        "loading": "جارٍ تحميل طرق الدفع",
+        "no_payment_methods_available": "لا توجد طرق دفع متاحة.",
+        "select_new_payment_method": "اختر طريقة دفع جديدة",
+        "current_method": "الحالي",
+        "cancel": "إلغاء",
+        "save": "حفظ",
+        "success": "تم تحديث طريقة الدفع.",
+        "use_new_payment_method": "+ استخدام طريقة دفع جديدة"
+      },
+      "subscription_contracts": {
+        "title": "استخدم طريقة الدفع الخاصة بالطلبات المتكررة",
+        "more_items": {
+          "one": "{{count}} منتج إضافي",
+          "other": "{{count}} منتجًا إضافيًا"
+        },
+        "product_count": {
+          "one": "{{count}} منتج",
+          "other": "{{count}} منتج(ات)"
+        },
+        "subscription_contracts_updated": "تم تحديث {{succeeded}} من {{total}} الاشتراكات",
+        "product_details": "تفاصيل المنتج",
+        "load_more": "تحميل المزيد"
+      },
+      "updating_contracts": {
+        "one": "جاري تحديث {{count}} عقد اشتراك...",
+        "other": "جاري تحديث {{count}} عقود الاشتراك..."
+      },
+      "contracts_updated": {
+        "one": "تم تحديث عقد الاشتراك بنجاح {{count}}",
+        "other": "تم تحديث {{count}} عقد اشتراك بنجاح."
+      },
+      "contracts_update_failed": "تعذر تحديث بعض عقود الاشتراك.",
+      "invalid_wallet_type_error": "نوع المحفظة غير صالح.",
+      "update_success": {
+        "title": "تم تحديث طريقة الدفع.",
+        "done_button": "استمر في التسوق"
+      }
+    },
+    "sign_in": {
+      "brand_logo_alt_text": "شعار %{shop_name}",
+      "processing": "جاري المعالجة...",
+      "step_one": {
+        "page_title": "تسجيل الدخول - %{shop_name}",
+        "heading": "تسجيل الدخول",
+        "subheading": "أدخل بريدك الإلكتروني وسنرسل إليك رمز التحقق.",
+        "subheading_with_sign_in_options": "اختر طريقة تسجيل الدخول المفضلة لديك",
+        "input_field_label": "بريد إلكتروني",
+        "button": "استمر",
+        "or": "أو"
+      },
+      "step_two": {
+        "page_title": "أدخل الرمز - %{shop_name}",
+        "heading": "أدخل الرمز",
+        "subheading": "تم إرسالها إلى %{email}",
+        "restart_link": "تسجيل الدخول باستخدام بريد إلكتروني مختلف",
+        "input_field_label": "رمز مكون من 6 أرقام",
+        "button": "إرسال"
+      },
+      "error": {
+        "invalid": {
+          "invalid_email": "أدخل عنوان بريد إلكتروني صالحًا",
+          "invalid_code": "أدخل الرمز الصحيح المكون من 6 أرقام"
+        }
+      }
+    }
+  },
+  "sections": {
+    "header": {
+      "announcement": "إعلان",
+      "menu": "القائمة"
     }
   }
 }
