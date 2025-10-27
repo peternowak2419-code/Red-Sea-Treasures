@@ -1271,8 +1271,99 @@
             "reduction_code": "أدخل رمز خصم أو بطاقة هدايا صالحة.",
             "billing_must_match_shipping": "يجب أن يتطابق مع عنوان الشحن.",
             "billing_zip": "أدخل رمزًا بريديًا/رمزًا منطقيًا صالحًا لعنوان الفوترة."
+          },
+          "missing": {
+            "first_name": "أدخل اسمك الأول",
+            "billing_first_name": "أدخل اسم العميل الأول في عنوان الفوترة",
+            "last_name": "أدخل اسم العائلة",
+            "address1": "أدخل عنوانًا",
+            "billing_address1": "أدخل عنوان الفوترة",
+            "address2": "ادخل إلى شقة، جناح، إلخ.",
+            "billing_address2": "أدخل عنوان الفوترة (الشقة، الجناح، إلخ).",
+            "city": "أدخل اسم مدينة",
+            "billing_city": "أدخل مدينة عنوان الفوترة",
+            "province": "اختر ولاية / إقليم",
+            "billing_province": "اختر ولاية/إقليم عنوان الفوترة",
+            "country": "اختر دولة/منطقة",
+            "zip": "أدخل الرمز البريدي / الرمز البريدي",
+            "billing_zip": "أدخل الرمز البريدي/الرمز البريدي لعنوان الفوترة",
+            "phone": "أدخل رقم هاتف",
+            "contact_info": "أدخل معلومات الاتصال"
+          },
+          "formatting": {
+            "name_contains_emojis": "احذف الرموز التعبيرية من اسمك.",
+            "postal_code_contains_emoji": "احذف الرموز التعبيرية من الرمز البريدي الخاص بك.",
+            "first_name_too_long": "الاسم الأول يحتوي على عدد كبير جداً من الأحرف.",
+            "last_name_too_long": "الاسم الأخير يحتوي على عدد كبير جداً من الأحرف.",
+            "address_too_long": "سطر العنوان طويل جداً."
+          },
+          "select_different_shipping_address_to_resolve_errors": "عنوان الشحن الخاص بك غير صالح. يرجى اختيار عنوان مختلف أو استخدام عنوان جديد."
+        },
+        "scrim": {
+          "continue_purchase_in_window": "استمر في عملية الشراء في نافذة {{walletName}}",
+          "and_return_to_checkout": "وعد إلى صفحة الدفع",
+          "cancel": "إلغاء"
+        }
+      },
+      "note": {
+        "length_exceeds_maximum": "قم بتقليل حجم الملاحظة إلى 5000 حرف أو أقل."
+      },
+      "offsite_payment_failed": {
+        "title": "فشلت عملية الدفع خارج الموقع.",
+        "payment_not_processed_title": "فشلت عملية الدفع.",
+        "payment_not_processed_text": "حاول مسح رمز الاستجابة السريعة مرة أخرى. إذا استمرت المشكلة، فأبلغ موظفينا وحاول استخدام طريقة دفع مختلفة.",
+        "payment_link_expired_title": "انتهت صلاحية رابط الدفع.",
+        "payment_link_expired_text": "حاول مسح رمز الاستجابة السريعة مرة أخرى."
+      },
+      "one": {
+        "errors": {
+          "merchandise": {
+            "gift_card_price_must_be_greater_than_zero": "يجب أن يكون سعر بطاقة الهدايا أكبر من 0.",
+            "gift_card_price_must_not_exceed_limit": "يجب ألا يتجاوز سعر بطاقة الهدايا %{gift_card_limit}.",
+            "subtotal_limit_reached": "تم الوصول إلى القيمة القصوى لأصناف السلع.",
+            "signature_mismatch": "توجد مغايرة في توقيع السلع الخاصة بالسطر %{stable_id}."
           }
         }
+      },
+      "remote": {
+        "errors": {
+          "only_remote_merchandise_lines": "تحتوي صفحة الدفع فقط على منتجات من متجر بعيد.  يُرجى إعادة توجيهك إلى المتجر البعيد لإكمال عملية الدفع.",
+          "currency_mismatch": "لا يمكن إضافة هذا المنتج إلى سلة التسوق الخاصة بك لأنه من متجر يستخدم عملة مختلفة.",
+          "max_remote_shops_exceeded": "لا يمكن إضافة هذا المنتج لأن سلة التسوق الخاصة بك تحتوي بالفعل على الحد الأقصى من المنتجات من متاجر أخرى."
+        }
+      },
+      "units": {
+        "milligram": "ملغم",
+        "kilogram": "كيلوغرام",
+        "milliliter": "مل",
+        "centiliter": "كل",
+        "cubic_meter": "م³",
+        "millimeter": "مم",
+        "centimeter": "سم",
+        "square_meter": "متر مربع",
+        "ounce": "أونصة",
+        "pound": "رطل",
+        "fluid_ounce": "أونصة سائلة",
+        "quart": "كمية",
+        "gallon": "فتاة",
+        "inch": "في",
+        "foot": "قدم",
+        "yard": "ياردة",
+        "square_foot": "قدم مربع (ft²)",
+        "item": "البند"
+      },
+      "memberships": {
+        "delivery_promise_unfulfillable": "العنوان غير مدعوم للاشتراك الحالي.",
+        "items_split_across_locations_unsupported": "خدمة التوصيل السريع غير متوفرة لطلبك. تم تحديث خيارات الشحن الخاصة بك."
+      },
+      "editor": {
+        "navigation": {
+          "store_logo_accessibility_label": "انتقل إلى المتجر الإلكتروني"
+        }
+      },
+      "tooltip": {
+        "accessibility_label_context": "مزيد من المعلومات حول %{context}",
+        "additional_payment_methods": "طرق دفع إضافية"
       }
     },
     "notices": {
@@ -1437,6 +1528,60 @@
       "words_connector": "، ",
       "two_words_connector": " و ",
       "last_word_connector": "و "
+    },
+    "pagination": {
+      "previous": "السابق",
+      "next": "التالي"
+    },
+    "links": {
+      "powered_by_shopify": "بواسطة Shopify",
+      "learn_more": "تعرف على المزيد"
+    },
+    "feed": {
+      "more": "المزيد"
+    },
+    "attributes": {
+      "email": "بريد إلكتروني",
+      "password": "كلمة المرور",
+      "password_confirmation": "تأكيد كلمة المرور",
+      "first_name": "الاسم الأول",
+      "last_name": "اسم العائلة",
+      "body": "الجسم",
+      "signature": "العنوان"
+    },
+    "addresses": {
+      "zip_code": "الرمز البريدي",
+      "postal_code": "الرمز البريدي",
+      "postcode": "الرمز البريدي",
+      "pincode": "الرمز البريدي",
+      "region": "المنطقة",
+      "prefecture": "محافظة",
+      "province": "مقاطعة",
+      "state": "دولة",
+      "state_and_territory": "الولاية/الإقليم",
+      "county": "مقاطعة",
+      "emirate": "إمارة",
+      "governorate": "محافظة",
+      "confirm": "هل أنت متأكد من أنك ترغب في حذف هذا العنوان؟"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "مُتميّز",
+        "best_selling": "الأكثر مبيعاً",
+        "az": "أبجدياً، AZ",
+        "za": "أبجدياً، ZA",
+        "price_ascending": "السعر، من الأقل إلى الأعلى",
+        "price_descending": "السعر، من الأعلى إلى الأقل",
+        "date_ascending": "التاريخ، من الأقدم إلى الأحدث",
+        "date_descending": "التاريخ، من الأحدث إلى الأقدم"
+      }
+    },
+    "errors": {
+      "blank": "لا يمكن أن يكون فارغًا",
+      "blocked_address": "هذا الموقع غير مدعوم.",
+      "credit_card_session_expired": "انتهت صلاحية تفويض بطاقة الائتمان، يرجى إعادة إدخال معلومات الدفع الخاصة بك. لم يتم تحصيل أي رسوم من بطاقتك.",
+      "empty": "لا يمكن أن يكون فارغًا",
+      "invalid_email": "يجب أن يكون عنوان بريد إلكتروني صالحًا."
     }
   },
   "customer_accounts": {
