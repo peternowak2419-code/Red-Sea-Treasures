@@ -436,6 +436,29 @@
           "week": {
             "one": "أسبوع",
             "other": "%{count} أسابيع"
+          },
+          "month": {
+            "one": "شهر",
+            "other": "%{count} أشهر"
+          },
+          "year": {
+            "one": "سنة",
+            "other": "%{count} سنة/سنوات"
+          }
+        },
+        "recurring_totals": "%{total_price} كل %{interval}",
+        "recurring_totals_with_initial_order_shipping_discount": "الدفعة الأولى %{total_price_with_discount}، ثم %{recurring_total}",
+        "recurring_totals_with_policies": {
+          "first_cycles": {
+            "one": "الدفعة الأولى %{total_price}",
+            "other": "أول %{count} دفعات، كل دفعة بقيمة %{total_price}"
+          },
+          "following_cycles": "، ثم %{total_price} كل %{interval}"
+        },
+        "recurring_totals_with_initial_order_shipping_discount_with_policies": {
+          "first_cycles": {
+            "one": "، ثم %{count} دفعة بقيمة %{total_price}",
+            "other": "ثم %{count} دفعة كل دفعة بقيمة %{total_price}"
           }
         }
       },
@@ -1134,7 +1157,24 @@
           "title": "معلومات الاتصال غير صالحة.",
           "header": "لتحديث معلوماتك، {{emailLink}} .",
           "email_link": "تواصل معنا"
-        }
+        },
+        "return_to_cart_link_text": "العودة إلى السلة",
+        "return_to_cart_to_update_quantities": "%{return_to_cart_link_text} لتحديث الكميات",
+        "subscription_changed": "لقد تم تغيير إحدى اشتراكاتك.",
+        "company_location_changed": "تم تحديث سلة التسوق الخاصة بك. يرجى مراجعة طلبك قبل إرساله.",
+        "company_location_changed_product_removed": "تم تحديث سلة التسوق الخاصة بك لأن بعض المنتجات غير متوفرة في هذا الموقع. يرجى مراجعة طلبك قبل إرساله.",
+        "violations_title": "{{violation}} مفقود أو غير صالح.",
+        "individual_violations_title": {
+          "DeliveryViolations": "عنوان الشحن",
+          "PaymentViolations": "عنوان الفوترة",
+          "OtherViolations": "معلومات الطلب",
+          "UnhandledViolations": "معلومات الطلب"
+        },
+        "all_violations_content": "اتصل بنا أو راسلنا {{emailLink}} لتحديث هذه المعلومات وإتمام طلبك:",
+        "all_violations_email_link": "بريد إلكتروني",
+        "editable_shipping_address_violations_message_title": "أضف هذه المعلومات لإكمال طلبك:",
+        "editable_shipping_address_violations_message_footer": "لتحديث العنوان بشكل دائم لهذا الموقع، {{emailLink}} .",
+        "editable_shipping_address_violations_email_link": "تواصل معنا"
       },
       "review_address_modal": {
         "title": "راجع العنوان",
@@ -1623,6 +1663,132 @@
         "unpurchasable_product": {
           "title": "منتج غير قابل للشراء",
           "header": "تم حذف بعض المنتجات من سلة التسوق الخاصة بك."
+        }
+      },
+      "customer_payment_methods": {
+        "page_title": "طرق الدفع",
+        "title": "طرق الدفع",
+        "update_card_button_label": "تحديث البطاقة",
+        "delete_customer_mandate": {
+          "generic_error": "حدثت مشكلة أثناء معالجة طلبك.",
+          "success_message": "تم حذف طريقة الدفع الخاصة بك بنجاح."
+        }
+      },
+      "throttle": {
+        "too_many_attempts": {
+          "message": "عدد كبير جداً من المحاولات",
+          "description": "يرجى المحاولة مرة أخرى بعد بضع دقائق."
+        },
+        "line_to_check_out": "أنت في طابور الانتظار لإتمام عملية الدفع.",
+        "cart_summary_heading": "سلة التسوق الخاصة بك",
+        "merchandise": {
+          "available": "متوفر",
+          "sold_out": "نفدت الكمية"
+        },
+        "inventory": {
+          "partial_inventory_banner": "جزء من محتويات سلة التسوق نفد من المخزون ولن يكون متاحًا للشراء عند إتمام عملية الدفع.",
+          "sold_out": {
+            "heading": "تم بيع جميع المنتجات في سلة التسوق الخاصة بك.",
+            "storefront_body": "عد إلى المتجر لمواصلة التسوق.",
+            "no_storefront_body": "للأسف، المنتج الذي ترغب في شرائه لم يعد متوفرًا.",
+            "link": "العودة إلى المتجر"
+          }
+        },
+        "title": "طابور",
+        "time_to_checkout_title": "حان وقت الدفع - {{shopName}}",
+        "estimated_wait_time": {
+          "calculating": "حساب وقت الانتظار المتوقع",
+          "less_than_one": "الوقت المتوقع للانتظار: أقل من دقيقة",
+          "one": "الوقت المتوقع للانتظار: {{count}} دقيقة",
+          "other": "الوقت المتوقع للانتظار: {{count}} دقيقة"
+        },
+        "last_checked": "(آخر تحديث: {{time}} )",
+        "footer": {
+          "heading": "لا تقوم بتحديث هذه الصفحة، سيتم تحديثها تلقائيًا.",
+          "body": "الأشياء الموجودة في سلة التسوق الخاصة بك غير محجوزة حتى تقوم بإتمام عملية الدفع."
+        }
+      },
+      "cart_checkout_validation": {
+        "runtime_error": "حدثت مشكلة أثناء معالجة طلبك، يرجى الاتصال بمالك المتجر."
+      },
+      "no_address_location": {
+        "title": "موقع بدون عنوان",
+        "header": "لا يوجد لديك عنوان شحن لهذا الموقع.",
+        "alt_header": "عنوان الشحن مفقود",
+        "message": "اتصل بنا لإضافة عنوان لهذا الموقع لإكمال عملية الدفع.",
+        "email_us_button_label": "أرسل لنا بريدًا إلكترونيًا"
+      },
+      "order_errors": {
+        "creation_failure": "حدثت مشكلة أثناء إنشاء طلبك. حاول مرة أخرى، أو تواصل معنا لمزيد من التفاصيل.",
+        "network_failure": "تعذر إرسال طلبك بسبب خطأ في الشبكة. يرجى التحقق من اتصالك ومحاولة الإرسال مرة أخرى.",
+        "inventory_reservation_failure": "بعض المنتجات لم تعد متاحة."
+      },
+      "session_errors": {
+        "session_not_unique": "حدثت مشكلة أثناء معالجة طلبك. يرجى تحديث هذه الصفحة للعودة إلى المتجر.",
+        "session_already_finished": "تم تقديم هذه الطلبية بالفعل. يمكنك العودة إلى المتجر لبدء طلب جديد."
+      },
+      "artifact_errors": {
+        "artifact_dissatisfaction_without_violation": "حدثت مشكلة أثناء معالجة طلبك. حاول مرة أخرى بعد بضع دقائق."
+      },
+      "pickup_point": {
+        "location_is_currently_closed": "مغلق",
+        "business_hours": "أوقات العمل",
+        "no_business_hours": "لا توجد ساعات عمل متاحة.",
+        "open_twenty_four_hours": "مفتوح على مدار 24 ساعة في اليوم، 7 أيام في الأسبوع.",
+        "title": "نقطة الاستلام",
+        "or": "أو",
+        "search_button": "بحث",
+        "address_label": "العنوان",
+        "selector_tabs": "محدد نقطة الاستلام",
+        "selector_tab_map": "خريطة",
+        "selector_tab_list": "قائمة",
+        "could_not_resolve_address": "تعذر تحديد موقع عنوانك. حاول مرة أخرى أو استخدم عنوانًا مختلفًا.",
+        "no_pickup_points_near_you": "لم يتم العثور على نقاط استلام قريبة من العنوان المحدد.",
+        "no_pickup_points_near_location": "لم يتم العثور على نقاط استلام قريبة من موقعك.",
+        "pickup_unavailable_banner_title": {
+          "one": "لا توجد نقاط استلام متاحة لطلباتك.",
+          "other": "لا توجد نقاط استلام متاحة لطلباتك."
+        },
+        "no_pickup_points_found": "لم يتم العثور على نقاط استلام.",
+        "paginator": {
+          "next_accessibility_label": "الصفحة التالية",
+          "previous_accessibility_label": "الصفحة السابقة",
+          "header": {
+            "one": "عرض %{first} - %{last} من %{count} نقطة",
+            "other": "عرض %{first} - %{last} من %{count} نقطة"
+          },
+          "selected_pickup_point_label": {
+            "one": "%{pickup_point_index} من %{count} نقطة",
+            "other": "%{pickup_point_index} من %{count} نقطة"
+          },
+          "selected_page": {
+            "one": "من %{first} إلى %{last} من %{count} نقطة",
+            "other": "من %{first} إلى %{last} من %{count} نقطة"
+          }
+        },
+        "number_of_pickup_points_near_location": {
+          "one": "%{count} نقطة استلام قريبة من موقعك",
+          "other": "%{count} نقاط استلام قريبة من موقعك"
+        },
+        "change": "تغيير الموقع",
+        "waiting_on_pickup_point_location_notice": "بحث عن نقاط التوصيل...",
+        "geolocation": {
+          "shared_location_button": "استخدم موقعي الحالي",
+          "errors": {
+            "unsuported_by_browser": "لا يدعم متصفحك الحصول على الموقع الجغرافي. حاول مرة أخرى أو استخدم متصفحًا مختلفًا.",
+            "permission_not_allowed": "اسمح بمشاركة موقعك.",
+            "permission_denied": "تعذر تحديد موقعك. حاول مرة أخرى."
+          }
+        }
+      },
+      "error_page": {
+        "terminal": {
+          "title": "حدثت مشكلة أثناء عملية الدفع.",
+          "message": "قم بتحديث هذه الصفحة أو حاول مرة أخرى بعد بضع دقائق.",
+          "action": {
+            "cta": "تحديث الصفحة"
+          },
+          "request_id": "رقم الطلب: {{requestId}}"
         }
       }
     },
