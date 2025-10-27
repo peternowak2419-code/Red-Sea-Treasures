@@ -144,7 +144,149 @@
         "bank_account_generic_error": "تعذر إضافة الحساب المصرفي. حاول مرة أخرى لاحقاً.",
         "separate_payments_label": "أغراضك من أكثر من متجر واحد. سيتم احتساب الرسوم في %{separate_payments_link}.",
         "separate_payments_text": "مدفوعات منفصلة",
-        "payments": "المدفوعات"
+        "payments": "المدفوعات",
+        "store_credit": {
+          "no_fixed_selling_plans": "لا يمكنك استخدام رصيد المتجر مع خيارات الشراء المؤجل."
+        },
+        "clear": "واضح",
+        "billing_must_match_shipping_notice": "يجب أن يتطابق عنوان الفوترة الخاص بطريقة الدفع الخاصة بك مع عنوان الشحن.",
+        "same_billing_address_checkbox_label": "استخدم عنوان الشحن كعنوان الفوترة.",
+        "location_billing_address_label": "عنوان الفوترة للموقع",
+        "fact_billing_address_label": "عنوان الفوترة",
+        "location_shipping_address_label": "عنوان الشحن (الموقع)",
+        "use_order_billing_address_label": "استخدم عنوان الفوترة الخاص بالطلب.",
+        "use_location_billing_address_label": "استخدم عنوان الفوترة الخاص بالموقع.",
+        "use_location_shipping_address_label": "استخدم عنوان الشحن الخاص بالموقع.",
+        "no_working_method_error": "لا يستطيع هذا المتجر قبول المدفوعات في الوقت الحالي. يرجى تحديث الصفحة أو العودة لاحقاً.",
+        "brand_not_available": "هذا المتجر لا يقبل {{brand}} . يرجى استخدام بطاقة مختلفة للدفع.",
+        "shipping_rate_updated": "تم تحديث طرق الشحن المتاحة. يرجى تأكيد اختيارك قبل إتمام عملية الشراء.",
+        "billing_address_invalid_phone": "قم بتحديث رقم الهاتف في عنوان الفوترة الخاص بك لـ {{label}} {{last_digits}} للمتابعة.",
+        "billing_address_invalid_phone_no_card": "قم بتحديث رقم الهاتف في عنوان الفوترة الخاص بك للمتابعة.",
+        "preview_not_available": {
+          "title": "لا يوجد معاينة متاحة",
+          "content": "لا تقلق، عملية الدفع السريع هذه ستناسب عملائك.",
+          "button": "حسنًا"
+        },
+        "card_fields": {
+          "errors": {
+            "required": {
+              "issue_date": "أدخل تاريخ إصدار صالح.",
+              "issue_number": "أدخل رقم الإصدار الصحيح."
+            },
+            "invalid": {
+              "verification_value": "أدخل رمز CVV أو رمز الأمان الصحيح."
+            }
+          }
+        },
+        "simulated_checkout": "معاينة قادمة قريباً",
+        "simulated_express_checkout": "محافظ التشفير غير متاحة في معاينة المحرر بسبب منطقتك أو متصفحك.",
+        "vaulting_agreement_label": "احفظ معلومات الدفع الخاصة بي مع %{company} لتسريع عملية الدفع.",
+        "business_customer_vaulting_payment_label": "احفظ طريقة الدفع هذه عند إتمام عملية الشراء، وأذن لـ %{company} بتحصيل المدفوعات منها للشراءات المستقبلية لهذا الموقع. يمكن لجميع جهات الاتصال المخصصة لهذا الموقع استخدام طريقة الدفع هذه.",
+        "business_customer_with_bank_account_vaulting_payment_label": "احفظ طريقة الدفع هذه عند إتمام عملية الشراء، وقم بالموافقة على أن تقوم %{company} بتحصيل المبلغ من حسابك مقابل مشترياتك المستقبلية التي توافق عليها لهذا الموقع، حتى تقوم بإلغاء الموافقة. يمكن لجميع جهات الاتصال المخصصة لهذا الموقع استخدام طريقة الدفع.",
+        "purchase_options_and_vaulting_agreement_label": "يحتوي سلة التسوق الخاصة بك على منتج أو أكثر يشكل شراءً مؤجلاً أو اشتراكًا. بمواصلة عملية الدفع، فإنك توافق على أن يتم تحصيل رسوم الدفع تلقائيًا من طريقة الدفع الخاصة بك بالسعر والتردد المذكورين في هذه الصفحة حتى ينتهي الاشتراك أو تقوم بإلغائه. تخضع جميع عمليات الإلغاء لـ %{cancellation_policy_label}.",
+        "purchase_options_cancellation_policy_label": "سياسة الإلغاء",
+        "use_different_credit_card_label": "استخدم بطاقة مختلفة.",
+        "saved_credit_card": "بطاقة الائتمان المحفوظة الخاصة بك",
+        "saved_credit_card_info": "آخر أربعة أرقام",
+        "saved_credit_card_cvv_verification": "لأغراض التحقق، يرجى إدخال رمز الأمان الخاص ببطاقتك.",
+        "saved_credit_card_actions": {
+          "edit": "تعديل",
+          "delete": "حذف"
+        },
+        "saved_credit_cards_modal": {
+          "view_all_label": "عرض جميع البطاقات المحفوظة",
+          "done": "تم",
+          "cancel": "إلغاء"
+        },
+        "add_credit_card_modal": {
+          "title": "أضف بطاقة",
+          "save": "حفظ",
+          "cancel": "إلغاء"
+        },
+        "delete_credit_card_modal": {
+          "title": "حذف البطاقة",
+          "confirmation": "هل أنت متأكد من أنك تريد حذف {{brandName}} الذي ينتهي بـ {{lastDigits}} ؟",
+          "cancel": "إلغاء",
+          "delete": "حذف"
+        },
+        "edit_credit_card_modal": {
+          "title": "تعديل البطاقة",
+          "done": "تم",
+          "cancel": "إلغاء",
+          "description": "يمكنك فقط تعديل عنوان الفوترة الخاص ببطاقتك.",
+          "fields": {
+            "default": "تعيين كافتراضي",
+            "card_number": "رقم البطاقة",
+            "expiry": "تاريخ الانتهاء",
+            "security_code": "رمز الأمان",
+            "name": "الاسم المكتوب على البطاقة",
+            "billing": "فاتورة إلى"
+          }
+        },
+        "expired_cards_info": {
+          "one": "يوجد %{count} بطاقة منتهية الصلاحية، يمكنك عرضها وتحريرها في حسابك.",
+          "other": "يوجد %{count} بطاقة منتهية الصلاحية، يمكنك عرضها وتحريرها في حسابك."
+        },
+        "local_payment_method_receiver_notice": "بعد تقديم طلبك، ستتلقى تفاصيل الدفع. قم بالدفع من خلال ماكينة صرف آلي أو عبر الإنترنت خلال {{dueDays}} يومًا.",
+        "order_edit_banner_title": "يُرجى تسديد مبلغ {{amount_owed}}",
+        "order_edit_banner_subtitle": "تم تحديث طلبك {{order_number}} . يرجى مراجعة هذه التغييرات، ثم الدفع لتأكيد طلبك.",
+        "order_edit_banner_items_added": {
+          "one": "مضاف",
+          "other": "تمت الإضافة %{count}"
+        },
+        "order_edit_banner_items_removed": {
+          "in_full": "تمت الإزالة",
+          "with_quantities": "تم إزالة {{delta}} من {{quantity}}"
+        },
+        "order_edit_banner_items_returned": {
+          "in_full": "تمت الإرجاع {{quantity}}",
+          "with_quantities": "تمت إعادة {{delta}} من {{quantity}}"
+        },
+        "order_edit_banner_items_return_line_item_removed": {
+          "in_full": "تمت إزالته من عملية الإرجاع",
+          "with_quantities": "تمت إزالة {{delta}} من الإرجاع."
+        },
+        "order_edit_banner_single_item_added": "مضاف",
+        "order_edit_banner_multiple_items_added": "تمت الإضافة {{amount}}",
+        "order_edit_banner_single_item_removed": "تمت الإزالة",
+        "order_edit_banner_multiple_items_removed": "تمت الإزالة {{amount}}",
+        "order_edit_banner_single_item_returned": "تمت الإعادة",
+        "order_edit_banner_multiple_items_returned": "تمت استرداد مبلغ {{amount}}",
+        "order_edit_banner_single_item_return_line_item_removed": "تمت إزالته من عملية الإرجاع",
+        "order_edit_banner_multiple_items_return_line_item_removed": "تم إزالة {{amount}} من المبلغ المسترد",
+        "order_edit_banner_updated_order_label": "تم تحديث الطلب",
+        "gift_card_wrapper": {
+          "heading": "بطاقة هدية",
+          "apply_gift_card_label": "استخدم بطاقة هدايا",
+          "apply_another_gift_card_label": "استخدم بطاقة هدايا أخرى",
+          "gift_card_label": "بطاقة هدايا %{identifier}",
+          "payment_tag": "بطاقة هدية",
+          "add_label": "أضف بطاقة هدايا",
+          "manage_label": "إدارة بطاقات الهدايا"
+        },
+        "gift_card_store_credit": {
+          "add_label": "أضف بطاقة هدية أو رصيدًا في المتجر",
+          "manage_label": "إدارة بطاقات الهدايا أو رصيد المتجر"
+        },
+        "gift_card_checkbox_label": "استخدم بطاقة الهدايا",
+        "custom_onsite_payment_method_modal": {
+          "title": "تأكيد الدفع المخصص في الموقع"
+        },
+        "markets_pro_disclaimer_label": "بالضغط أدناه وإتمام طلبك، أنت توافق على شراء منتجك (منتجاتك) من Global-e بصفتها بائعًا مسجلًا لهذه المعاملة، وفقًا لـ %{markets_pro_terms} و %{privacy_policy} الخاصة بـ Global-e.  Global-e هي مزود خدمة عالمي لتنفيذ الطلبات لـ %{shop_name}.",
+        "markets_pro_disclaimer_terms_and_conditions": "الشروط والأحكام",
+        "markets_pro_disclaimer_privacy_policy": "سياسة الخصوصية",
+        "markets_pro_disclaimer_terms_and_conditions_title": "شروط وأحكام البائع المسجل",
+        "markets_pro_disclaimer_privacy_policy_title": "سياسة خصوصية بائع السجل",
+        "markets_pro_disclaimer_label_express_checkout": "بالشراء، أنت توافق على %{markets_pro_terms} و %{privacy_policy} الخاصة بـ Global-e، مزود الخدمة الدولي الخاص بنا.",
+        "markets_pro_disclaimer_express_terms_and_conditions": "مصطلحات",
+        "markets_pro_disclaimer_express_privacy_policy": "سياسة الخصوصية",
+        "purchase_order_number": {
+          "title": "رقم أمر الشراء",
+          "label": "رقم أمر الشراء (اختياري)"
+        },
+        "alternative_payment_currency_total_notice": "ملاحظة: سيتم تحصيل مبلغ %{amount_due} منك.",
+        "alternative_payment_currency_total_manual_payment_notice": "ملاحظة: الإجمالي المحول هو %{amount_due}.",
+        "waiting_on_taxes_message": "إذا لم يتم حساب الضرائب الخاصة بك خلال الثواني القليلة القادمة، يرجى تحديث الصفحة."
       },
       "billing": {
         "billing_address_title": "فاتورة إلى",
