@@ -1850,5 +1850,151 @@
       "announcement": "إعلان",
       "menu": "القائمة"
     }
+  },
+  "products": {
+    "product": {
+      "unavailable": "غير متوفر",
+      "vendor": "البائع",
+      "value_unavailable": "{{ option_value }} - غير متوفر",
+      "variant_sold_out_or_unavailable": "النسخة نفدت أو غير متوفرة.",
+      "video_exit_message": "{{ title }} يعرض مقطع فيديو في وضع الشاشة الكاملة في نفس النافذة.",
+      "view_full_details": "عرض تفاصيل المنتج",
+      "xr_button": "عرض في مساحتك",
+      "xr_button_label": "عرض في مساحتك، يحمل العنصر في نافذة الواقع المعزز",
+      "include_taxes": "الضريبة مشمولة.",
+      "shipping_policy_html": "سيتم حساب <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">تكلفة الشحن</a> عند الدفع."
+    },
+    "modal": {
+      "label": "معرض الوسائط"
+    },
+    "facets": {
+      "apply": "تطبيق",
+      "clear": "واضح",
+      "clear_all": "إزالة الكل",
+      "from": "من",
+      "filter_and_sort": "تصفية وترتيب",
+      "filter_by_label": "تصفية:",
+      "filter_button": "تصفية",
+      "filters_selected": {
+        "one": "تم اختيار {{ count }}",
+        "other": "تم اختيار {{ count }}"
+      },
+      "filter_selected_accessibility": "{{ type }} ( {{ count }} مرشحات مختارة)",
+      "show_more": "عرض المزيد",
+      "show_less": "عرض أقل",
+      "max_price": "أعلى سعر هو {{ price }}",
+      "product_count": {
+        "one": "{{ product_count }} من أصل {{ count }} منتج",
+        "other": "{{ product_count }} من أصل {{ count }} منتج"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتج(ات)"
+      },
+      "reset": "إعادة تعيين",
+      "sort_button": "ترتيب",
+      "sort_by_label": "ترتيب حسب:",
+      "to": "إلى",
+      "clear_filter": "إزالة الفلتر"
+    }
+  },
+  "templates": {
+    "search": {
+      "no_results": "لم يتم العثور على نتائج لـ \" {{ terms }} \".  تحقق من الإملاء أو استخدم كلمة أو عبارة مختلفة.",
+      "page": "صفحة",
+      "articles": "مقالات",
+      "collections": "مجموعات",
+      "products": "المنتجات",
+      "results_pages_with_count": {
+        "one": "صفحة {{ count }}",
+        "other": "{{ count }} صفحات"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} اقتراح",
+        "other": "{{ count }} اقتراحات"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} منتج",
+        "other": "{{ count }} منتج(ات)"
+      },
+      "results_with_count": {
+        "one": "{{ count }} نتيجة",
+        "other": "{{ count }} نتيجة"
+      },
+      "results_with_count_and_term": {
+        "one": "تم العثور على {{ count }} نتيجة لـ \" {{ terms }} \"",
+        "other": "تم العثور على {{ count }} نتيجة لـ \" {{ terms }} \""
+      },
+      "title": "نتائج البحث",
+      "search_for": "ابحث عن \" {{ terms }} \"",
+      "suggestions": "اقتراحات",
+      "pages": "الصفحات"
+    },
+    "cart": {
+      "cart": "سلة التسوق"
+    },
+    "contact": {
+      "form": {
+        "title": "نموذج الاتصال",
+        "name": "الاسم",
+        "email": "بريد إلكتروني",
+        "phone": "رقم الهاتف",
+        "comment": "تعليق",
+        "send": "أرسل",
+        "post_success": "شكراً للتواصل معنا. سنعاود الاتصال بك في أقرب وقت ممكن.",
+        "error_heading": "يرجى تعديل ما يلي:"
+      }
+    },
+    "404": {
+      "title": "الصفحة غير موجودة",
+      "subinnertext": "الصفحة التي تبحث عنها غير موجودة. يرجى التأكد من صحة عنوان الموقع الإلكتروني."
+    }
+  },
+  "localization": {
+    "country_label": "البلد/المنطقة",
+    "language_label": "اللغة",
+    "update_language": "تحديث اللغة",
+    "update_country": "تحديث الدولة/المنطقة",
+    "search": "بحث",
+    "popular_countries_regions": "الدول/المناطق الشائعة",
+    "country_results_count": "تم العثور على {{ count }} دولة/منطقة"
+  },
+  "customer": {
+    "account": {
+      "title": "حساب",
+      "details": "تفاصيل الحساب",
+      "view_addresses": "عرض العناوين",
+      "return": "العودة إلى تفاصيل الحساب"
+    },
+    "account_fallback": "حساب",
+    "activate_account": {
+      "title": "تفعيل الحساب",
+      "subtext": "أنشئ كلمة المرور الخاصة بك لتفعيل حسابك.",
+      "password": "كلمة المرور",
+      "password_confirm": "أكد كلمة المرور",
+      "submit": "تفعيل الحساب",
+      "cancel": "رفض الدعوة"
+    },
+    "addresses": {
+      "title": "العناوين",
+      "default": "الافتراضي",
+      "add_new": "أضف عنوانًا جديدًا",
+      "edit_address": "تعديل العنوان",
+      "first_name": "الاسم الأول",
+      "last_name": "اسم العائلة",
+      "company": "شركة",
+      "address1": "العنوان 1",
+      "address2": "العنوان 2",
+      "city": "مدينة",
+      "country": "البلد/المنطقة",
+      "province": "مقاطعة",
+      "zip": "الرمز البريدي/الرمز البريدي الأمريكي",
+      "phone": "هاتف",
+      "set_default": "تعيين كعنوان افتراضي",
+      "add": "أضف عنوانًا",
+      "update": "تحديث العنوان",
+      "cancel": "إلغاء",
+      "edit": "تعديل"
+    }
   }
 }
