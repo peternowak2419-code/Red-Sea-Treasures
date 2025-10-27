@@ -318,7 +318,11 @@
           "change_value": "تغيير القيمة",
           "section": "قسم",
           "value": "قيمة"
-        }
+        },
+        "title": "مراجعة",
+        "review_title": "أكمل طلبك",
+        "review_and_confirm_title": "راجع وقم بالتأكيد",
+        "checkout_as_guest": "تسجيل الخروج كضيف"
       },
       "marketing": {
         "accept_marketing_checkbox_label": "أرسل لي رسائل البريد الإلكتروني التي تحتوي على الأخبار والعروض.",
@@ -1364,6 +1368,142 @@
       "tooltip": {
         "accessibility_label_context": "مزيد من المعلومات حول %{context}",
         "additional_payment_methods": "طرق دفع إضافية"
+      },
+      "thank_you": {
+        "delivered": "تم التوصيل",
+        "delivered_title": "تم تسليم طلبك.",
+        "delivered_description_html": "تم تسليم طلبك إلى العنوان الذي قدمته. إذا لم تستلمه، أو إذا واجهتك أي مشاكل أخرى، %{تواصل_معنا}.",
+        "delivered_local_title": "تم تسليم طلبك.",
+        "delivered_local_description_html": "لم تستلم طلبك بعد؟ %{أخبرنا}.",
+        "choose_payment_method_later": "اختر طريقة الدفع لاحقاً",
+        "picked_up_title": "تم استلام طلبك.",
+        "picked_up_description_html": "تم استلام طلبك من %{location_name} في %{date}.",
+        "contact_us": "تواصل معنا",
+        "contact_us_lowercase": "تواصل معنا",
+        "contact_us_html": "هل تحتاج إلى مساعدة؟ %{contact_us}",
+        "updated_time": "تم التحديث قبل %{time_ago}",
+        "failure": "لم يتم التوصيل",
+        "failed_title": "لم يتمكنوا من توصيل طلبك.",
+        "failed_contact_merchant": "اتصل بـ %{company} لترتيب عملية التوصيل.",
+        "failed_contact_merchant_no_company": "اتصل بنا لترتيب عملية التوصيل.",
+        "non_shippable_title": "طلبك مكتمل.",
+        "let_us_know": "أخبرنا",
+        "login_title": "سجّل الدخول لعرض تفاصيل الطلب بالكامل.",
+        "login_description": "يمكنك العثور على رقم طلبك في الإيصال الذي استلمته عبر البريد الإلكتروني.",
+        "login_description_phone": "يمكنك العثور على رقم طلبك في الإيصال الذي استلمته عبر رسالة نصية.",
+        "login_not_customer_html": "أليس اسمك %{name}؟ يمكنك %{link}",
+        "login_reorder_link_text": {
+          "one": "اشترِ هذا المنتج أيضًا.",
+          "other": "اشترِ هذه المنتجات أيضًا."
+        },
+        "customer_information_hidden_fields_message": "قم بتسجيل الدخول لعرض جميع معلومات العملاء.",
+        "cancelled_title": "تم إلغاء طلبك.",
+        "cancelled_description": "تم إلغاء طلبك في %{date}. تواصل معنا إذا كانت لديك أي أسئلة.",
+        "order_number_label": "رقم الطلب",
+        "customer_validation_error": "أدخل عنوان بريد إلكتروني أو رقم طلب صالح.",
+        "customer_validation_error_phone": "أدخل رقم هاتف أو رقم طلب صالح.",
+        "login": "تسجيل الدخول",
+        "unfulfilled_items_title": "الاستعداد للشحن",
+        "unfulfilled_items_description": "نحن بصدد تجهيز هذه المنتجات للشحن حاليًا.",
+        "marker": {
+          "current": "موقع الشحنة الحالي",
+          "shipping": "عنوان الشحن"
+        },
+        "pick_up_in_store_marker": {
+          "current": "موقع الشحنة الحالي",
+          "shipping": "مكان الاستلام"
+        },
+        "fulfillment": {
+          "fulfilled_table_title": "المواد الموجودة في هذه الشحنة",
+          "unfulfilled_table_title": "المنتجات في طور التحضير للشحن",
+          "product_image_label": "صورة المنتج",
+          "description_label": "الوصف",
+          "quantity_label": "الكمية"
+        },
+        "order_updates_description_missing": "أنت لا تتلقى تحديثات الشحن.",
+        "order_updates_subscribe_to_email_notifications": "تلقى تحديثات الشحن عبر البريد الإلكتروني",
+        "order_updates_subscribe_to_email_or_phone_notifications": "احصل على تحديثات الشحن عبر البريد الإلكتروني أو الرسائل النصية.",
+        "order_updates_subscribe_to_phone_notifications": "احصل على تحديثات الشحن عبر الرسائل النصية",
+        "order_updates_submit_subscription": "إرسال",
+        "track_shipment": "تتبع الشحنة",
+        "other_options": "خيارات أخرى",
+        "delivery_information_label": "معلومات التوصيل:",
+        "gift_card_sent_confirmation": "بطاقات هدايا مرسلة",
+        "qr_code": {
+          "send_link_to_phone": "أو أرسل رابطًا إلى هاتفك",
+          "title": "تتبع عبر هاتفك"
+        },
+        "shop_qr_with_sms_upsell": {
+          "qr_code": {
+            "title": "قم بالمسح الضوئي باستخدام هاتفك"
+          },
+          "sms": {
+            "title": "أو أرسل رابطًا إلى هاتفك"
+          }
+        },
+        "view_business_customer_account": "عرض الحساب",
+        "breadcrumbs_submitted": "تمت الإرسال",
+        "breadcrumbs_in_review": "قيد المراجعة",
+        "breadcrumbs_confirmed": "مؤكد",
+        "missing_shipping_address_banner": {
+          "title": "الطلب لا يحتوي على عنوان شحن.",
+          "text_html": "% {contact_us} لإضافة عنوانك",
+          "contact_us": "تواصل معنا"
+        },
+        "first_payment_complete": "تمت عملية الدفع الأولى بنجاح.",
+        "in_store_purchase": "الشراء من داخل المتجر",
+        "company_location_section_title": "الشركة والموقع",
+        "thank_you_ready_for_picked_up": "تم استلام طلبك من %{address}.",
+        "ready_for_delivery": "جاهز للتسليم",
+        "order_updates_subscribe_to_email_notifications_failed": "لا يمكننا تخزين هذا البريد الإلكتروني لتلقي التحديثات. يرجى المحاولة مرة أخرى أو استخدام بريد إلكتروني آخر.",
+        "order_updates_subscribe_to_email_notifications_email_already_exists": "البريد الإلكتروني الذي أدخلته موجود بالفعل.",
+        "subscriptions_management": {
+          "title": "اشتراك",
+          "description": "تابع إلى حسابك لعرض وإدارة اشتراكاتك.",
+          "button_label": "إدارة اشتراكك"
+        },
+        "manage_order_label": "إدارة طلبك",
+        "gift_card_confirmation_by_text_typ": {
+          "one": "ستتلقى رسالة نصية تحتوي على بطاقة الهدايا الخاصة بك في غضون دقائق.",
+          "other": "ستتلقى رسالة نصية تحتوي على بطاقات الهدايا الخاصة بك في غضون دقائق."
+        },
+        "gift_card_confirmation_by_email_typ": {
+          "one": "ستتلقى بريدًا إلكترونيًا يحتوي على بطاقة الهدايا الخاصة بك في غضون دقائق.",
+          "other": "ستتلقى رسالة بريد إلكتروني تحتوي على بطاقات الهدايا الخاصة بك في غضون دقائق."
+        },
+        "gift_card_email_title": {
+          "one": "تم إرسال بطاقة الهدايا عبر البريد الإلكتروني.",
+          "other": "تم إرسال بطاقات الهدايا عبر البريد الإلكتروني."
+        },
+        "gift_card_text_title": {
+          "one": "تم إرسال بطاقة الهدايا عبر رسالة نصية.",
+          "other": "تم إرسال بطاقات الهدايا عبر رسائل نصية."
+        },
+        "resend_gift_cards_by_email": "إعادة إرسال البريد الإلكتروني",
+        "resend_gift_cards_by_text": "أعد إرسال الرسالة النصية",
+        "gift_card_resent_confirmation": {
+          "one": "تم إعادة إرسال بطاقة الهدايا.",
+          "other": "تم إعادة إرسال بطاقات الهدايا."
+        },
+        "gift_card_resend_failure": {
+          "one": "حدثت مشكلة في إعادة إرسال بطاقة الهدايا الخاصة بك. حاول مرة أخرى أو تواصل معنا.",
+          "other": "حدثت مشكلة في إعادة إرسال بطاقات الهدايا الخاصة بك. حاول مرة أخرى أو تواصل معنا."
+        },
+        "vat_invoices": {
+          "title": "فاتورة ضريبة القيمة المضافة"
+        },
+        "verify_shop_account_title": "التحقق من حساب المتجر الخاص بك",
+        "verify_shop_account_message": "تم حفظ معلوماتك مع Shop، تأكد من حسابك لاستخدامه تلقائيًا في ملايين المتاجر.",
+        "verify_shop_account_cta": "التحقق من حسابك",
+        "verify_shop_account_confirmation": "تم حفظ تفاصيل عملية الدفع",
+        "announcement": {
+          "close": "إغلاق",
+          "expand": "توسيع",
+          "collapse": "انهيار"
+        }
+      },
+      "vaulted": {
+        "change_button": "تغيير"
       }
     },
     "notices": {
