@@ -1486,7 +1486,7 @@ product-recommendations .wbvariantbadges{
     max-height: 500px !important;
   }
 
-  .focus-inset.product__media.media.media--transparent.global-media-settings{
+  .focus-inset.product__media.media.media--transparent.global-media-settings img{
     max-height: 500px !important;
   }
 
@@ -1495,7 +1495,7 @@ product-recommendations .wbvariantbadges{
       max-height: 200px !important;
     }
 
-    .focus-inset.product__media.media.media--transparent.global-media-settings{
+    .focus-inset.product__media.media.media--transparent.global-media-settings img{
       max-height: 200px !important;
     }
   }
