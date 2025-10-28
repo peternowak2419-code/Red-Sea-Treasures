@@ -1481,6 +1481,26 @@ product-recommendations .wbvariantbadges{
   max-width: calc(100% - calc(var(--media-border-width) * 2));
   border-radius: var(--media-radius)
 }
+
+  .focus-inset.product__media.media.media--transparent.global-media-settings{
+    max-height: 500px;
+  }
+
+  .focus-inset.product__media.media.media--transparent.global-media-settings{
+    max-height: 500px;
+  }
+
+  @media screen and (max-width: 450px) {
+    .focus-inset.product__media.media.media--transparent.global-media-settings{
+      max-height: 200px;
+    }
+
+    .focus-inset.product__media.media.media--transparent.global-media-settings{
+      max-height: 200px;
+    }
+  }
+
+
 .product-media-container.constrain-height {
   /* arbitrary offset value based on average theme spacing and header height */
   --viewport-offset: 400px;
