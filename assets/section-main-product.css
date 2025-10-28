@@ -1484,21 +1484,31 @@ product-recommendations .wbvariantbadges{
 
   /* .focus-inset.product__media.media.media--transparent.global-media-settings{
     max-height: 500px !important;
-  }
+  } */
 
   .focus-inset.product__media.media.media--transparent.global-media-settings img{
     max-height: 500px !important;
   }
 
+  .protopimg-item.product__media-item.grid__item.slider__slide.is-active{
+    max-height: 500px !important;
+
+  }
+
   @media screen and (max-width: 450px) {
-    .focus-inset.product__media.media.media--transparent.global-media-settings{
+    /* .focus-inset.product__media.media.media--transparent.global-media-settings{
       max-height: 200px !important;
-    }
+    } */
 
     .focus-inset.product__media.media.media--transparent.global-media-settings img{
-      max-height: 200px !important;
+      max-height: 240px !important;
     }
-  } */
+
+    .protopimg-item.product__media-item.grid__item.slider__slide.is-active{
+      max-height: 240px !important;
+
+    }
+  }
 
 
 .product-media-container.constrain-height {
