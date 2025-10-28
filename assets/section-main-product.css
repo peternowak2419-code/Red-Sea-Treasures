@@ -1495,6 +1495,10 @@ product-recommendations .wbvariantbadges{
 
   }
 
+  .product__media-list.contains-media.grid.list-unstyled.slider.grid--peek.slider--mobile{
+    max-height: 500px !important;
+  }
+
   @media screen and (max-width: 450px) {
     /* .focus-inset.product__media.media.media--transparent.global-media-settings{
       max-height: 200px !important;
@@ -1507,6 +1511,10 @@ product-recommendations .wbvariantbadges{
     .protopimg-item.product__media-item.grid__item.slider__slide.is-active{
       max-height: 240px !important;
 
+    }
+
+    .product__media-list.contains-media.grid.list-unstyled.slider.grid--peek.slider--mobile{
+      max-height: 240px !important;
     }
   }
 
