@@ -1483,20 +1483,20 @@ product-recommendations .wbvariantbadges{
 }
 
   .focus-inset.product__media.media.media--transparent.global-media-settings{
-    max-height: 500px;
+    max-height: 500px !important;
   }
 
   .focus-inset.product__media.media.media--transparent.global-media-settings{
-    max-height: 500px;
+    max-height: 500px !important;
   }
 
   @media screen and (max-width: 450px) {
     .focus-inset.product__media.media.media--transparent.global-media-settings{
-      max-height: 200px;
+      max-height: 200px !important;
     }
 
     .focus-inset.product__media.media.media--transparent.global-media-settings{
-      max-height: 200px;
+      max-height: 200px !important;
     }
   }
 
