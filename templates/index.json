@@ -299,6 +299,16 @@
             "showtext": "",
             "customb_style": "solid"
           }
+        },
+        "featured_collection_xAPQQj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "url": "",
+            "showtext": "",
+            "customb_style": "solid"
+          }
         }
       },
       "block_order": [
@@ -306,7 +316,8 @@
         "featured_collection_E6EWTn",
         "featured_collection_D64cEj",
         "featured_collection_N37MAh",
-        "featured_collection_8qEX4T"
+        "featured_collection_8qEX4T",
+        "featured_collection_xAPQQj"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
