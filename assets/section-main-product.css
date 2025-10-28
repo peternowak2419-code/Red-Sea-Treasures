@@ -1482,7 +1482,7 @@ product-recommendations .wbvariantbadges{
   border-radius: var(--media-radius)
 }
 
-  .focus-inset.product__media.media.media--transparent.global-media-settings{
+  /* .focus-inset.product__media.media.media--transparent.global-media-settings{
     max-height: 500px !important;
   }
 
@@ -1498,7 +1498,7 @@ product-recommendations .wbvariantbadges{
     .focus-inset.product__media.media.media--transparent.global-media-settings img{
       max-height: 200px !important;
     }
-  }
+  } */
 
 
 .product-media-container.constrain-height {
