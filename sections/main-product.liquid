@@ -362,6 +362,8 @@
                   </div>
                 </div>
               </webi-collapse>
+            {%- when 'variant_picker' -%}
+              {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'offer' -%}
               <div class="wboffer_m">
                 <h2><span>{{ block.settings.heading }}</span></h2>
@@ -514,8 +516,7 @@
                         </li>
                     {% endif %}
                 </ul>
-            {%- when 'variant_picker' -%}
-              {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
+
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
             {%- when 'complementary' -%}
