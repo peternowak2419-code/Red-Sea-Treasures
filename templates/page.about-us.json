@@ -11,11 +11,10 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
-        "heading_size": "h0",
-        "head_align": "left",
-        "heading_color_scheme": "background-1",
+        "heading_size": "h1",
+        "head_align": "center",
+        "heading_color_scheme": "scheme-fe404675-b857-47d9-beb8-3438200d0cbe",
         "head_space": false,
         "padding_top": 0,
         "padding_bottom": 4
