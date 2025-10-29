@@ -195,7 +195,7 @@
       "settings": {
         "full_width": false,
         "image": "shopify://shop_images/Photo_2025-10-09_1_27_41_PM.jpg",
-        "height": "small",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
@@ -258,7 +258,7 @@
       "settings": {
         "full_width": false,
         "image": "shopify://shop_images/Photo_2025-10-04_12_45_03_AM.jpg",
-        "height": "adapt",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
