@@ -132,7 +132,7 @@
       "settings": {
         "full_width": false,
         "image": "shopify://shop_images/Photo_2025-10-18_11_39_31_PM_5.jpg",
-        "height": "medium",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
