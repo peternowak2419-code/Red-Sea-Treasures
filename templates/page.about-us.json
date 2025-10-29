@@ -44,7 +44,6 @@
         "template--16209783947321__da98eb36-c09b-44c2-ba56-446635fa3d53-author-text-1": {
           "type": "author-text",
           "settings": {
-            "authorimage": "",
             "image_corners": "circle",
             "authorname": "Angelo H. Lott",
             "authorpos": "Product manager"
@@ -67,8 +66,9 @@
         "template--16209783947321__da98eb36-c09b-44c2-ba56-446635fa3d53-button-1"
       ],
       "settings": {
-        "image": "",
-        "height": "small",
+        "full_width": false,
+        "image": "shopify://shop_images/Photo_2025-10-18_11_34_32_PM_5_df5e3291-fdc9-455f-92cb-585fdc8128ab.jpg",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
@@ -149,7 +149,6 @@
             "display_review_text": true,
             "star_rating": 5,
             "quote": "<p>\"I'm judging these earphones with extremely critical ear and I think they perform extremely well.\"</p>",
-            "image": "",
             "author": "Nadine R. Creech",
             "authorsub": "CEO",
             "color_scheme": ""
@@ -163,7 +162,6 @@
             "display_review_text": true,
             "star_rating": 5,
             "quote": "<p>’’I recently purchased these headphones and by the audio quality. The bass is deep and punchy.’’</p>",
-            "image": "",
             "author": "Angelo H. Lott",
             "authorsub": "Finance manager",
             "color_scheme": ""
@@ -177,7 +175,6 @@
             "display_review_text": true,
             "star_rating": 5,
             "quote": "<p>’’These headphones seamlessly connect to all my devices. The Bluetooth pairing is hassle-free’’</p>",
-            "image": "",
             "author": "Alexander Ball",
             "authorsub": "Product manager",
             "color_scheme": ""
@@ -191,7 +188,6 @@
             "display_review_text": true,
             "star_rating": 4.5,
             "quote": "<p>\"They have definitely secured their place as top of the line, noise cancelling, earbuds in my book.’’</p>",
-            "image": "",
             "author": "Alone Boy",
             "authorsub": "Product manager",
             "color_scheme": ""
@@ -205,7 +201,6 @@
             "display_review_text": true,
             "star_rating": 3,
             "quote": "<p>’’Not only do these headphones deliver exceptional audio, but they also look and feel great.’’</p>",
-            "image": "",
             "author": "Stefanie Rashford",
             "authorsub": "CEO",
             "color_scheme": ""
