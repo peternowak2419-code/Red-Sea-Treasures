@@ -214,21 +214,21 @@
           "type": "icon_item",
           "settings": {
             "icon_image": "shopify://shop_images/award-alt-svgrepo-com.png",
-            "label": "100% Natural Products"
+            "label": "Premium Quality Guaranteed"
           }
         },
         "icon_item_HqDMzy": {
           "type": "icon_item",
           "settings": {
             "icon_image": "shopify://shop_images/shipping-truck-svgrepo-com.png",
-            "label": "100% Natural Products"
+            "label": "Fast & Reliable Delivery"
           }
         },
         "icon_item_7YcKYH": {
           "type": "icon_item",
           "settings": {
             "icon_image": "shopify://shop_images/hand-heart-valentine-svgrepo-com.png",
-            "label": "100% Natural Products"
+            "label": "Crafted with Love & Care"
           }
         }
       },
