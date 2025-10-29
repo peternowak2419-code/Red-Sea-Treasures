@@ -303,7 +303,7 @@
         "featured_collection_xAPQQj": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
+            "collection": "traditional-kids-dress",
             "title": "",
             "url": "",
             "showtext": "",
@@ -558,7 +558,7 @@
       "type": "featured-collection",
       "settings": {
         "color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
-        "collection": "rings",
+        "collection": "all",
         "title": "Todays Popular Product",
         "heading_size": "h1",
         "head_align": "center",
