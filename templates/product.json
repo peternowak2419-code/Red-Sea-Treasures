@@ -27,6 +27,13 @@
           "type": "price",
           "settings": {}
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "show_colorswatch": true
+          }
+        },
         "6334601c-bd31-449a-8cf9-0021eef3d9fa": {
           "type": "offer",
           "settings": {
@@ -55,13 +62,6 @@
             "count_text": "Hurry Up! Sale End In:",
             "count_bgcolor": "#b53333",
             "count_textcolor": "#ffffff"
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "show_colorswatch": true
           }
         },
         "4cd2d0c0-c935-4cc8-a56e-fd40a599db48": {
@@ -170,10 +170,10 @@
         "65491c3f-abb9-4bd5-9728-1b439626a36f",
         "title",
         "price",
+        "variant_picker",
         "6334601c-bd31-449a-8cf9-0021eef3d9fa",
         "offer_UjFL7A",
         "9c089a03-57b4-47ec-9cee-287b7a879611",
-        "variant_picker",
         "4cd2d0c0-c935-4cc8-a56e-fd40a599db48",
         "buy_buttons",
         "19669d92-b27c-451d-b38e-a72e760b57e0",
