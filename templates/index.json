@@ -378,7 +378,7 @@
             "desktop_content_position": "middle-center",
             "desktop_content_alignment": "center",
             "color_scheme": "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26",
-            "image_behavior": "none"
+            "image_behavior": "ambient"
           }
         },
         "image_ky7Gt3": {
@@ -407,7 +407,7 @@
             "desktop_content_position": "middle-left",
             "desktop_content_alignment": "left",
             "color_scheme": "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26",
-            "image_behavior": "none"
+            "image_behavior": "ambient"
           }
         },
         "image_ce33fh": {
@@ -465,7 +465,7 @@
             "desktop_content_position": "top-left",
             "desktop_content_alignment": "left",
             "color_scheme": "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26",
-            "image_behavior": "none"
+            "image_behavior": "ambient"
           }
         }
       },
