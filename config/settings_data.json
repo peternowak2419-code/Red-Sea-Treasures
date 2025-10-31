@@ -61,7 +61,7 @@
     "show_quantity": false,
     "show_vendor": true,
     "show_rating": false,
-    "enable_quick_add": true,
+    "enable_quick_add": false,
     "quicklook_style": "link",
     "color_swatchhover": true,
     "enable_addtocart": true,
@@ -216,6 +216,24 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "17618688494297881097": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": false,
+        "settings": {
+          "storefront_layout_enabled": false,
+          "storefront_layout_primary_bg_color": "#000000",
+          "storefront_layout_primary_text_color": "#ffffff",
+          "storefront_layout_secondary_bg_color": "#F4F8FE",
+          "storefront_layout_secondary_text_color": "#333333",
+          "storefront_layout_ui_border_radius": 6,
+          "storefront_layout_notification_position": "left",
+          "storefront_layout_action_popup_position": "left",
+          "storefront_layout_drawer_position": "left",
+          "storefront_layout_as_section_page": ""
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -341,24 +359,6 @@
           "secondary_button_label": "#000000",
           "link_hover": "#0062ee",
           "shadow": "#121212"
-        }
-      }
-    },
-    "blocks": {
-      "17618688494297881097": {
-        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
-        "disabled": false,
-        "settings": {
-          "storefront_layout_enabled": false,
-          "storefront_layout_primary_bg_color": "#000000",
-          "storefront_layout_primary_text_color": "#ffffff",
-          "storefront_layout_secondary_bg_color": "#F4F8FE",
-          "storefront_layout_secondary_text_color": "#333333",
-          "storefront_layout_ui_border_radius": 6,
-          "storefront_layout_notification_position": "left",
-          "storefront_layout_action_popup_position": "left",
-          "storefront_layout_drawer_position": "left",
-          "storefront_layout_as_section_page": ""
         }
       }
     }
