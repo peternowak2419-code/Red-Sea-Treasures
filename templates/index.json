@@ -571,7 +571,7 @@
         "columns_desktop": 5,
         "show_row_on_desktop": 1,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "link",
         "view_button_pos": "top",
         "enable_desktop_slider": true,
