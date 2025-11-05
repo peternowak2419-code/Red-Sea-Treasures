@@ -85,6 +85,7 @@
 .section__wrapper {
     column-gap: var(--grid-mobile-horizontal-spacing);
     row-gap: var(--grid-mobile-vertical-spacing);
+    padding: 0px 20px;
 }
 .pro-part.grid__item {
     max-width: 80%;
