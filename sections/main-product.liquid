@@ -174,7 +174,7 @@
                   {% if block.settings.show_vendor %}
                     <span>{{ 'wbcustomlabel.wballtext.vendor_show' | t }}</span>
 
-                    {% assign vendor_key = product.vendor | replace: ' ', '_' | downcase %}
+                    {% assign vendor_key = product.vendor | stripe | replace: ' ', '_' | downcase %}
                     {% assign translation_key = 'wbcustomlabel.wballtext.' | append: vendor_key %}
 
                     <p class="vendor-capitalize">
