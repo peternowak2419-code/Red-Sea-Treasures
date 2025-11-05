@@ -315,7 +315,14 @@
 
     {% if localization.language.iso_code == 'ar' %}
       <style>
-        * {
+        .rte,
+        .content,
+        .main-content,
+        .page-width,
+        .product__description,
+        .article__content,
+        .footer__content,
+        p, h1, h2, h3, h4, h5, h6, span, li {
           direction: rtl;
           unicode-bidi: isolate;
           text-align: right;
