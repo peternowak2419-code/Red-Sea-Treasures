@@ -4133,7 +4133,8 @@
       "product_total": "إجمالي سعر المنتجات",
       "each": "{{ money }} /القطعة",
       "variant_total": "إجمالي المتغيرات",
-      "product_variants": "أصناف المنتج"
+      "product_variants": "أصناف المنتج",
+      "remove_all_items_confirmation": "هل تريد إزالة جميع {{ quantity }} المنتجات من سلة التسوق الخاصة بك؟"
     }
   },
   "products": {
