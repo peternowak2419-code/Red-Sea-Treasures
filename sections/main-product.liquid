@@ -189,15 +189,39 @@
                         <p>{{ product.type }}</p>
                     {% endif %}
                  </li>
-                 <li>
+                <li>
                   {% if block.settings.display_tags and product.tags.size > 0 %}
-                      <span>{{ 'wbcustomlabel.wballtext.tags_show' | t }}</span>
-                      {% for tag in product.tags %}
+                    <span>{{ 'wbcustomlabel.wballtext.tags_show' | t }}</span>
+
+                    {% for tag in product.tags %}
+                      {%- comment -%}
+                        Convert tag → translation key:
+                        Example: "Summer Collection" → "summer_collection"
+                      {%- endcomment -%}
+
+                      {% assign tag_key = tag | strip | replace: ' ', '_' | downcase %}
+                      {% assign tag_translation_key = 'wbcustomlabel.wballtext.tag_' | append: tag_key %}
+                      {% assign translated_tag = tag_translation_key | t %}
+
+                      {%- comment -%}
+                        If translation is missing → Shopify returns the same key.
+                        So we fall back to the original tag.
+                      {%- endcomment -%}
+
+                      {% if translated_tag contains 'translation missing' %}
+                        {% assign final_tag = tag %}
+                      {% else %}
+                        {% assign final_tag = translated_tag %}
+                      {% endif %}
+
                       {% assign tag_coll = '/collections/all/' | append: tag %}
-                        {{ tag | capitalize | link_to: tag_coll }}{% unless forloop.last %},&nbsp;{% endunless %}
-                      {% endfor %}
+
+                      {{ final_tag | capitalize | link_to: tag_coll }}
+                      {% unless forloop.last %},&nbsp;{% endunless %}
+                    {% endfor %}
                   {% endif %}
-                 </li>
+                </li>
+
               </ul>
             {%- when 'countdown_timer' -%}
               {% if product.metafields.custom.product_timer %}
