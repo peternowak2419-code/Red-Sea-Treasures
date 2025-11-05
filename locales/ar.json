@@ -4141,7 +4141,6 @@
     "product": {
       "unavailable": "غير متوفر",
       "vendor": "البائع",
-      "yemeni_jambiya": "خنجر يمني",
       "value_unavailable": "{{ option_value }} - غير متوفر",
       "variant_sold_out_or_unavailable": "النسخة نفدت أو غير متوفرة.",
       "video_exit_message": "{{ title }} يعرض مقطع فيديو في وضع الشاشة الكاملة في نفس النافذة.",
