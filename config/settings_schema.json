@@ -16,6 +16,18 @@
         "label": "t:settings_schema.logo.settings.logo_image.label"
       },
       {
+        "type": "text",
+        "id": "logo_title",
+        "label": "Logo Title",
+        "default": "Red Sea Treasures"
+      },
+      {
+        "type": "text",
+        "id": "logo_subtitle",
+        "label": "Logo Subtitle",
+        "default": "Authentic Arabian Products"
+      },
+      {
         "type": "range",
         "id": "logo_width",
         "min": 50,
