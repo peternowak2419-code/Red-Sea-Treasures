@@ -170,12 +170,18 @@
                 <h1 class="product__title" {{ block.shopify_attributes }}>{{ product.title | escape }}</h1>
             {%- when 'product_meta' -%}
               <ul class="wbmeta_main">
-                 <li>
-                    {% if block.settings.show_vendor %}
-                        <span>{{ 'wbcustomlabel.wballtext.vendor_show' | t }}</span>
-                        <p class="vendor-capitalize">{{ product.vendor }}</p>
-                    {% endif %}
-                 </li>
+                <li>
+                  {% if block.settings.show_vendor %}
+                    <span>{{ 'wbcustomlabel.wballtext.vendor_show' | t }}</span>
+
+                    {% assign vendor_key = product.vendor | replace: ' ', '_' | downcase %}
+                    {% assign translation_key = 'wbcustomlabel.wballtext.' | append: vendor_key %}
+
+                    <p class="vendor-capitalize">
+                      {{ translation_key | t }}
+                    </p>
+                  {% endif %}
+                </li>
                  <li>
                     {% if block.settings.display_product_type and product.type.size > 0 %}
                         <span>{{ 'wbcustomlabel.wballtext.product_type_show' | t }}</span>
