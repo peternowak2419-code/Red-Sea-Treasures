@@ -174,7 +174,7 @@
                   {% if block.settings.show_vendor %}
                     <span>{{ 'wbcustomlabel.wballtext.vendor_show' | t }}</span>
 
-                    {% assign vendor_key = product.vendor | stripe | replace: ' ', '_' | downcase %}
+                    {% assign vendor_key = product.vendor | strip | replace: ' ', '_' | downcase %}
                     {% assign translation_key = 'wbcustomlabel.wballtext.' | append: vendor_key %}
 
                     <p class="vendor-capitalize">
@@ -182,6 +182,7 @@
                     </p>
                   {% endif %}
                 </li>
+
                  <li>
                     {% if block.settings.display_product_type and product.type.size > 0 %}
                         <span>{{ 'wbcustomlabel.wballtext.product_type_show' | t }}</span>
