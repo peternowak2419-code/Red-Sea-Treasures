@@ -621,7 +621,13 @@
       "category": "CATEGORY",
       "play_text": "Play",
       "subscribe_text": "Subscribe now",
-      "news_popup": "Newsletter popup"
+      "news_popup": "Newsletter popup",
+      "tag_traditional_kids_dress": "فستان أطفال تقليدي",
+      "tag_yemeni_shawls": "شالات يمنية",
+      "tag_yemeni_jewelry": "خنجر يمني",
+      "tag_agate_rings": "خواتم",
+      "tag_heritage_collection": "مجموعة التراث",
+      "tag_handmade_jewelry": "مجوهرات مصنوعة يدويًا"
     }
   },
   "custom_data": {
