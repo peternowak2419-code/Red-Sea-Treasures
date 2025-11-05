@@ -173,9 +173,9 @@
                 <li>
                   {% if block.settings.show_vendor %}
                     <span>{{ 'wbcustomlabel.wballtext.vendor_show' | t }}</span>
-
+{% comment %} 
                     {% assign vendor_key = product.vendor | replace: ' ', '_' | downcase %}
-                    {% assign translation_key = 'wbcustomlabel.wballtext.' | append: vendor_key %}
+                    {% assign translation_key = 'wbcustomlabel.wballtext.' | append: vendor_key %} {% endcomment %}
 
                     <p class="vendor-capitalize">
                       {{ vendor_key | t }}
