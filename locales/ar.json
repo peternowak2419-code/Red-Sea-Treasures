@@ -802,7 +802,8 @@
         "shop_pay_wallet_not_available": "خدمة Shop Pay غير متاحة لهذا الطلب.",
         "market_manager_blocks_wallet_payments": "طريقة الدفع غير مدعومة في بلدك.",
         "paypal_over_capture": "تم تحديث إجمالي طلبك. قم بالدفع باستخدام {{walletName}} لإكمال طلبك.",
-        "captcha_required": "الرجاء إدخال معلومات الدفع وحل اختبار الكابتشا لإتمام عملية الشراء."
+        "captcha_required": "الرجاء إدخال معلومات الدفع وحل اختبار الكابتشا لإتمام عملية الشراء.",
+        "captcha_required_without_payment_information": "من فضلك حل الكابتشا لإتمام عملية الشراء."
       },
       "general": {
         "errors": {
@@ -1654,7 +1655,8 @@
         "errors": {
           "only_remote_merchandise_lines": "تحتوي صفحة الدفع فقط على منتجات من متجر بعيد.  يُرجى إعادة توجيهك إلى المتجر البعيد لإكمال عملية الدفع.",
           "currency_mismatch": "لا يمكن إضافة هذا المنتج إلى سلة التسوق الخاصة بك لأنه من متجر يستخدم عملة مختلفة.",
-          "max_remote_shops_exceeded": "لا يمكن إضافة هذا المنتج لأن سلة التسوق الخاصة بك تحتوي بالفعل على الحد الأقصى من المنتجات من متاجر أخرى."
+          "max_remote_shops_exceeded": "لا يمكن إضافة هذا المنتج لأن سلة التسوق الخاصة بك تحتوي بالفعل على الحد الأقصى من المنتجات من متاجر أخرى.",
+          "currency_mismatch_removal": "لقد تم إزالة أحد العناصر من سلة التسوق الخاصة بك لأنه من متجر يستخدم عملة مختلفة."
         }
       },
       "units": {
@@ -2057,7 +2059,8 @@
         "different_shipping_address_text": "استخدم عنوانًا لمرة واحدة لهذا الطلب.",
         "change_company_location_link_label": "تغيير موقع الشركة",
         "change_location_link_label": "تغيير الموقع",
-        "ship_to_company": "الشحن إلى {{companyName}}"
+        "ship_to_company": "الشحن إلى {{companyName}}",
+        "phone_country_code_label": "رقم الهاتف رمز الدولة"
       },
       "delivery_options": {
         "free_total_label": "مجاناً",
@@ -2878,7 +2881,10 @@
       },
       "pay_pal": {
         "iframe_title_accessibility_label": "أضف طريقة الدفع عبر باي بال",
-        "loading_accessibility_message": "جاري تحميل باي بال"
+        "loading_accessibility_message": "جاري تحميل باي بال",
+        "errors": {
+          "generic": "حدثت مشكلة في باي بال. حاول مرة أخرى أو استخدم طريقة دفع أخرى."
+        }
       },
       "apple_pay": {
         "loading": "جاري تحميل Apple Pay",
@@ -2971,6 +2977,10 @@
       "add_payment_method_button": "أضف طريقة الدفع",
       "add_payment_method_dropdown": {
         "bank_account_consent": "بإضافة طريقة دفع، فإنك تفوض بتحصيل قيمة مشترياتك المستقبلية التي توافق عليها من بطاقتك أو خصمها من حسابك المصرفي، حتى تقوم بإلغاء الاشتراك."
+      },
+      "link_expired": {
+        "message": "لقد انتهت صلاحية هذا الرابط لتحديث طريقة الدفع الخاصة بك.",
+        "return_home_button": "العودة إلى الصفحة الرئيسية"
       }
     },
     "payment_method_brands": {
