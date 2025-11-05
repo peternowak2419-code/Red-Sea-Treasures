@@ -79,6 +79,7 @@
         "enable_language_selector": true,
         "show_policy": true,
         "payment_enable": true,
+        "copyright_content": "<p><strong>© 2025 Red Sea Treasures</strong>. All rights reserved.</p>",
         "show_copyright": true,
         "scroll-to-top": true,
         "color_scheme": "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26",
