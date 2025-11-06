@@ -457,14 +457,9 @@
               {% endif %}
               {%- if show_vendor -%}
                 <div class="product__vendor cardhide_toggle">{{ card_product.vendor }}</div>
-                {% if block.settings.show_vendor %}
                   {% assign vendor_key = card_product.vendor | strip | replace: ' ', '_' | downcase %}
                   {% assign translation_key = 'wbcustomlabel.wballtext.' | append: vendor_key %}
-
-                  <p class="vendor-capitalize">
-                    {{ translation_key | t }}
-                  </p>
-                {% endif %}
+                  {{ translation_key | t }}
               {%- endif -%}
               <h3
                 class="cardhide_toggle card__heading{% if card_product.featured_media or card_style == 'standard' %} h5{% endif %}"
