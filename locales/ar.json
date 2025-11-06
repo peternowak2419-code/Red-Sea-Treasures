@@ -2592,7 +2592,8 @@
       "checkpoint": "نقطة تفتيش"
     },
     "cart": {
-      "discounts_with_count": "تم تطبيق %{count} خصمًا"
+      "discounts_with_count": "تم تطبيق %{count} خصمًا",
+      "empty": "Your cart is empty"
     },
     "challenge": {
       "message": "للمتابعة، يرجى إثبات أنك لست روبوتًا.",
