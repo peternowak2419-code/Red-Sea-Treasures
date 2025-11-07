@@ -63,7 +63,7 @@
                   <span>{{ option.selected_value }}</span>
                 {% endif %} {% endcomment %}
                 <div {% if option.name == 'Color' %}{% if block.settings.show_colorswatch == true %}class="wbswatchclr"{% endif %}{% endif %}>
-                  <span class="product-color__frame"></span>
+                  <span class="product-color__frame">{{ 'wbcustomlabel.wballtext.frame_color' | t }}</span>
                   {% render 'product-variant-options',
                     product: product,
                     option: option,
