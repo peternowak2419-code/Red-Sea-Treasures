@@ -63,6 +63,7 @@
                 {% endif %}
               </legend>
               <div {% if option.name == 'Color' %}{% if block.settings.show_colorswatch == true %}class="wbswatchclr"{% endif %}{% endif %}>
+                <span class="product-color__frame"></span>
                 {% render 'product-variant-options',
                   product: product,
                   option: option,
