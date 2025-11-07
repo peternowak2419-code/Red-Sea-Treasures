@@ -21,7 +21,7 @@
 
 
 {% if type == "agate color" %}
-  {%- for value in option.values -%}
+  {%- for value in option.values limit: 3 -%}
   {%- liquid
     assign option_disabled = true
     for option1_name in variants_option1_arr
