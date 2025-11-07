@@ -4492,7 +4492,9 @@
       "tag_agate_rings": "خواتم",
       "tag_heritage_collection": "مجموعة التراث",
       "tag_handmade_jewelry": "مجوهرات مصنوعة يدويًا",
-      "tag_yemeni_huwar_coffee": "قهوة حوار اليمنية"
+      "tag_yemeni_huwar_coffee": "قهوة حوار اليمنية",
+      "frame_color": "Frame Color :",
+      "agate_color": "Agate Color :"
     }
   },
   "general": {
