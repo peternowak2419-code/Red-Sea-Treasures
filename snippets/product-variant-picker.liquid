@@ -56,7 +56,8 @@
           </fieldset>
         {%- elsif picker_type == 'button' -%}
           <fieldset class="js product-form__input product-form__input--pill {% if option.name == 'Color' and block.settings.show_colorswatch %} product_form_input swatchComponent inner-class {% else %} product_form_input inner-class {% endif %}">
-              <legend class="form__label">Agate Color :
+              <legend class="form__label">
+                <span>Agate Color :</span>
                 {% comment %} {% assign current_variant = product.selected_or_first_available_variant %}
                 {% if current_variant.option.selected_value != '' %}
                   <span>{{ option.selected_value }}</span>
