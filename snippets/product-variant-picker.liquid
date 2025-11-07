@@ -57,21 +57,21 @@
         {%- elsif picker_type == 'button' -%}
           <fieldset class="js product-form__input product-form__input--pill {% if option.name == 'Color' and block.settings.show_colorswatch %} product_form_input swatchComponent inner-class {% else %} product_form_input inner-class {% endif %}">
               <legend class="form__label">Agate Color :
-                {% assign current_variant = product.selected_or_first_available_variant %}
+                {% comment %} {% assign current_variant = product.selected_or_first_available_variant %}
                 {% if current_variant.option.selected_value != '' %}
                   <span>{{ option.selected_value }}</span>
-                {% endif %}
+                {% endif %} {% endcomment %}
+                <div {% if option.name == 'Color' %}{% if block.settings.show_colorswatch == true %}class="wbswatchclr"{% endif %}{% endif %}>
+                  <span class="product-color__frame"></span>
+                  {% render 'product-variant-options',
+                    product: product,
+                    option: option,
+                    block: block,
+                    show_colorswatch: show_colorswatch,
+                    picker_type: picker_type
+                  %}
+                </div>
               </legend>
-              <div {% if option.name == 'Color' %}{% if block.settings.show_colorswatch == true %}class="wbswatchclr"{% endif %}{% endif %}>
-                <span class="product-color__frame"></span>
-                {% render 'product-variant-options',
-                  product: product,
-                  option: option,
-                  block: block,
-                  show_colorswatch: show_colorswatch,
-                  picker_type: picker_type
-                %}
-              </div>
           </fieldset>
         {%- else -%}
           <div class="product-form__input product-form__input--dropdown">
