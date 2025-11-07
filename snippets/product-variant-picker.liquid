@@ -38,9 +38,12 @@
         {%- if  check -%}
         {%- elsif picker_type == 'swatch' -%}
           <fieldset class="js product-form__input product-form__input--swatch">
-              <legend class="form__label">
-                "Frame Color" :
-              </legend>
+              {% comment %} <legend class="form__label">
+                {{ option.name }} :
+                <span data-selected-swatch-value="{{ option.name }}">
+                  {{- option.selected_value -}}
+                </span>
+              </legend> {% endcomment %}
               <div {% if option.name == 'Color' %}{% if block.settings.show_colorswatch == true %}class="wbswatchclr"{% endif %}{% endif %}>
                 {% render 'product-variant-options',
                   product: product,
