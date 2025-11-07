@@ -18,7 +18,8 @@
   assign variants_option3_arr = product.variants | map: 'option3'
   assign product_form_id = 'product-form-' | append: section.id
 -%}
-{%- for value in option.values limit: 3 -%}
+{%- for value in option.values -%}
+  {% if forloop.index != 1 and forloop.index != 2 and forloop.index != 3 %}{% endif %}
   {%- liquid
     assign option_disabled = true
     for option1_name in variants_option1_arr
