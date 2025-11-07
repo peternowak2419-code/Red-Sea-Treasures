@@ -19,7 +19,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 {%- for value in option.values -%}
-  {% if forloop.index != 1 and forloop.index != 2 and forloop.index != 3 %}{% endif %}
+  {% if forloop.index != 1 and forloop.index != 2 and forloop.index != 3 %}
   {%- liquid
     assign option_disabled = true
     for option1_name in variants_option1_arr
@@ -166,4 +166,5 @@
       {%- endif %}
     </option>
   {%- endif -%}
+{% endif %}
 {%- endfor -%}
