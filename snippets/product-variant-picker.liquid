@@ -73,6 +73,23 @@
                   %}
                 </div>
               </legend>
+              <legend class="form__label">
+                <span>Frame Color :</span>
+                {% comment %} {% assign current_variant = product.selected_or_first_available_variant %}
+                {% if current_variant.option.selected_value != '' %}
+                  <span>{{ option.selected_value }}</span>
+                {% endif %} {% endcomment %}
+                <div {% if option.name == 'Color' %}{% if block.settings.show_colorswatch == true %}class="wbswatchclr"{% endif %}{% endif %}>
+                  <span class="product-color__frame"></span>
+                  {% render 'product-variant-options',
+                    product: product,
+                    option: option,
+                    block: block,
+                    show_colorswatch: show_colorswatch,
+                    picker_type: picker_type
+                  %}
+                </div>
+              </legend>
           </fieldset>
         {%- else -%}
           <div class="product-form__input product-form__input--dropdown">
