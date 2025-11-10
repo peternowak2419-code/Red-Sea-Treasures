@@ -4111,8 +4111,7 @@
       "headings": {
         "image": "صورة المنتج"
       },
-      "empty": "Your cart is empty",
-
+      "empty": "سلة التسوق الخاصة بك فارغة",
     },
     "featured_collection": {
       "view_all_label": "عرض جميع المنتجات في مجموعة {{ collection_name }}",
