@@ -57,8 +57,11 @@
         <div class="drawer__inner-empty">
           <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
             <div class="cart-drawer__empty-content">
-              
+              {% if localization.language.iso_code == 'ar' %}
               <p class="cart__empty-text h2">{{ 'sections.cart.empty' | t }}</p>
+              {% elsif condition %}
+              <p class="cart__empty-text h2">{{ 'sections.cart.empty' | t }}</p>
+              {%  endif %}
               <button class="drawer__close" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">
                 {% render 'icon-close' %}
               </button>
