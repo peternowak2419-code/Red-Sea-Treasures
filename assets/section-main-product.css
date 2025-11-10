@@ -616,9 +616,9 @@ a.product__text {
 .product__media-list video {
   border-radius: calc(var(--media-radius) - var(--media-border-width));
 }
-.product__media-item.product__media-item--variant {
+/* .product__media-item.product__media-item--variant {
   display: none;
-}
+} */
 .product__media-item--variant:first-child {
   display: block;
 }
