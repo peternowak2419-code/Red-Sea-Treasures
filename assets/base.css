@@ -363,11 +363,11 @@ table:not([class]) th {
     display: none !important;
   }
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .large-up-hide {
     display: none !important;
   }
-}
+} */
 .dropdown,.dropleft,.dropright,.dropup {
     position: relative;
 }
