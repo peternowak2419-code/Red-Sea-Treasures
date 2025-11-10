@@ -47,7 +47,7 @@
         {{ 'accessibility.skip_to_product_info' | t }}
       </a>
     {%- endunless -%}
-    <ul
+    {% comment %} <ul
       id="Slider-Gallery-{{ section.id }}{{ id_append }}"
       class="product__media-list contains-media grid list-unstyled slider grid--peek slider--mobile"
     >
@@ -105,7 +105,7 @@
           </li>
         {%- endunless -%}
       {%- endfor -%}
-    </ul>
+    </ul> {% endcomment %}
     {%- unless is_duplicate -%}
       <div class="slider-buttons no-js-hidden quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
         <button
@@ -165,7 +165,7 @@
       >
         {% render 'icon-caret' %}
       </button>
-      <ul
+      {% comment %} <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
         class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
       >
@@ -269,7 +269,7 @@
             </li>
           {%- endunless -%}
         {%- endfor -%}
-      </ul>
+      </ul> {% endcomment %}
       <button
         type="button"
         class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}"
