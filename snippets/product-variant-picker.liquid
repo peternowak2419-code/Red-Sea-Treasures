@@ -57,45 +57,26 @@
         {%- elsif picker_type == 'button' -%}
           <fieldset class="js product-form__input product-form__input--pill {% if option.name == 'Color' and block.settings.show_colorswatch %} product_form_input swatchComponent inner-class {% else %} product_form_input inner-class {% endif %}">
               <legend class="form__label">
-                <span class="option-form">{{ 'wbcustomlabel.wballtext.agate_color' | t }}</span>
-                {% comment %} {% assign current_variant = product.selected_or_first_available_variant %}
+                {% assign current_variant = product.selected_or_first_available_variant %}
                 {% if current_variant.option.selected_value != '' %}
                   <span>{{ option.selected_value }}</span>
-                {% endif %} {% endcomment %}
+                {% endif %}
                 <div {% if option.name == 'Color' %}{% if block.settings.show_colorswatch == true %}class="wbswatchclr"{% endif %}{% endif %}>
                   {% render 'product-variant-options',
                     product: product,
                     option: option,
                     block: block,
                     show_colorswatch: show_colorswatch,
-                    picker_type: picker_type,
-                    type: "agate color"
-                  %}
-                </div>
-              </legend>
-              <legend class="form__label">
-                <span class="option-form">{{ 'wbcustomlabel.wballtext.frame_color' | t }}</span>
-                {% comment %} {% assign current_variant = product.selected_or_first_available_variant %}
-                {% if current_variant.option.selected_value != '' %}
-                  <span>{{ option.selected_value }}</span>
-                {% endif %} {% endcomment %}
-                <div {% if option.name == 'Color' %}{% if block.settings.show_colorswatch == true %}class="wbswatchclr"{% endif %}{% endif %}>
-                  {% render 'product-variant-options',
-                    product: product,
-                    option: option,
-                    block: block,
-                    show_colorswatch: show_colorswatch,
-                    picker_type: picker_type,
-                    type: "frame color"
+                    picker_type: picker_type
                   %}
                 </div>
               </legend>
           </fieldset>
         {%- else -%}
           <div class="product-form__input product-form__input--dropdown">
-              {% comment %} <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+              <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                 {{ option.name }} :
-              </label> {% endcomment %}
+              </label>
               <div class="select">
                 {%- if picker_type == 'swatch_dropdown' -%}
                   <span data-selected-dropdown-swatch="options[{{ option.name | escape }}]" class="dropdown-swatch">
