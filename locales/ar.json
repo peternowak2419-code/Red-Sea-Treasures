@@ -2571,7 +2571,7 @@
         "price_ascending": "السعر، من الأقل إلى الأعلى",
         "price_descending": "السعر، من الأعلى إلى الأقل"
       },
-      "search": "البحث عن المنتجات...",
+      "search": "البحث عن المنتجات..."
     },
     "page_titles": {
       "blog_or_article_with_error": "خطأ - %{title}",
