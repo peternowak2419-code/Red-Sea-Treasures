@@ -146,7 +146,7 @@
               <button type="button" class="slider-button slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">
                 {% render 'icon-caret' %}
               </button>
-              <ul id="Slider-Thumbnails-{{ section.id }}{{ id_append }}" class="thumbnail-list list-unstyled slider slider--mobile slider--tablet-up" >
+              {% comment %} <ul id="Slider-Thumbnails-{{ section.id }}{{ id_append }}" class="thumbnail-list list-unstyled slider slider--mobile slider--tablet-up" >
                 {%- capture sizes -%}
                   (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4),
                   (min-width: 992px) calc(({{ media_width | times: 100 }}vw - 4rem) / 4),
@@ -211,7 +211,7 @@
                     </li>
                   {%- endunless -%}
                 {%- endfor -%}
-              </ul>
+              </ul> {% endcomment %}
               <button type="button" class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}" name="next" aria-label="{{ 'general.slider.next_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">
                 {% render 'icon-caret' %}
               </button>
@@ -440,7 +440,7 @@
               <button type="button" class="slider-button slider-button--prev{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">
                 {% render 'icon-caret' %}
               </button>
-              {% comment %} <ul id="Slider-Thumbnails-{{ section.id }}{{ id_append }}" class="thumbnail-list list-unstyled slider slider--mobile slider--tablet-up" >
+              <ul id="Slider-Thumbnails-{{ section.id }}{{ id_append }}" class="thumbnail-list list-unstyled slider slider--mobile slider--tablet-up" >
                 {%- capture sizes -%}
                   (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width | minus: 100 | times: media_width | round }} - 4rem) / 4),
                   (min-width: 992px) calc(({{ media_width | times: 100 }}vw - 4rem) / 4),
@@ -505,7 +505,7 @@
                     </li>
                   {%- endunless -%}
                 {%- endfor -%}
-              </ul> {% endcomment %}
+              </ul>
               <button type="button" class="slider-button slider-button--next{% if media_count <= 3 %} small-hide{% endif %}{% if media_count <= 4 %} medium-hide large-up-hide{% endif %}" name="next" aria-label="{{ 'general.slider.next_slide' | t }}" aria-controls="GalleryThumbnails-{{ section.id }}" data-step="3">
                 {% render 'icon-caret' %}
               </button>
