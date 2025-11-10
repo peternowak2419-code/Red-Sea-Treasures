@@ -59,7 +59,7 @@
             <div class="cart-drawer__empty-content">
               {% if localization.language.iso_code == 'ar' %}
               <p class="cart__empty-text h2">{{ 'sections.cart.empty' | t }}</p>
-              {% elsif condition %}
+              {% elsif localization.language.iso_code == "en" %}
               <p class="cart__empty-text h2">{{ 'sections.cart.empty' | t }}</p>
               {%  endif %}
               <button class="drawer__close" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">
