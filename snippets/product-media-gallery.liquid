@@ -47,7 +47,6 @@
         {{ 'accessibility.skip_to_product_info' | t }}
       </a>
     {%- endunless -%}
-    {{ media_count }}
     <ul
       id="Slider-Gallery-{{ section.id }}{{ id_append }}"
       class="product__media-list contains-media grid list-unstyled slider grid--peek slider--mobile"
@@ -166,7 +165,6 @@
       >
         {% render 'icon-caret' %}
       </button>
-      {{ media_count }}
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
         class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
