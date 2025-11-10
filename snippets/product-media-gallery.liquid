@@ -166,6 +166,7 @@
       >
         {% render 'icon-caret' %}
       </button>
+      {{ media_count }}
       <ul
         id="Slider-Thumbnails-{{ section.id }}{{ id_append }}"
         class="thumbnail-list list-unstyled slider slider--mobile{% if section.settings.gallery_layout == 'thumbnail_slider' %} slider--tablet-up{% endif %}"
