@@ -860,9 +860,9 @@ a.product__text {
   flex-wrap: wrap;
   grid-gap: 1rem;
 }
-/* .thumbnail-list_item--variant:not(:first-child) {
+.thumbnail-list_item--variant:not(:first-child) {
   display: none;
-} */
+}
 .thumbnail {
   display: block;
   padding: 0;
@@ -1236,9 +1236,9 @@ product-recommendations .wbvariantbadges{
 .slider--mobile.thumbnail-list:after {
   content: none;
 }
-/* .thumbnail-list_item--variant:not(:first-child) {
+.thumbnail-list_item--variant:not(:first-child) {
   display: none;
-} */
+}
 @media screen and (min-width: 900px) {
   .product--small .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
     width: calc(25% - 0.8rem);
