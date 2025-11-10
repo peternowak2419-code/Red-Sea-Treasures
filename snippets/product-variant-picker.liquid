@@ -74,7 +74,7 @@
               </legend>
           </fieldset>
         {%- else -%}
-          {% comment %} <div class="product-form__input product-form__input--dropdown">
+          <div class="product-form__input product-form__input--dropdown">
               <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                 {{ option.name }} :
               </label>
@@ -94,7 +94,7 @@
                 </select>
                 {% render 'icon-caret' %}
               </div>
-          </div> {% endcomment %}
+          </div>
         {%- endif -%}
       {%- endfor -%}
 
