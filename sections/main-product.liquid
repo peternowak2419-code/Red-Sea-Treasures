@@ -396,7 +396,7 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'offer' -%}
-              <div class="wboffer_m">
+              {% comment %} <div class="wboffer_m">
                 <h2><span>{{ block.settings.heading }}</span></h2>
                 <div class="wbpoffer_desc">
                   {% render 'icon-accordion', icon: block.settings.icon %}<span>{{ block.settings.content }}</span>
@@ -410,7 +410,7 @@
                 fill: {{ block.settings.icon_color }};
                 flex-shrink: 0;
               }
-              {%- endstyle -%}
+              {%- endstyle -%} {% endcomment %}
             {%- when 'content' -%}
               <div class="wbcuscontent" {{ block.shopify_attributes }}>
                   <h2>{{ block.settings.heading | default: block.settings.page.title }}</h2>
