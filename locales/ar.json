@@ -4519,7 +4519,7 @@
       "admin_link_html": "هل أنت صاحب المتجر؟ <a href=\"/admin\" class=\"link underlined-link\">سجل الدخول هنا.</a>",
       "login_form_password_placeholder": "كلمة المرور الخاصة بك",
       "login_form_error": "كلمة المرور خاطئة!",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "powered_by_shopify_html": "سيتم تشغيل هذا المتجر بواسطة {{ shopify }}"
     },
     "social": {
       "alt_text": {
