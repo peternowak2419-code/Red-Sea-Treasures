@@ -528,11 +528,11 @@
         .login-main h2 {
           direction: rtl !important;
         }
-        
+
         .login-main #customer-account-description {
           direction: rtl !important;
         }
-        
+
         .wbcontform .form__message {
           direction: rtl;
         }
@@ -601,18 +601,14 @@
     <script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
 
     <script>
-      
-      document.addEventListener("DOMContentLoaded", () => {
-  // Find the element that hosts the shadow root
-  const shopLoginButton = document.querySelector("shop-login-button");
+      document.addEventListener('DOMContentLoaded', () => {
+        const shopLoginButton = document.querySelector('shop-login-button');
 
-  // Ensure it exists and has an open shadow root
-  if (shopLoginButton && shopLoginButton.shadowRoot) {
-    const button = shopLoginButton.shadowRoot.querySelector("button");
-    if (button) button.remove();
-  }
-});
-
+        if (shopLoginButton && shopLoginButton.shadowRoot) {
+          const button = shopLoginButton.shadowRoot.querySelector('button');
+          if (button) button.remove();
+        }
+      });
     </script>
   </body>
 </html>
