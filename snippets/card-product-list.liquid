@@ -566,7 +566,7 @@
             </div>
         </product-info> 
         {% comment %} Cart Button Start {% endcomment %}
-        <product-form class="no-js-hidden" id="ProductInfo-{{ section.id }}-{{ card_product.id }}">
+        {% comment %} <product-form class="no-js-hidden" id="ProductInfo-{{ section.id }}-{{ card_product.id }}"> {% endcomment %}
           {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: card_product.id -%}
           {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
             <input type="hidden" name="id" class="product-variant-id" value="{{ card_product.selected_or_first_available_variant.id }}" disabled>
