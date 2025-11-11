@@ -4531,7 +4531,8 @@
       "previous": "الصفحة السابقة"
     },
     "search": {
-      "reset": "مسح مصطلح البحث"
+      "reset": "مسح مصطلح البحث",
+      "search": "Search For Products..."
     }
   },
   "newsletter": {
