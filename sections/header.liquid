@@ -607,7 +607,7 @@
                         {%- endform -%}
                       </localization-form>
                     {%- endif -%}
-                    {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+                    {% comment %} {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
                       <localization-form>
                         {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
                           <div class="no-js-hidden">
@@ -615,7 +615,7 @@
                           </div>
                         {%- endform -%}
                       </localization-form>
-                    {% endif %}
+                    {% endif %} {% endcomment %}
                   </div>
                 {%- endif -%}
               </div>
