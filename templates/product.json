@@ -34,6 +34,26 @@
             "show_colorswatch": true
           }
         },
+        "4cd2d0c0-c935-4cc8-a56e-fd40a599db48": {
+          "type": "stock_countdown",
+          "settings": {
+            "max_stock": 150,
+            "limited_stock_cut_off": 10,
+            "limited_stock_message": "Only {stock_number} units left",
+            "instock_message": "In stock ({stock_number} units), ready to be shipped",
+            "continue_selling_message": "Re-stocking soon",
+            "limited_stock_color": "#ff0000",
+            "in_stock_color": "#008a00",
+            "continue_selling_color": "#ff0000"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
         "6334601c-bd31-449a-8cf9-0021eef3d9fa": {
           "type": "offer",
           "settings": {
@@ -62,26 +82,6 @@
             "count_text": "Hurry Up! Sale End In:",
             "count_bgcolor": "#b53333",
             "count_textcolor": "#ffffff"
-          }
-        },
-        "4cd2d0c0-c935-4cc8-a56e-fd40a599db48": {
-          "type": "stock_countdown",
-          "settings": {
-            "max_stock": 150,
-            "limited_stock_cut_off": 10,
-            "limited_stock_message": "Only {stock_number} units left",
-            "instock_message": "In stock ({stock_number} units), ready to be shipped",
-            "continue_selling_message": "Re-stocking soon",
-            "limited_stock_color": "#ff0000",
-            "in_stock_color": "#008a00",
-            "continue_selling_color": "#ff0000"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
           }
         },
         "19669d92-b27c-451d-b38e-a72e760b57e0": {
@@ -171,11 +171,11 @@
         "title",
         "price",
         "variant_picker",
+        "4cd2d0c0-c935-4cc8-a56e-fd40a599db48",
+        "buy_buttons",
         "6334601c-bd31-449a-8cf9-0021eef3d9fa",
         "offer_UjFL7A",
         "9c089a03-57b4-47ec-9cee-287b7a879611",
-        "4cd2d0c0-c935-4cc8-a56e-fd40a599db48",
-        "buy_buttons",
         "19669d92-b27c-451d-b38e-a72e760b57e0",
         "3bfd39a7-fdb4-427d-9d97-7d9616d54a07",
         "complementary_4AF7QY",
