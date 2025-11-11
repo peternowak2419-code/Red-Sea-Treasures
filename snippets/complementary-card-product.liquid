@@ -161,7 +161,7 @@
         </div>
         <div id="ProductInfo-{{ section.id }}-{{ card_product.id }}" class="wbcomplebtn">
             {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: card_product.id -%}
-            {% comment %} <product-form class="product-form">
+            <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
                     <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
                     <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -186,7 +186,7 @@
                         </div>
                     </button>
                 {%- endform -%}
-            </product-form> {% endcomment %}
+            </product-form>
             {%- if show_quick_add -%}
                 <div class="quick-add no-js-hidden quick_add_position-top-right">
                 {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
