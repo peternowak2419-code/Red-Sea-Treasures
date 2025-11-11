@@ -4,6 +4,7 @@
 }
 .email-signup-banner__box .email-signup-banner__heading {
   margin-bottom: 0;
+  direction: rtl;
 }
 .email-signup-banner__box > * + .newsletter__subheading {
   margin-top: 2rem;
