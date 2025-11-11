@@ -504,7 +504,7 @@
                 block: block,
                 share_link: share_url
               %}
-              {%- when 'share_button' -%}
+              {% comment %} {%- when 'share_button' -%}
                 <ul class="social-sharing">
                     {% if block.settings.share_facebook %}
                         <li>
@@ -530,7 +530,7 @@
                             </a>
                         </li>
                     {% endif %}
-                </ul>
+                </ul> {% endcomment %}
 
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
