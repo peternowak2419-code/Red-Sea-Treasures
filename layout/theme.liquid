@@ -528,13 +528,13 @@
         .login-main h2 {
           direction: rtl !important;
         }
-
+        
         .login-main #customer-account-description {
           direction: rtl !important;
         }
-
+        
         .wbcontform .form__message {
-          direction: rtl;
+          direction: rtl !important;
         }
       </style>
     {% endif %}
@@ -599,16 +599,5 @@
 
     <script src="{{ 'wbcustom.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'popup.js' | asset_url }}" defer="defer"></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const shopLoginButton = document.querySelector('shop-login-button');
-
-        if (shopLoginButton && shopLoginButton.shadowRoot) {
-          const button = shopLoginButton.shadowRoot.querySelector('button');
-          if (button) button.remove();
-        }
-      });
-    </script>
   </body>
 </html>
