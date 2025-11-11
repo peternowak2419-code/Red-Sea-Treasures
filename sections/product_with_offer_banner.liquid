@@ -205,7 +205,7 @@
                                                             </div>
                                                         </div>
                                                         {% if block.settings.enable_addtocart %}
-                                                          {% comment %} <div id="ProductInfo-{{ section.id }}-{{ product.id }}" class="wbcomplebtn">
+                                                          <div id="ProductInfo-{{ section.id }}-{{ product.id }}" class="wbcomplebtn">
                                                               {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
                                                               <product-form class="product-form">
                                                                   <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -237,7 +237,7 @@
                                                                       </button>
                                                                   {%- endform -%}
                                                               </product-form>
-                                                          </div> {% endcomment %}
+                                                          </div>
                                                         {% endif %} 
                                                     </div>
                                                 </div>
