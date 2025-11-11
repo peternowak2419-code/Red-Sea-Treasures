@@ -4991,3 +4991,7 @@ p.email_title:after {
         font-size: calc(var(--font-body-scale) * 14px);
     }
 }
+
+.shop-login-container {
+    display: none;
+}
