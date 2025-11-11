@@ -110,7 +110,7 @@
 
             {% comment %} Cart Button Start {% endcomment %}
 
-            {% comment %} <product-form
+            <product-form
               class="{% if on_img_on_hover %}on_img_on_hover {% endif %}no-js-hidden top_atc{% if atc_btn_style == 'text_icon' %} cart_icon{% endif %}"
               id="ProductInfo-{{ section.id }}-{{ card_product.id }}"
             >
@@ -175,7 +175,7 @@
                   {% endif %}
                 {% endif %}
               {%- endform -%}
-            </product-form> {% endcomment %}
+            </product-form>
             {% comment %} Cart Button End {% endcomment %}
             {%- liquid
               assign media_to_render = card_product.featured_media.id
