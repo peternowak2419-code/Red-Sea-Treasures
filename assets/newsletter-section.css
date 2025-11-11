@@ -45,6 +45,11 @@
   max-width: 36rem;
   direction: rtl;
 }
+
+.newsletter-form__field-wrapper .field__input {
+  direction: rtl;
+}
+
 .newsletter-form__field-wrapper .newsletter-form__message {
   margin-top: 1.5rem;
 }
