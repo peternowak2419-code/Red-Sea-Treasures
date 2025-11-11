@@ -534,7 +534,7 @@
 
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
-                        {%- when 'offer' -%}
+            {%- when 'offer' -%}
               <div class="wboffer_m">
                 <h2><span>{{ block.settings.heading }}</span></h2>
                 <div class="wbpoffer_desc">
@@ -549,7 +549,7 @@
                 fill: {{ block.settings.icon_color }};
                 flex-shrink: 0;
               }
-              {%- endstyle -%}  
+              {%- endstyle -%}
             {%- when 'complementary' -%}
               <product-recommendations class="complementary-products quick-add-hidden no-js-hidden{% if block.settings.make_collapsible_row %} is-accordion{% endif %}{% if block.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
                 {%- if recommendations.performed and recommendations.products_count > 0 -%}
