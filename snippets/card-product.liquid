@@ -913,7 +913,7 @@
                   </span>
                 </button>
               {% endunless %}
-              <product-form
+              {% comment %} <product-form
                 class="{% unless allVariantDisabled %} popup_hidden_cart {% endunless %}"
                 id="ProductInfo-{{ section.id }}-{{ card_product.id }}"
               >
@@ -985,7 +985,7 @@
                     </div>
                   </button>
                 {%- endform -%}
-              </product-form>
+              </product-form> {% endcomment %}
             {% else %}
               <div class="no-js-hidden selectedbtn">
                 {%- liquid
