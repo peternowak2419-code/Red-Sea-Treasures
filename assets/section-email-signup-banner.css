@@ -12,6 +12,7 @@
 .email-signup-banner__box .newsletter__subheading p {
   margin: 0;
   word-break: break-word;
+  direction: rtl;
 }
 .email-signup-banner {
   justify-content: space-between;
