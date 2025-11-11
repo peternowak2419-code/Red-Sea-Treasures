@@ -155,7 +155,7 @@
                     </svg>
                     <span class="product-form__error-message"></span>
                 </div>
-                {% comment %} <div class="wbbtngrp">
+                <div class="wbbtngrp">
                     {%- form 'product', card_product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                         <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}" disabled>
                         <button type="submit" name="add" class="focus-inset cartb add-to-cart__submit product-form__submit button button--primary" aria-label="{{ 'products.product.add_to_cart' | t }}" {% if card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
@@ -171,7 +171,7 @@
                             </div>
                         </button>
                     {%- endform -%}  
-                </div> {% endcomment %}
+                </div>
             </product-form>
         </div>
     </div>
