@@ -23,7 +23,7 @@
         assign show_dynamic_checkout = true
       endif
     -%}
-{% comment %} 
+
     <product-form class="product-form" data-hide-errors="{{ gift_card_recipient_feature_active }}">
       <div class="product-form__error-message-wrapper" role="alert" hidden>
         <svg
@@ -295,7 +295,7 @@
         </div>
       {%- endform -%}
       
-    </product-form> {% endcomment %}
+    </product-form>
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">
