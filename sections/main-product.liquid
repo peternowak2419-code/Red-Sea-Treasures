@@ -533,8 +533,8 @@
                 </ul>
 
             {%- when 'buy_buttons' -%}
-              {% comment %} {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%} {% endcomment %}
-                          {%- when 'offer' -%}
+              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+            {%- when 'offer' -%}
               <div class="wboffer_m">
                 <h2><span>{{ block.settings.heading }}</span></h2>
                 <div class="wbpoffer_desc">
