@@ -159,7 +159,7 @@ media-gallery .button.visually-hidden::before,.button.visually-hidden::after{
 }
 .wbmeta_main li span{
     font-weight: var(--font-body-weight-medium);
-    min-width: 155px;
+    min-width: max-content;
 }
 .spr-starrating .underlined-link,.spr-starrating .underlined-link:hover{
     text-decoration: none;
@@ -2030,7 +2030,7 @@ product-recommendations .wbvariantbadges{
     column-gap: 6px;
   }
   .wbmeta_main li span {
-    min-width: 105px;
+    min-width: max-content;
   }
   .wbpreview .spr-content .spr-review{
     margin: 8px 0;
