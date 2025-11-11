@@ -1043,7 +1043,7 @@
                     </div>
                   </quick-add-modal>
                 {%- else -%}
-                  {% comment %} <product-form data-section-id="{{ section.id }}">
+                  <product-form data-section-id="{{ section.id }}">
                     <div class="product-form__error-message-wrapper" role="alert" hidden>
                       <svg
                         aria-hidden="true"
@@ -1115,7 +1115,7 @@
                         </div>
                       </button>
                     {%- endform -%}
-                  </product-form> {% endcomment %}
+                  </product-form>
                 {%- endif -%}
               </div>
             {% endunless %}

@@ -145,7 +145,7 @@
             <div class="no-js-hidden wbhprice" id="price-{{ section.id }}-{{ card_product.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price', product: card_product, use_variant: true, show_badges: true, from_varies: true -%}
             </div> 
-            {% comment %} <product-form class="product-form">
+            <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden>
                     <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
                     <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -172,7 +172,7 @@
                         </button>
                     {%- endform -%}  
                 </div>
-            </product-form> {% endcomment %}
+            </product-form>
         </div>
     </div>
     </div>
