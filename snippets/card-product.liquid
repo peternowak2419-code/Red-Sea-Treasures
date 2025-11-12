@@ -52,7 +52,7 @@
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         <div
-          style="height:180px"
+          style="height:170px"
           class="card__inner {% if card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %} wbimgblock {% if card_product.featured_media or card_style == 'standard' %} ratio{% endif %}"
           style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
         >
@@ -913,7 +913,7 @@
                   </span>
                 </button>
               {% endunless %}
-              {% comment %} <product-form
+              <product-form
                 class="{% unless allVariantDisabled %} popup_hidden_cart {% endunless %}"
                 id="ProductInfo-{{ section.id }}-{{ card_product.id }}"
               >
@@ -985,7 +985,7 @@
                     </div>
                   </button>
                 {%- endform -%}
-              </product-form> {% endcomment %}
+              </product-form>
             {% else %}
               <div class="no-js-hidden selectedbtn">
                 {%- liquid
