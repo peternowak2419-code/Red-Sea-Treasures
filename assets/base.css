@@ -3097,7 +3097,7 @@ summary.list-menu__item {
     padding-bottom: var(--ratio-percent);
 }
 
-@media screen and (max-width: ) {
+@media screen and (max-width: 768px) {
     .ratio::before {
         padding-bottom: 50%;
     }
