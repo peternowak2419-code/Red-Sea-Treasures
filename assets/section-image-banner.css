@@ -563,10 +563,6 @@
     min-height: unset;
   }
 
-  .wbimgbnrblock .banner--small:not(.banner--adapt) .wb_banner_cover:first-child {
-    min-height: 35rem;
-  }
-
   .wbimgbnrblock .banner--small:not(.banner--adapt) .wb_banner_cover {
     min-height: 25rem;
   }
