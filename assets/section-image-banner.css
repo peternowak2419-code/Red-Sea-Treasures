@@ -564,7 +564,7 @@
   }
 
   .wbimgbnrblock .banner--small:not(.banner--adapt) .wb_banner_cover {
-    min-height: 25rem;
+    min-height: 22rem;
   }
 
   .wbimgbnrblock .banner--medium:not(.banner--adapt) .wb_banner_cover {
