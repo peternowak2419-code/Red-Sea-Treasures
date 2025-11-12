@@ -47,8 +47,7 @@
 
 .newsletter-form__field-wrapper .field__label {
   direction: rtl;
-  right: calc(var(--inputs-border-width) + 2rem);
-  left: auto;
+  left: calc(var(--inputs-border-width) + 2rem);
 }
 
 .newsletter-form__field-wrapper .newsletter-form__message {
