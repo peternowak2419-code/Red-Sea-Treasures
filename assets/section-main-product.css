@@ -1488,7 +1488,7 @@ product-recommendations .wbvariantbadges{
   } */
 
   .focus-inset.product__media.media.media--transparent.global-media-settings img{
-    max-height: unset;
+    max-height: 500px !important;
   }
 
   .protopimg-item.product__media-item.grid__item.slider__slide.is-active{
