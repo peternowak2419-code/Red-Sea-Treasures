@@ -295,11 +295,10 @@
               -%}
               {%- assign bar_progress = current_variant.inventory_quantity | times: 100 | divided_by: block.settings.max_stock | append: '%' -%}
               <div id="Stock-{{ section.id }}" class="wbstockcount {% unless current_variant.available and current_variant.inventory_quantity >= 0 and current_variant.inventory_management == "shopify" %} hidden {% endunless %}">
-                <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">{{ inventory_message }}</div> 
+                {% comment %} <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">{{ inventory_message }}</div>  {% endcomment %}
                 <div class="wbstockinfo-bar {% if inventory_status == "soon" %} hidden {% endif %}">
                   <span class="wbstockinfo-probar" style="width: {{ bar_progress }}"></span>
                 </div> 
-              </div>
               {%- style -%}
               :root {
                 --product-in-stock-color: {{ block.settings.in_stock_color }};
