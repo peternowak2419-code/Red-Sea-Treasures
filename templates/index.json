@@ -255,7 +255,7 @@
           "settings": {
             "collection": "rings",
             "title": "",
-            "url": "",
+            "url": "shopify://collections/rings",
             "showtext": "",
             "customb_style": "solid"
           }
