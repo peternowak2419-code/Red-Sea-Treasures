@@ -154,7 +154,12 @@
 .collection-list-wrapper .card .card__inner .card__media img{
   width: 100%;
   height: 100%;
-  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .collection-list-wrapper .card .card__inner .card__media img{
+    object-fit: contain;
+  }
 }
 .collection-list-wrapper .media>img{
   border-radius: calc(var(--border-radius) - var(--border-width) - var(--image-padding))
