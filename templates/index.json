@@ -255,7 +255,7 @@
           "settings": {
             "collection": "rings",
             "title": "",
-            "url": "shopify://collections/rings",
+            "url": "shopify://products/yemeni-agate-ring-43",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -275,7 +275,7 @@
           "settings": {
             "collection": "yemeni-sidr-honey",
             "title": "",
-            "url": "",
+            "url": "shopify://products/yemeni-sidr-honey-premium-quality-1",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -285,7 +285,7 @@
           "settings": {
             "collection": "yemeni-jambiya",
             "title": "",
-            "url": "",
+            "url": "shopify://products/yemeni-jambia",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -295,7 +295,7 @@
           "settings": {
             "collection": "yemeni-huwar-coffee",
             "title": "",
-            "url": "",
+            "url": "shopify://products/yemeni-huwar-coffee-premium-roasted-beans",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -305,7 +305,7 @@
           "settings": {
             "collection": "traditional-kids-dress",
             "title": "",
-            "url": "",
+            "url": "shopify://products/traditional-kids-dress",
             "showtext": "",
             "customb_style": "solid"
           }
