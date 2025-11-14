@@ -652,7 +652,7 @@
                   >
                     <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">
                       {% if localization.language.iso_code == 'ar' %}
-                        {{ '' }}
+                        {{ 'checkout.stock.stock_count_message' | t }}
                       {% elsif localization.language.iso_code == "en" %}
                         {{ inventory_message }}
                       {% endif %}
