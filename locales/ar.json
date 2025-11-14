@@ -2218,7 +2218,7 @@
       },
       "stock": {
         "stock_count_low_message": "المتبقي: {{ stock_number }} قطع فقط",
-        "stock_count_hihg_message": "متوفر في المخزن (عدد الوحدات: {stock_number})، جاهز للشحن",
+        "stock_count_high_message": "متوفر في المخزن (عدد الوحدات: {{ stock_number }})، جاهز للشحن",
         "page_title": "مشاكل في المخزون",
         "title": "نفد من المخزون",
         "items_unavailable_notice": "بعض المنتجات لم تعد متاحة.",
