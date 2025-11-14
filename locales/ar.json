@@ -2217,6 +2217,7 @@
         "single_shop_transition": "يتم إعادة توجيهك إلى %{advertiser} لإتمام عملية الشراء."
       },
       "stock": {
+        "stock_count_message": "المتبقي: {stock_number} قطع فقط",
         "page_title": "مشاكل في المخزون",
         "title": "نفد من المخزون",
         "items_unavailable_notice": "بعض المنتجات لم تعد متاحة.",
