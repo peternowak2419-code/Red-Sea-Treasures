@@ -345,6 +345,7 @@
                   assign promotionBlock = section.blocks | map: 'settings' | sort: 'img_position'
                   assign blockSize = section.blocks | size | minus: 1
                 %}
+                {{ blockSize }}
                 {%- for product in collection.products -%}
                   {% liquid
                     assign lazy_load = false
