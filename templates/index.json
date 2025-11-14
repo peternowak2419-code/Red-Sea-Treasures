@@ -309,6 +309,17 @@
             "showtext": "",
             "customb_style": "solid"
           }
+        },
+        "featured_collection_TT4BRQ": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yemeni-souvenirs",
+            "image": "shopify://shop_images/Photo_2025-10-23_5_51_41_AM.jpg",
+            "title": "Yemeni Souvenirs",
+            "url": "shopify://collections/yemeni-souvenirs",
+            "showtext": "",
+            "customb_style": "solid"
+          }
         }
       },
       "block_order": [
@@ -317,7 +328,8 @@
         "featured_collection_D64cEj",
         "featured_collection_N37MAh",
         "featured_collection_8qEX4T",
-        "featured_collection_xAPQQj"
+        "featured_collection_xAPQQj",
+        "featured_collection_TT4BRQ"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
