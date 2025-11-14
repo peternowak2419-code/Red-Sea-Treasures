@@ -650,7 +650,6 @@
                     id="Stock-{{ section.id }}"
                     class="wbstockcount {% unless current_variant.available and current_variant.inventory_quantity >= 0 and current_variant.inventory_management == "shopify" %} hidden {% endunless %}"
                   >
-                    {{ inventory_message }}
                     <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">{{ inventory_message }}</div>
                     {% if stock_inventory == false %}
                       <div class="wbstockinfo-bar {% if inventory_status == "soon" %} hidden {% endif %}">
