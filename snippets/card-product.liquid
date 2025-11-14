@@ -651,7 +651,11 @@
                     class="wbstockcount {% unless current_variant.available and current_variant.inventory_quantity >= 0 and current_variant.inventory_management == "shopify" %} hidden {% endunless %}"
                   >
                     <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">
-                      {{ inventory_message }}
+                      {% if localization.language.iso_code == "ar" %}
+                          {{ inventory_message }}
+                        {% elsif localization.language.iso_code == "en" %}
+                          {{ inventory_message }}
+                      {% endif %}
                     </div>
                     {% if stock_inventory == false %}
                       <div class="wbstockinfo-bar {% if inventory_status == "soon" %} hidden {% endif %}">
