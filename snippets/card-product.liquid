@@ -651,11 +651,9 @@
                     class="wbstockcount {% unless current_variant.available and current_variant.inventory_quantity >= 0 and current_variant.inventory_management == "shopify" %} hidden {% endunless %}"
                   >
                     <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">
-                      {% if localization.language.iso_code == 'ar' %}
-                        {{
-                          'shopify.checkout.stock.stock_count_message'
-                          | t | replace
-                        }}
+                      {% if localization.language.iso_code == 'ar' and inventory_status == "low" %}
+                        {{ 'shopify.checkout.stock.stock_count_message' | t: stock_number: current_variant.inventory_quantity }}
+
                       {% else %}
                         {{ inventory_message }}
                       {% endif %}
