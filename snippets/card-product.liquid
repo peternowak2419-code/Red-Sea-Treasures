@@ -653,6 +653,8 @@
                     <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">
                       {% if localization.language.iso_code == 'ar' and inventory_status == "low" %}
                         {{ 'shopify.checkout.stock.stock_count_message' | t: stock_number: current_variant.inventory_quantity }}
+                      {% elsif localization.language.iso_code == "ar" and inventory_status == "high" %}
+                        {{ 'shopify.checkout.stock.stock_count_message' | t: stock_number: current_variant.inventory_quantity }}
                       {% else %}
                         {{ inventory_message }}
                       {% endif %}
