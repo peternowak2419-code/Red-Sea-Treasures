@@ -654,7 +654,7 @@
                       {% if localization.language.iso_code == 'ar' %}
                         {{
                           'shopify.checkout.stock.stock_count_message'
-                          | t: stock_number: card_product.selected_or_first_available_variant.inventory_quantity
+                          | t | replace
                         }}
                       {% else %}
                         {{ inventory_message }}
