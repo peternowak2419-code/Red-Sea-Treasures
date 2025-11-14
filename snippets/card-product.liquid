@@ -652,8 +652,11 @@
                   >
                     <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">
                       {% if localization.language.iso_code == 'ar' %}
-                        {{ 'stock.stock_count_message' | t }}
-                      {% elsif localization.language.iso_code == "en" %}
+                        {{
+                          'shopify.checkout.stock.stock_count_message'
+                          | t: stock_number: card_product.selected_or_first_available_variant.inventory_quantity
+                        }}
+                      {% else %}
                         {{ inventory_message }}
                       {% endif %}
                     </div>
