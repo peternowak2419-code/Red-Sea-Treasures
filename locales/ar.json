@@ -2495,8 +2495,7 @@
         "note": "اطلب تعليمات خاصة",
         "merchandise_not_applicable": "لا يمكن شراء هذا المنتج بالصيغة الحالية.",
         "checkout": "الدفع",
-        "subtotal": "المجموع الفرعي",
-        "note": "Order special instructions",
+        "subtotal": "المجموع الفرعي"
       },
       "storefront": {
         "invalid_password": "كلمة المرور غير صحيحة، يرجى المحاولة مرة أخرى."
