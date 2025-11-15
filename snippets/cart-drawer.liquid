@@ -445,6 +445,8 @@
             <a href="{{ routes.cart_url }}" class="button button--primary btn-block"><span>{{ 'wbcustomlabel.wballtext.viewcart' | t }}</span></a>
             <button type="submit" id="CartDrawer-Checkout" class="cart__checkout-button button button--primary" name="checkout" form="CartDrawer-Form"{% if cart == empty %} disabled{% endif %}>
               {% if localization.language.iso_code == 'ar' %}
+                <span>{{ 'shopify.notices.cart.checkout' | t }}</span>
+              {% else %}
                 <span>{{ 'sections.cart.checkout' | t }}</span>
               {% endif %}
             </button>
