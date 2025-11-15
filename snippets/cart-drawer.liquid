@@ -70,15 +70,9 @@
               </a>
               {%- if shop.customer_accounts_enabled and customer == null -%}
                 <p class="cart__login-title h3">{{ 'sections.cart.login.title' | t }}</p>
-                {% if localization.language.iso_code == 'ar' %}
-                  <p class="cart__login-paragraph">
-                    {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
-                  </p>
-                {% else %}
-                  <p class="cart__login-paragraph">
-                    {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
-                  </p>
-                {% endif %}
+                <p class="cart__login-paragraph">
+                  {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
+                </p>
               {%- endif -%}
             </div>
           </div>
