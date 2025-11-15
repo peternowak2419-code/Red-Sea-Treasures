@@ -409,12 +409,17 @@
             <details id="Details-CartDrawer">
               <summary>
               {% if localization.language.iso_code == 'ar' %}
-              {% endif %}
                 <span class="summary__title">
                   {{ 'sections.cart.note' | t }}
                   {% render 'icon-caret' %}
                 </span>
-              </summary>
+              {% else %}
+                <span class="summary__title">
+                  {{ 'sections.cart.note' | t }}
+                  {% render 'icon-caret' %}
+                </span>
+              {% endif %}
+            </summary>
               <cart-note class="cart__note field">
                 <label class="visually-hidden" for="CartDrawer-Note">{{ 'sections.cart.note' | t }}</label>
                 <textarea
