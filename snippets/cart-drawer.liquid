@@ -426,6 +426,9 @@
           {%- endif -%}
           <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
             <div class="totals" role="status">
+              {% if localization.language.iso_code == 'ar' %}
+                <span class="totals__subtotal">{{ 'sections.cart.subtotal' | t }} ({{ cart.item_count }})</span>
+              {% endif %}
               <span class="totals__subtotal">{{ 'sections.cart.subtotal' | t }} ({{ cart.item_count }})</span>
               <p class="product-option price-original">
                 {%- if settings.currency_code_enabled -%}
