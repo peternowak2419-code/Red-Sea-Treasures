@@ -439,7 +439,11 @@
           <div class="cart__ctas cartdrawbtn" {{ block.shopify_attributes }}>
             <noscript>
               <button type="submit" class="cart__update-button button button--secondary" form="CartDrawer-Form">
-                <span>{{ 'sections.cart.update' | t }}</span>
+                {% if localization.language.iso_code == 'ar' %}
+                  <span>{{ 'sections.cart.update' | t }}</span>
+                {% else %}
+                  <span>{{ 'sections.cart.update' | t }}</span>
+                {% endif %}
               </button>
             </noscript>
             <a href="{{ routes.cart_url }}" class="button button--primary btn-block"><span>{{ 'wbcustomlabel.wballtext.viewcart' | t }}</span></a>
