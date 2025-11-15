@@ -427,7 +427,7 @@
           <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
             <div class="totals" role="status">
               {% if localization.language.iso_code == 'ar' %}
-                <span class="totals__subtotal">{{ 'sections.cart.subtotal' | t }} ({{ cart.item_count }})</span>
+                <span class="totals__subtotal">{{ 'shopify.notices.cart.subtotal' | t }} ({{ cart.item_count }})</span>
               {% else %}
                 <span class="totals__subtotal">{{ 'sections.cart.subtotal' | t }} ({{ cart.item_count }})</span>
               {% endif %}
