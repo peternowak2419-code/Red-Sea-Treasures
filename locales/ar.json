@@ -2492,6 +2492,7 @@
         "merchandise_line_transformers": {
           "run_error": "حدث خطأ في سلة التسوق الخاصة بك."
         },
+        "note": "Order special instructions",
         "merchandise_not_applicable": "لا يمكن شراء هذا المنتج بالصيغة الحالية."
       },
       "storefront": {
