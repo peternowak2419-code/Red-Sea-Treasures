@@ -74,6 +74,10 @@
                   <p class="cart__login-paragraph">
                     {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
                   </p>
+                {% else %}
+                  <p class="cart__login-paragraph">
+                    {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
+                  </p>
                 {% endif %}
               {%- endif -%}
             </div>
