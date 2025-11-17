@@ -59,7 +59,7 @@
           "settings": {
             "heading": "Available Offers",
             "icon": "tag",
-            "content": "<p><strong>Free Delivery</strong> on Orders Over <strong>$200</strong></p>",
+            "content": "<p><strong>Free Delivery</strong> on Orders Over <strong>$400</strong></p>",
             "icon2": "tag",
             "content2": "<p>Get <strong>10% Off</strong> Your Next Purchase</p>",
             "icon_color": "#dd1d1d"
