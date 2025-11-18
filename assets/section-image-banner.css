@@ -209,7 +209,7 @@
 .wbimgbnrblock .banner__box>*+.banner__text {
   margin-top: 0;
   word-wrap: break-word;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .wbimgbnrblock .banner__text {
