@@ -147,7 +147,7 @@ button.predictive-search__item.predictive-search__item--term {
   margin: 0;
 }
 .predictive-search .seachbar-left{
-  padding: 10px 25px 10px 0;
+  padding: 10px 0px 10px 0;
   overflow-y: auto;
   grid-area: menu;
 }
