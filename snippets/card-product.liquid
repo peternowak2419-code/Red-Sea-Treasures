@@ -565,6 +565,9 @@
                   {{ block.shopify_attributes }}
                 >
                   <div class="card_product_Price">
+                    {% if card_product.price_varies %}
+                      <span class="price-label">{{ 'products.product.from' | t }}</span>
+                    {% endif %}
                     <span class="card_sale_price">
                       <span dir="ltr" class="price-value">
                         {% if settings.currency_code_enabled %}
@@ -573,9 +576,6 @@
                           {{ card_product.price | money }}
                         {% endif %}
                       </span>
-                      {% if card_product.price_varies %}
-                        <span class="price-label">{{ 'products.product.from' | t }}</span>
-                      {% endif %}
                     </span>
 
                     <small class="card_compare_price">
