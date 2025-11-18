@@ -192,7 +192,7 @@
     "show_cartpayment": true,
     "upsellp": true,
     "wbuphead": "You might like",
-    "upsellcollection": "yemeni-jambiya",
+    "upsellcollection": "",
     "upsell_to_show": 3,
     "show_cart_countdown": true,
     "heading": "",
