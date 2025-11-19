@@ -482,6 +482,7 @@
         },
         "image_Kjedxm": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "enable_video_looping": false,
             "auto_play_video": false,
@@ -511,6 +512,7 @@
         },
         "image_qNgyBz": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "enable_video_looping": false,
             "auto_play_video": false,
@@ -540,6 +542,7 @@
         },
         "image_iJ8epi": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "enable_video_looping": false,
             "auto_play_video": false,
