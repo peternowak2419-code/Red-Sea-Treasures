@@ -4516,7 +4516,7 @@
     "share": {
       "close": "إغلاق مشاركة",
       "copy_to_clipboard": "نسخ الرابط",
-      // "share_url": "رابط",
+      "share_url": "رابط",
       "success_message": "تم نسخ الرابط إلى الحافظة"
     },
     "slider": {
@@ -4556,7 +4556,7 @@
   "accessibility": {
     "skip_to_text": "انتقل إلى المحتوى",
     "skip_to_product_info": "انتقل إلى معلومات المنتج",
-    "close": "إغلاق",
+    // "close": "إغلاق",
     "unit_price_separator": "لكل",
     "vendor": "البائع:",
     "error": "خطأ",
