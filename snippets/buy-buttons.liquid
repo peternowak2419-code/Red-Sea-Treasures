@@ -187,9 +187,9 @@
               </div>
             </button>
           </div>
-          {% comment %} {%- if show_dynamic_checkout -%}
+          {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
-          {%- endif -%} {% endcomment %}
+          {%- endif -%}
 
           {%- if product.quantity_price_breaks_configured? -%}
             <volume-pricing class="parent-display no-js-hidden" id="Volume-{{ section.id }}">
