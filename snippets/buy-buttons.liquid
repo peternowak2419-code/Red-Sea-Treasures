@@ -421,22 +421,6 @@
 
       tries++;
       if (tries >= maxTries) clearInterval(intervalId);
-    }, 500);
+    }, 100);
   });
 </script>
-
-<style>
-  .shopify-payment-button__more-options {
-    font-size: 0 !important;
-  }
-
-  .shopify-payment-button__more-options::after {
-    content: "خيارات دفع أخرى";
-    font-size: 14px;
-    direction: rtl;
-  }
-  
-  .shopify-payment-button__more-options {
-    visibility: hidden;
-  }
-</style>
