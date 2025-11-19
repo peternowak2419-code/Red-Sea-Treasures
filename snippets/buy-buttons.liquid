@@ -373,30 +373,37 @@
 
 <script>
   window.addEventListener('load', function () {
-    // Optional: only run on Arabic
     var lang = (document.documentElement.lang || '').toLowerCase();
     if (!lang.startsWith('ar')) return;
 
     var tries = 0;
-    var maxTries = 20; // 20 * 500ms = 10s max
+    var maxTries = 20;
 
     var intervalId = setInterval(function () {
-      // Try to find the link
       var link = document.querySelector(
-        'more-payment-options-link a.shopify-payment-button__more-options, ' +
-        'a#more-payment-options-link, ' +
-        '.shopify-payment-button__more-options'
+        '#more-payment-options-link, .shopify-payment-button__more-options'
       );
 
       if (link) {
-        link.textContent = 'خيارات دفع أخرى'; // your Arabic text
-        clearInterval(intervalId); // stop checking once done
+        link.textContent = 'خيارات دفع أخرى';
+        link.style.visibility = 'visible';
+        clearInterval(intervalId);
       }
 
       tries++;
-      if (tries >= maxTries) {
-        clearInterval(intervalId); // hard stop just in case
-      }
+      if (tries >= maxTries) clearInterval(intervalId);
     }, 500);
   });
 </script>
+
+<style>
+  .shopify-payment-button__more-options {
+  font-size: 0 !important;          /* hide English text */
+}
+
+.shopify-payment-button__more-options::after {
+  content: "خيارات دفع أخرى";        /* your Arabic text */
+  font-size: 14px;                   /* adjust size if needed */
+  direction: rtl;
+}
+</style>
