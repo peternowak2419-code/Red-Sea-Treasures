@@ -344,7 +344,7 @@
   {%- endif -%}
 </div>
 
-<script>
+{% comment %} <script>
   document.addEventListener('DOMContentLoaded', function () {
     var lang = (document.documentElement.lang || '').toLowerCase();
     if (!lang.startsWith('ar')) return;
@@ -369,4 +369,4 @@
 
     observer.observe(container, { childList: true, subtree: true });
   });
-</script>
+</script> {% endcomment %}
