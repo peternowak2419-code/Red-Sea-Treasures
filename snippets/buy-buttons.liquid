@@ -343,3 +343,34 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Optional: only run on Arabic
+    var lang = (document.documentElement.lang || '').toLowerCase();
+    if (!lang.startsWith('ar')) return;
+
+    // This is the wrapper that contains the dynamic checkout buttons
+    var container = document.querySelector('.shopify-payment-button');
+    if (!container) return;
+
+    function translateMorePaymentLink() {
+      var link = container.querySelector(
+        '#more-payment-options-link, .shopify-payment-button__more-options'
+      );
+      if (link) {
+        link.textContent = 'خيارات دفع أخرى'; // your Arabic text
+      }
+    }
+
+    // Run once in case it is already in the DOM
+    translateMorePaymentLink();
+
+    // Watch for Shopify re-rendering the button / link
+    var observer = new MutationObserver(function () {
+      translateMorePaymentLink();
+    });
+
+    observer.observe(container, { childList: true, subtree: true });
+  });
+</script>
