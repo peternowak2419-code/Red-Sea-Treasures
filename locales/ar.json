@@ -4285,7 +4285,7 @@
         "other": "تم العثور على {{ count }} نتيجة لـ \" {{ terms }} \""
       },
       "title": "نتائج البحث",
-      "search_for": "ابحث عن \" {{ terms }} \"",
+      "search_for": "ابحث عن “{{ terms }}”",
       "suggestions": "اقتراحات",
       "pages": "الصفحات"
     },
