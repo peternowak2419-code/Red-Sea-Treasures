@@ -85,7 +85,7 @@ if product.price_varies
 		</div>
     {% if product.selected_or_first_available_variant.unit_price_measurement %}
   		<small class="unit-price price-item price-item--last caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
-          <span class="cardunitp">{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
+          {% comment %} <span class="cardunitp">{{- product.selected_or_first_available_variant.unit_price | money -}}</span> {% endcomment %}
           <span aria-hidden="true">/</span>
           <span class="cardunitv">
             {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
