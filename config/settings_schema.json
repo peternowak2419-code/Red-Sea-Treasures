@@ -1051,17 +1051,6 @@
     ]
   },
   {
-    "name": "Shipping Settings",
-    "settings": [
-      {
-        "type": "number",
-        "id": "free_shipping_threshold",
-        "label": "Free shipping minimum (in CAD)",
-        "default": 400
-      }
-    ]
-  },
-  {
     "name": "t:settings_schema.collection_cards.name",
     "settings": [
       {
