@@ -173,9 +173,7 @@ class PredictiveSearch extends SearchForm {
       return;
     }
     const root = window.Shopify?.routes?.root || '/';
-    fetch(`${root}search/suggest?q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`)
-
-      .then((response) => {
+    fetch(`${root}search/suggest?q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`).then((response) => {
         if (!response.ok) {
           var error = new Error(response.status);
           this.hiddenClassActivity(false);
