@@ -172,9 +172,10 @@ class PredictiveSearch extends SearchForm {
       this.renderSearchResults(this.cachedResults[queryKey]);
       return;
     }
-    fetch(`/search/suggest?q=${encodeURIComponent(searchTerm)}&section_id=predictive-search&locale=${Shopify.locale}`, {
-      signal: this.abortController.signal
-    })
+    fetch(
+      `/search/suggest?locale=${Shopify.locale}&q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`,
+      { signal: this.abortController.signal }
+    )
       .then((response) => {
         if (!response.ok) {
           var error = new Error(response.status);
