@@ -539,7 +539,7 @@
                 <h2><span>{{ block.settings.heading }}</span></h2>
                 <div class="wbpoffer_desc">
                   {% assign clean_content = block.settings.content | remove: 'CAD' | remove: 'USD' | strip %}
-                  {% render 'icon-accordion', icon: block.settings.icon %}<span>{{ block.settings.content }}</span>
+                  {% render 'icon-accordion', icon: block.settings.icon %}<span>{{ clean_content }}</span>
                 </div>
                 <div class="wbpoffer_desc">
                   {% render 'icon-accordion', icon: block.settings.icon2 %}<span>{{ block.settings.content2 }}</span>
