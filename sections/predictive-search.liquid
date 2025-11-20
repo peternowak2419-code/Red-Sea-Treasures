@@ -5,7 +5,7 @@
 | plus: predictive_search.resources.articles.size
 %}
 {% assign section_id = section.id %}
-  <div id="predictive-search-results" role="listbox" class="color-{{ settings.color_schemesearch }} gradient wbsearch_inner">
+  {% comment %} <div id="predictive-search-results" role="listbox" class="color-{{ settings.color_schemesearch }} gradient wbsearch_inner">
     <div id="predictive-search-option-search-keywords" class="predictive-search__search-for-button">
       <button class="predictive-search__item predictive-search__item--term link link--text animate-arrow" tabindex="-1" role="option" aria-selected="false">
         <span class="search-result-text" data-predictive-search-search-for-text>
@@ -370,7 +370,7 @@
         <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
       </svg>
     </div>
-  </div>
+  </div> {% endcomment %}
   <span class="hidden" data-predictive-search-live-region-count-value>
     {% liquid
       assign total_results = predictive_search.resources.products.size | plus: first_column_results_size
