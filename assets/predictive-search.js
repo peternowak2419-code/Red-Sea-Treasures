@@ -19,13 +19,20 @@ class PredictiveSearch extends SearchForm {
     this.setupEventListeners();
   }
 
+  /* ===========================
+     EVENT LISTENERS
+  ============================ */
   setupEventListeners() {
+    if (!this.input) return;
+
     this.input.form.addEventListener("submit", this.onFormSubmit.bind(this));
     this.input.addEventListener("focus", this.onFocus.bind(this));
     this.addEventListener("focusout", this.onFocusOut.bind(this));
     this.addEventListener("keyup", this.onKeyup.bind(this));
     this.addEventListener("keydown", this.onKeydown.bind(this));
-    this.querySelector(".wbsclose").addEventListener("click", this.onClick.bind(this));
+
+    const closeBtn = this.querySelector(".wbsclose");
+    if (closeBtn) closeBtn.addEventListener("click", this.onClick.bind(this));
   }
 
   getQuery() {
@@ -37,18 +44,20 @@ class PredictiveSearch extends SearchForm {
 
     const newSearchTerm = this.getQuery();
 
-    if (!this.defaultSearch.classList.contains("hidden"))
+    if (this.defaultSearch && !this.defaultSearch.classList.contains("hidden")) {
       this.defaultSearch.classList.add("hidden");
+    }
 
     if (!this.searchTerm || !newSearchTerm.startsWith(this.searchTerm)) {
       this.querySelector("#predictive-search-results-groups-wrapper")?.remove();
     }
 
+    // update “Search for {term}”
     this.updateSearchForTerm(this.searchTerm, newSearchTerm);
     this.searchTerm = newSearchTerm;
 
     if (!this.searchTerm.length) {
-      this.defaultSearch.classList.remove("hidden");
+      if (this.defaultSearch) this.defaultSearch.classList.remove("hidden");
       this.close(true);
       return;
     }
@@ -57,15 +66,17 @@ class PredictiveSearch extends SearchForm {
   }
 
   onFormSubmit(event) {
-    if (!this.getQuery().length || this.querySelector('[aria-selected="true"] a')) event.preventDefault();
+    if (!this.getQuery().length || this.querySelector('[aria-selected="true"] a')) {
+      event.preventDefault();
+    }
   }
 
   onFocus() {
     const currentSearchTerm = this.getQuery();
 
     if (!currentSearchTerm.length) {
-      this.defaultSearch.classList.remove("hidden");
-      this.demoSearch.classList.remove("hidden");
+      if (this.defaultSearch) this.defaultSearch.classList.remove("hidden");
+      if (this.demoSearch) this.demoSearch.classList.remove("hidden");
       this.hiddenClassActivity(true);
       return;
     }
@@ -83,8 +94,8 @@ class PredictiveSearch extends SearchForm {
   onFocusOut() {
     setTimeout(() => {
       if (!this.contains(document.activeElement)) {
-        this.defaultSearch.classList.add("hidden");
-        this.demoSearch.classList.add("hidden");
+        if (this.defaultSearch) this.defaultSearch.classList.add("hidden");
+        if (this.demoSearch) this.demoSearch.classList.add("hidden");
         this.hiddenClassActivity(false);
         this.close();
       }
@@ -93,8 +104,8 @@ class PredictiveSearch extends SearchForm {
 
   onClick() {
     setTimeout(() => {
-      this.defaultSearch.classList.add("hidden");
-      this.demoSearch.classList.add("hidden");
+      if (this.defaultSearch) this.defaultSearch.classList.add("hidden");
+      if (this.demoSearch) this.demoSearch.classList.add("hidden");
       this.hiddenClassActivity(false);
       this.close();
     });
@@ -124,9 +135,9 @@ class PredictiveSearch extends SearchForm {
     }
   }
 
-  /* ---------------------------------------------
-      MAIN UPDATE: LANGUAGE-BASED SEARCH SWITCH
-  --------------------------------------------- */
+  /* ===========================
+     LANGUAGE-BASED SEARCH SWITCH
+  ============================ */
   getSearchResults(searchTerm) {
     if (this.locale.startsWith("ar")) {
       this.getArabicSearchResults(searchTerm);
@@ -135,9 +146,9 @@ class PredictiveSearch extends SearchForm {
     }
   }
 
-  /* ---------------------------------------------
-      ENGLISH (DEFAULT) – SHOPIFY PREDICTIVE SEARCH
-  --------------------------------------------- */
+  /* ===========================
+     ENGLISH (DEFAULT) – PREDICTIVE SEARCH
+  ============================ */
   getDefaultPredictiveResults(searchTerm) {
     const queryKey = searchTerm.replace(" ", "-").toLowerCase();
     this.setLiveRegionLoadingState();
@@ -146,6 +157,10 @@ class PredictiveSearch extends SearchForm {
       this.renderSearchResults(this.cachedResults[queryKey]);
       return;
     }
+
+    // cancel previous request if any
+    this.abortController.abort();
+    this.abortController = new AbortController();
 
     fetch(
       `${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`,
@@ -160,23 +175,25 @@ class PredictiveSearch extends SearchForm {
         return response.text();
       })
       .then((text) => {
-        const resultsMarkup = new DOMParser()
+        const section = new DOMParser()
           .parseFromString(text, "text/html")
-          .querySelector("#shopify-section-predictive-search").innerHTML;
+          .querySelector("#shopify-section-predictive-search");
+
+        const resultsMarkup = section ? section.innerHTML : text;
 
         this.cachedResults[queryKey] = resultsMarkup;
         this.renderSearchResults(resultsMarkup);
       })
       .catch((error) => {
-        if (error?.code === 20) return;
+        if (error?.name === "AbortError" || error?.code === 20) return;
         this.hiddenClassActivity(false);
         this.close();
       });
   }
 
-  /* ---------------------------------------------
-      ARABIC FALLBACK – REGULAR SEARCH AS PREDICTIVE
-  --------------------------------------------- */
+  /* ===========================
+     ARABIC – USE SAME ENDPOINT
+  ============================ */
   getArabicSearchResults(searchTerm) {
     const queryKey = searchTerm.replace(" ", "-").toLowerCase();
     this.setLiveRegionLoadingState();
@@ -186,16 +203,23 @@ class PredictiveSearch extends SearchForm {
       return;
     }
 
-    const lang = document.documentElement.lang || Shopify.locale || "en";
+    this.abortController.abort();
+    this.abortController = new AbortController();
 
     fetch(
-    `${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&section_id=predictive-search&language=${lang}`,
-    { signal: this.abortController.signal }
+      `${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`,
+      { signal: this.abortController.signal }
     )
       .then((response) => response.text())
-      .then((html) => {
-        this.cachedResults[queryKey] = html;
-        this.renderSearchResults(html);
+      .then((text) => {
+        const section = new DOMParser()
+          .parseFromString(text, "text/html")
+          .querySelector("#shopify-section-predictive-search");
+
+        const resultsMarkup = section ? section.innerHTML : text;
+
+        this.cachedResults[queryKey] = resultsMarkup;
+        this.renderSearchResults(resultsMarkup);
       })
       .catch(() => {
         this.hiddenClassActivity(false);
@@ -203,19 +227,21 @@ class PredictiveSearch extends SearchForm {
       });
   }
 
-  /* ---------------------------------------------
-      RENDER RESULTS
-  --------------------------------------------- */
+  /* ===========================
+     RENDER RESULTS
+  ============================ */
   renderSearchResults(resultsMarkup) {
+    if (!this.predictiveSearchResults) return;
+
     this.predictiveSearchResults.innerHTML = resultsMarkup;
     this.setAttribute("results", true);
     this.hiddenClassActivity(true);
     this.open();
   }
 
-  /* ---------------------------------------------
-      UI HELPERS (UNCHANGED)
-  --------------------------------------------- */
+  /* ===========================
+     UI HELPERS
+  ============================ */
   open() {
     this.setAttribute("open", true);
     this.input.setAttribute("aria-expanded", true);
@@ -233,28 +259,89 @@ class PredictiveSearch extends SearchForm {
       this.removeAttribute("results");
     }
     const selected = this.querySelector('[aria-selected="true"]');
-    if (selected) selected.setAttribute("aria-selected", false);
+    if (selected) selected.setAttribute("aria-selected", "false");
 
     this.input.setAttribute("aria-activedescendant", "");
     this.removeAttribute("loading");
     this.removeAttribute("open");
-    this.input.setAttribute("aria-expanded", false);
-    this.predictiveSearchResults.removeAttribute("style");
+    this.input.setAttribute("aria-expanded", "false");
+    if (this.predictiveSearchResults) this.predictiveSearchResults.removeAttribute("style");
   }
 
   setLiveRegionLoadingState() {
     this.statusElement = this.statusElement || this.querySelector(".predictive-search-status");
     this.loadingText = this.loadingText || this.getAttribute("data-loading-text");
+    if (!this.statusElement || !this.loadingText) return;
+
     this.setLiveRegionText(this.loadingText);
     this.setAttribute("loading", true);
   }
 
   setLiveRegionText(statusText) {
+    if (!this.statusElement) return;
+
     this.statusElement.setAttribute("aria-hidden", "false");
     this.statusElement.textContent = statusText;
     setTimeout(() => {
       this.statusElement.setAttribute("aria-hidden", "true");
     }, 1000);
+  }
+
+  /* ===========================
+     NEW / RESTORED METHODS
+  ============================ */
+
+  // Show / hide global “search is open” class
+  hiddenClassActivity(isActive) {
+    if (!this.searchActiveClass) return;
+    document.body.classList.toggle(this.searchActiveClass, Boolean(isActive));
+  }
+
+  // Update the “Search for: {term}” text in the dropdown
+  updateSearchForTerm(previousTerm, newTerm) {
+    const searchForText = this.querySelector("[data-predictive-search-search-for-text]");
+    if (!searchForText) return;
+    searchForText.textContent = newTerm || "";
+  }
+
+  // Keyboard navigation through results
+  switchOption(direction) {
+    const options = Array.from(this.querySelectorAll("[role='option']"));
+    if (!options.length) return;
+
+    let currentIndex = options.findIndex((el) => el.getAttribute("aria-selected") === "true");
+
+    if (direction === "down") {
+      currentIndex = currentIndex + 1;
+    } else {
+      currentIndex = currentIndex - 1;
+    }
+
+    if (currentIndex < 0) currentIndex = options.length - 1;
+    if (currentIndex >= options.length) currentIndex = 0;
+
+    options.forEach((el) => el.setAttribute("aria-selected", "false"));
+
+    const newOption = options[currentIndex];
+    newOption.setAttribute("aria-selected", "true");
+
+    if (newOption.id) {
+      this.input.setAttribute("aria-activedescendant", newOption.id);
+    }
+  }
+
+  // Enter key behaviour
+  selectOption() {
+    const selectedLink = this.querySelector('[aria-selected="true"] a');
+    if (selectedLink) {
+      window.location.href = selectedLink.href;
+      return;
+    }
+
+    // If nothing selected, submit normal search
+    if (this.getQuery().length) {
+      this.input.form.submit();
+    }
   }
 }
 
