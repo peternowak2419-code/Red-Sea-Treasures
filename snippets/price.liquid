@@ -69,7 +69,7 @@ if product.price_varies
 			<span class="price-item price-item--sale price-item--last">
         {{ money_price }}
       </span>
-			{% comment %} {%- if money_price != compare_at_price %} {% endcomment %}
+			{%- if money_price != compare_at_price %}
           <small class="price-item price-item--regular">
             {% if settings.currency_code_enabled %}
               {% if compare_at_price != 0 %}
@@ -81,7 +81,7 @@ if product.price_varies
               {% endif %}
             {% endif %}
           </small>
-			{% comment %} {%- endif -%} {% endcomment %}
+			{%- endif -%}
 		</div>
     {% if product.selected_or_first_available_variant.unit_price_measurement %}
   		<small class="unit-price price-item price-item--last caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
