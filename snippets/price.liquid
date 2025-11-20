@@ -88,7 +88,7 @@ if product.price_varies
           {% comment %} <span class="cardunitp">{{- product.selected_or_first_available_variant.unit_price | money -}}</span> {% endcomment %}
           <span aria-hidden="true">/</span>
           <span class="cardunitv">
-            {{ product.selected_or_first_available_variant | json }}
+            {{ product.selected_variant. | json }}
             {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
   	          {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
             {%- endif -%}
