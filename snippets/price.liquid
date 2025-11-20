@@ -83,7 +83,7 @@ if product.price_varies
           </small>
 			{%- endif -%}
 		</div>
-    {% if product.selected_or_first_available_variant.unit_price_measurement %}
+    {% comment %} {% if product.selected_or_first_available_variant.unit_price_measurement %}
   		<small class="unit-price price-item price-item--last caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
           {% comment %} <span class="cardunitp">{{- product.selected_or_first_available_variant.unit_price | money -}}</span> {% endcomment %}
           <span aria-hidden="true">/</span>
@@ -92,7 +92,7 @@ if product.price_varies
   	        {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
           </span>
   		</small>
-    {% endif %}
+    {% endif %} {% endcomment %}
 		{%- if show_badges and product.price -%}
       <div class="wbvariantbadges"> 
         <span class="badge price__badge-sale">
