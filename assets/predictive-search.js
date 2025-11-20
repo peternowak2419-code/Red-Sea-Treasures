@@ -174,6 +174,8 @@ class PredictiveSearch extends SearchForm {
     }
     const lang = document.documentElement.lang || Shopify.locale;
 
+    console.log(lang, "😘😘😘😘😘😘");
+
     fetch(
       `/search/suggest?language=${lang}&q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`,
       { signal: this.abortController.signal }
