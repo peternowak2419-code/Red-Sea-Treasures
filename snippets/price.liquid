@@ -91,7 +91,7 @@ if product.price_varies
             {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
   	          {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
             {%- endif -%}
-  	        {% comment %} {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }} {% endcomment %}
+  	        {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
           </span>
   		</small>
     {% endif %}
