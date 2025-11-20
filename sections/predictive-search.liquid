@@ -10,7 +10,7 @@
       <button class="predictive-search__item predictive-search__item--term link link--text animate-arrow" tabindex="-1" role="option" aria-selected="false">
         <span class="search-result-text" data-predictive-search-search-for-text>
           {% if localization.language.iso_code == 'ar' %}
-            {{ 'templates.search.search_for' | t: terms: predictive_search.terms }}
+            {% assign search_for_text = "" %}
           {% else %}
             {{ 'templates.search.search_for' | t: terms: predictive_search.terms }}
           {% endif %}
