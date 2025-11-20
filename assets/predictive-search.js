@@ -173,9 +173,7 @@ class PredictiveSearch extends SearchForm {
       return;
     }
     fetch(
-      `${routes.predictive_search_url}?q=${encodeURIComponent(
-        searchTerm
-      )}&section_id=predictive-search`,
+      `/search/suggest?q=${encodeURIComponent(searchTerm)}&section_id=predictive-search&locale=${Shopify.locale}`,
       { signal: this.abortController.signal }
     )
       .then((response) => {
