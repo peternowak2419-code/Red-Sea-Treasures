@@ -941,6 +941,39 @@
     </script>
   </product-info>
 </section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const offerElement = document.querySelector(".dynamic-offer-price");
+  if (!offerElement) return;
+
+  const originalText = offerElement.dataset.original;
+  const match = originalText.match(/(\d+(\.\d+)?)/);
+  if (!match) return;
+
+  const baseAmountCAD = parseFloat(match[1]); // Example: 400 CAD
+  const currentCurrency = Shopify.currency.active; 
+  const shopCurrency = Shopify.currency.shop; 
+
+  // Convert using Shopify’s converter if available
+  let convertedAmount = baseAmountCAD;
+
+  if (window.Currency && Currency.convert) {
+    // Use Shopify Currency Converter
+    convertedAmount = Currency.convert(baseAmountCAD, "CAD", currentCurrency);
+  }
+
+  // Format using Shopify money format
+  const moneyFormat = theme.moneyFormat || "{{amount}}";
+  const formatted = Shopify.formatMoney(Math.round(convertedAmount * 100), moneyFormat);
+
+  // Replace number inside the sentence
+  const updatedText = originalText.replace(match[0], formatted);
+
+  offerElement.innerHTML = updatedText;
+});
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-product.name",
