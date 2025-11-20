@@ -88,9 +88,9 @@ if product.price_varies
           {% comment %} <span class="cardunitp">{{- product.selected_or_first_available_variant.unit_price | money -}}</span> {% endcomment %}
           <span aria-hidden="true">/</span>
           <span class="cardunitv">
-            {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+            {% comment %} {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%} {% endcomment %}
   	          {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
-            {%- endif -%}
+            {% comment %} {%- endif -%} {% endcomment %}
   	        {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
           </span>
   		</small>
