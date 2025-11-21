@@ -348,6 +348,7 @@
               {{ price_difference_percent -}}
               {% if localization.language.iso_code == 'ar' %}
                 {% assign product_off_price = "% خصم" %}
+                {{ product_off_price }}
               {% else %}
                 {{- 'products.product.off_price' | t }}
               {%endif %}              
