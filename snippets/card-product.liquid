@@ -220,7 +220,12 @@
             {% if settings.percentage == true %}
               <span class="badge percent__badge-sale {% if price_difference_percent == null %}hidden{% endif %}">
                 {{ price_difference_percent -}}
-                {{- 'products.product.off_price' | t }}
+                {% if localization.language.iso_code == 'ar' %}
+                  {% assign product_off_price = '% خصم' %}
+                  {{ product_off_price }}
+                {% else %}
+                  {{- 'products.product.off_price' | t }}
+                {% endif %}
               </span>
             {% endif %}
             {% if settings.diff_price == true %}
@@ -651,10 +656,16 @@
                     class="wbstockcount {% unless current_variant.available and current_variant.inventory_quantity >= 0 and current_variant.inventory_management == "shopify" %} hidden {% endunless %}"
                   >
                     <div class="wbstockinfo wbstockinfo_{{ inventory_status }} ">
-                      {% if localization.language.iso_code == 'ar' and inventory_status == "low" %}
-                        {{ 'shopify.checkout.stock.stock_count_low_message' | t: stock_number: current_variant.inventory_quantity }}
-                      {% elsif localization.language.iso_code == "ar" and inventory_status == "high" %}
-                        {{ 'shopify.checkout.stock.stock_count_high_message' | t: stock_number: current_variant.inventory_quantity }}
+                      {% if localization.language.iso_code == 'ar' and inventory_status == 'low' %}
+                        {{
+                          'shopify.checkout.stock.stock_count_low_message'
+                          | t: stock_number: current_variant.inventory_quantity
+                        }}
+                      {% elsif localization.language.iso_code == 'ar' and inventory_status == 'high' %}
+                        {{
+                          'shopify.checkout.stock.stock_count_high_message'
+                          | t: stock_number: current_variant.inventory_quantity
+                        }}
                       {% else %}
                         {{ inventory_message }}
                       {% endif %}
