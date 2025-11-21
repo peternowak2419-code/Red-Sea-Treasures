@@ -219,7 +219,7 @@
             {%- endif -%}
             {% if settings.percentage == true %}
               <span class="badge percent__badge-sale {% if price_difference_percent == null %}hidden{% endif %}">
-                {{ price_difference_percent -}}
+                {{ price_difference_percent | append: "%" -}}
                 {% if localization.language.iso_code == 'ar' %}
                   {% assign product_off_price = '% خصم' %}
                   {{ product_off_price }}
