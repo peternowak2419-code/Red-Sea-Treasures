@@ -347,8 +347,9 @@
             <span class="{% if card_product.featured_media == blank and card_product.selected_or_first_available_variant.available %} badge_postion {% endif %}badge percent__badge-sale {% if price_difference_percent == null %}hidden{% endif %}">
               {{ price_difference_percent -}}
               {% if localization.language.iso_code == 'ar' %}
-                {{- 'products.product.off_price' | t }}
+                {% assign product_off_price = "% خصم" %}
               {% else %}
+                {{- 'products.product.off_price' | t }}
               {%endif %}              
             </span>
           {% endif %}
