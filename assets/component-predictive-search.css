@@ -32,7 +32,7 @@ predictive-search .wbproduct-container .wbproductdes, predictive-search .wbprodu
 }
 predictive-search[open] .predictive-search ,
 predictive-search[loading] .predictive-search {
-  display: none;
+  display: block;
 }
 .seachbar-left{
     overflow: auto;
