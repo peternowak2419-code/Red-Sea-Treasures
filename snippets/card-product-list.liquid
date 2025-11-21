@@ -345,13 +345,14 @@
           {%- endif -%}
           {% if settings.percentage == true %}
             <span class="{% if card_product.featured_media == blank and card_product.selected_or_first_available_variant.available %} badge_postion {% endif %}badge percent__badge-sale {% if price_difference_percent == null %}hidden{% endif %}">
-              {{ price_difference_percent -}}
               {% if localization.language.iso_code == 'ar' %}
-                {% assign product_off_price = "% خصم" %}
+                {{ price_difference_percent | append: '%' -}}
+                {% assign product_off_price = 'خصم' %}
                 {{ product_off_price }}
               {% else %}
+                {{ price_difference_percent -}}
                 {{- 'products.product.off_price' | t }}
-              {%endif %}              
+              {% endif %}
             </span>
           {% endif %}
           {% if settings.diff_price == true %}
@@ -833,65 +834,67 @@
           </div>
         </product-info>
         {% comment %} Cart Button Start {% endcomment %}
-        {% comment %} <product-form class="no-js-hidden" id="ProductInfo-{{ section.id }}-{{ card_product.id }}">
-          {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: card_product.id -%}
-          {%- form 'product',
-            card_product,
-            id: product_form_id,
-            class: 'form',
-            novalidate: 'novalidate',
-            data-type: 'add-to-cart-form'
-          -%}
-            <input
-              type="hidden"
-              name="id"
-              class="product-variant-id"
-              value="{{ card_product.selected_or_first_available_variant.id }}"
-              disabled
-            >
-            {% if atc_btn_position == 'bottom' %}
-              {% if card_product.has_only_default_variant or show_variants == true %}
-                <button
-                  id="{{ product_form_id }}-submit"
-                  type="submit"
-                  name="add"
-                  class="add-to-cart__submit button button--primary"
-                  aria-haspopup="dialog"
-                  aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
-                  aria-live="polite"
-                  data-sold-out-message="true"
-                  {% if card_product.selected_or_first_available_variant.available == false %}
-                    disabled
-                  {% endif %}
-                >
-                  {%- if card_product.selected_or_first_available_variant.available -%}
-                    <span>{{ 'products.product.add_to_cart' | t }}</span>
-                    {% render 'icon-hcartbag' %}
-                  {%- else -%}
-                    <span>{{ 'products.product.sold_out' | t }}</span>
-                    {% render 'icon-hcartbag' %}
-                  {%- endif -%}
-                  <span class="sold-out-message hidden">{{ 'products.product.sold_out' | t }}</span>
-                  <span class="loading-overlay__spinner hidden">
-                    <svg
-                      aria-hidden="true"
-                      focusable="false"
-                      class="spinner"
-                      viewBox="0 0 66 66"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
-                  </span>
-                </button>
-              {% else %}
-                <a href="{{ card_product.url }}" class="add-to-cart__submit button"
-                  ><span>{{ 'products.product.select_option' | t }}</span></a
-                >
+        {% comment %}
+          <product-form class="no-js-hidden" id="ProductInfo-{{ section.id }}-{{ card_product.id }}">
+            {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: card_product.id -%}
+            {%- form 'product',
+              card_product,
+              id: product_form_id,
+              class: 'form',
+              novalidate: 'novalidate',
+              data-type: 'add-to-cart-form'
+            -%}
+              <input
+                type="hidden"
+                name="id"
+                class="product-variant-id"
+                value="{{ card_product.selected_or_first_available_variant.id }}"
+                disabled
+              >
+              {% if atc_btn_position == 'bottom' %}
+                {% if card_product.has_only_default_variant or show_variants == true %}
+                  <button
+                    id="{{ product_form_id }}-submit"
+                    type="submit"
+                    name="add"
+                    class="add-to-cart__submit button button--primary"
+                    aria-haspopup="dialog"
+                    aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                    aria-live="polite"
+                    data-sold-out-message="true"
+                    {% if card_product.selected_or_first_available_variant.available == false %}
+                      disabled
+                    {% endif %}
+                  >
+                    {%- if card_product.selected_or_first_available_variant.available -%}
+                      <span>{{ 'products.product.add_to_cart' | t }}</span>
+                      {% render 'icon-hcartbag' %}
+                    {%- else -%}
+                      <span>{{ 'products.product.sold_out' | t }}</span>
+                      {% render 'icon-hcartbag' %}
+                    {%- endif -%}
+                    <span class="sold-out-message hidden">{{ 'products.product.sold_out' | t }}</span>
+                    <span class="loading-overlay__spinner hidden">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        class="spinner"
+                        viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                      </svg>
+                    </span>
+                  </button>
+                {% else %}
+                  <a href="{{ card_product.url }}" class="add-to-cart__submit button"
+                    ><span>{{ 'products.product.select_option' | t }}</span></a
+                  >
+                {% endif %}
               {% endif %}
-            {% endif %}
-          {%- endform -%}
-        </product-form> {% endcomment %}
+            {%- endform -%}
+          </product-form>
+        {% endcomment %}
         {% comment %} Cart Button End {% endcomment %}
       </div>
     </div>
