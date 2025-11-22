@@ -370,7 +370,7 @@
                           assign block = promotionBlock[idx]
                           assign blockIndex = idx | plus: 1
                         %}
-                        {% comment %} <li class="grid__item wbimgbnrblock wbbtw_coll wb-{{ idx }} global-media-settings">
+                        <li class="grid__item wbimgbnrblock wbbtw_coll wb-{{ idx }} global-media-settings">
                           {% if block.image != blank %}
                             {%- assign image_height = block.image.width
                               | divided_by: block.image.aspect_ratio
@@ -462,11 +462,11 @@
                               box-shadow: none;
                             }
                           {%- endstyle -%}
-                        </li> {% endcomment %}
+                        </li>
                       {%- endif -%}
                     {%- endfor -%}
                   {%- endif -%}
-                  <li class="grid__item">
+                  {% comment %} <li class="grid__item">
                     {% render 'card-product',
                       card_product: product,
                       card_style: section.settings.card_style,
@@ -498,7 +498,7 @@
                       stock_inventory: settings.stock_inventory,
                       section_id: section.id
                     %}
-                  </li>
+                  </li> {% endcomment %}
                 {%- endfor -%}
               </ul>
               {% if section.settings.pagination_type == 'load-more' %}
