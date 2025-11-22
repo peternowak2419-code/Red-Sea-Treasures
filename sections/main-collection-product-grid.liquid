@@ -370,7 +370,7 @@
                           assign block = promotionBlock[idx]
                           assign blockIndex = idx | plus: 1
                         %}
-                        <li class="grid__item wbimgbnrblock wbbtw_coll wb-{{ idx }} global-media-settings">
+                        {% comment %} <li class="grid__item wbimgbnrblock wbbtw_coll wb-{{ idx }} global-media-settings">
                           {% if block.image != blank %}
                             {%- assign image_height = block.image.width
                               | divided_by: block.image.aspect_ratio
@@ -462,7 +462,7 @@
                               box-shadow: none;
                             }
                           {%- endstyle -%}
-                        </li>
+                        </li> {% endcomment %}
                       {%- endif -%}
                     {%- endfor -%}
                   {%- endif -%}
