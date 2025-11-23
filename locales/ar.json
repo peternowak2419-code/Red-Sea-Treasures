@@ -4505,7 +4505,9 @@
       "tag_heritage_collection": "مجموعة التراث",
       "tag_handmade_jewelry": "مجوهرات مصنوعة يدويًا",
       "tag_yemeni_huwar_coffee": "قهوة حوار اليمنية",
-      "tag_yemeni_souvenirs": "هدايا تذكارية يمنية",
+      "tag_yemeni_souvenirs": "هدايا تذكارية يمنية",
+      "tag_thobe": "ثوب",
+      "tag_coming_soon": "قريباً",
       "frame_color": "لون الإطار:",
       "agate_color": "لون العقيق :",
       "viewcart": "عرض عربة التسوق",
@@ -4534,7 +4536,7 @@
     },
     "social": {
       "alt_text": {
-        "share_on_facebook": "شارك على فيسبوك",
+        // "share_on_facebook": "شارك على فيسبوك",
         "share_on_twitter": "تغريدة على تويتر",
         "share_on_pinterest": "تثبيت على موقع Pinterest"
       }
@@ -4583,7 +4585,7 @@
         "other": "{{ count }} تعليقات"
       },
       "moderated": "يرجى ملاحظة أن التعليقات تحتاج إلى الموافقة قبل نشرها.",
-      "comment_form_title": "اترك تعليقاً",
+      // "comment_form_title": "اترك تعليقاً",
       "name": "الاسم",
       "email": "بريد إلكتروني",
       "message": "تعليق",
