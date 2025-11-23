@@ -359,7 +359,7 @@
         "show_view_all": false,
         "arrow_position": "inline",
         "image_ratio": "square",
-        "columns_desktop": 9,
+        "columns_desktop": 5,
         "rows": 1,
         "card_flex_direction": "column",
         "design_type": "below",
