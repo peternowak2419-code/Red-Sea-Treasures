@@ -320,6 +320,16 @@
             "showtext": "",
             "customb_style": "solid"
           }
+        },
+        "featured_collection_VHhDJm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thobe",
+            "title": "",
+            "url": "shopify://products/thobe",
+            "showtext": "",
+            "customb_style": "solid"
+          }
         }
       },
       "block_order": [
@@ -329,7 +339,8 @@
         "featured_collection_N37MAh",
         "featured_collection_8qEX4T",
         "featured_collection_xAPQQj",
-        "featured_collection_TT4BRQ"
+        "featured_collection_TT4BRQ",
+        "featured_collection_VHhDJm"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
