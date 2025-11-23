@@ -4500,12 +4500,12 @@
       "tag_yemeni_jewelry": "جواهر يمنية",
       "tag_yemeni_jambiya": "جنبية يمنية",
       "tag_yemeni_sidr_honey": "عسل السدر اليمني",
-      "tag_souvenirs": "الهدايا التذكارية",
+      "tag_egyptian_souvenirs": "هدايا تذكارية مصرية",
       "tag_rings": "خواتم",
       "tag_heritage_collection": "مجموعة التراث",
       "tag_handmade_jewelry": "مجوهرات مصنوعة يدويًا",
       "tag_yemeni_hawar_coffee": "قهوة حوار اليمنية",
-      // "tag_yemeni_souvenirs": "هدايا تذكارية يمنية",
+      "tag_yemeni_souvenirs": "هدايا تذكارية يمنية",
       "tag_thobes": "ثوب",
       "tag_coming_soon": "قريباً",
       "frame_color": "لون الإطار:",
@@ -4536,7 +4536,7 @@
     },
     "social": {
       "alt_text": {
-        "share_on_facebook": "شارك على فيسبوك",
+        // "share_on_facebook": "شارك على فيسبوك",
         "share_on_twitter": "تغريدة على تويتر",
         "share_on_pinterest": "تثبيت على موقع Pinterest"
       }
