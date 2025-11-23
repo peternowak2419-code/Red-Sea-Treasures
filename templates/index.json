@@ -250,42 +250,12 @@
     "collection_list_UxeKcb": {
       "type": "collection-list",
       "blocks": {
-        "featured_collection_hkbC9k": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "rings",
-            "title": "",
-            "url": "shopify://products/yemeni-agate-ring-43",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
-        "featured_collection_E6EWTn": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "yemeni-shawls",
-            "title": "",
-            "url": "",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
         "featured_collection_D64cEj": {
           "type": "featured_collection",
           "settings": {
             "collection": "yemeni-sidr-honey",
             "title": "",
             "url": "shopify://products/yemeni-sidr-honey-premium-quality-1",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
-        "featured_collection_N37MAh": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "yemeni-jambiya",
-            "title": "",
-            "url": "shopify://products/yemeni-jambia",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -300,12 +270,52 @@
             "customb_style": "solid"
           }
         },
+        "featured_collection_N37MAh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yemeni-jambiya",
+            "title": "",
+            "url": "shopify://products/yemeni-jambia",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
+        "featured_collection_E6EWTn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yemeni-shawls",
+            "title": "",
+            "url": "",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
+        "featured_collection_VHhDJm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "thobe",
+            "title": "",
+            "url": "shopify://products/thobe",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
         "featured_collection_xAPQQj": {
           "type": "featured_collection",
           "settings": {
             "collection": "traditional-kids-dress",
             "title": "",
             "url": "shopify://products/traditional-kids-dress",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
+        "featured_collection_hkbC9k": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rings",
+            "title": "",
+            "url": "shopify://products/yemeni-agate-ring-43",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -320,27 +330,17 @@
             "showtext": "",
             "customb_style": "solid"
           }
-        },
-        "featured_collection_VHhDJm": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "thobe",
-            "title": "",
-            "url": "shopify://products/thobe",
-            "showtext": "",
-            "customb_style": "solid"
-          }
         }
       },
       "block_order": [
-        "featured_collection_hkbC9k",
-        "featured_collection_E6EWTn",
         "featured_collection_D64cEj",
-        "featured_collection_N37MAh",
         "featured_collection_8qEX4T",
+        "featured_collection_N37MAh",
+        "featured_collection_E6EWTn",
+        "featured_collection_VHhDJm",
         "featured_collection_xAPQQj",
-        "featured_collection_TT4BRQ",
-        "featured_collection_VHhDJm"
+        "featured_collection_hkbC9k",
+        "featured_collection_TT4BRQ"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
