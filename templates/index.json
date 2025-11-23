@@ -683,7 +683,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "products_to_show": 9,
+        "products_to_show": 10,
         "columns_desktop": 5,
         "show_row_on_desktop": 1,
         "full_width": false,
