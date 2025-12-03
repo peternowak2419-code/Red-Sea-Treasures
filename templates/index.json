@@ -330,6 +330,16 @@
             "showtext": "",
             "customb_style": "solid"
           }
+        },
+        "featured_collection_6gGDz4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hijab",
+            "title": "",
+            "url": "",
+            "showtext": "",
+            "customb_style": "solid"
+          }
         }
       },
       "block_order": [
@@ -340,7 +350,8 @@
         "featured_collection_VHhDJm",
         "featured_collection_xAPQQj",
         "featured_collection_hkbC9k",
-        "featured_collection_TT4BRQ"
+        "featured_collection_TT4BRQ",
+        "featured_collection_6gGDz4"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
