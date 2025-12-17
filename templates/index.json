@@ -322,6 +322,7 @@
         },
         "featured_collection_TT4BRQ": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "yemeni-souvenirs",
             "image": "shopify://shop_images/Photo2025-10-23_32352AM.jpg",
