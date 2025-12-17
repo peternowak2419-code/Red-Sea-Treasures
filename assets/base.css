@@ -482,7 +482,7 @@ table:not([class]) th {
     margin-left: 1rem;
 }
 a:not([href]) {
-    cursor: not-allowed;
+    cursor: pointer;
     /* opacity: 0.5; */
 }
 .circle-divider::after {
