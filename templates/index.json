@@ -341,6 +341,26 @@
             "showtext": "",
             "customb_style": "solid"
           }
+        },
+        "featured_collection_n88N6i": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "agate-rings",
+            "title": "",
+            "url": "shopify://collections/agate-rings",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
+        "featured_collection_8qyPM6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "agate-rings",
+            "title": "",
+            "url": "shopify://collections/agate-rings",
+            "showtext": "",
+            "customb_style": "solid"
+          }
         }
       },
       "block_order": [
@@ -352,7 +372,9 @@
         "featured_collection_xAPQQj",
         "featured_collection_hkbC9k",
         "featured_collection_TT4BRQ",
-        "featured_collection_6gGDz4"
+        "featured_collection_6gGDz4",
+        "featured_collection_n88N6i",
+        "featured_collection_8qyPM6"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
