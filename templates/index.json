@@ -342,16 +342,6 @@
             "customb_style": "solid"
           }
         },
-        "featured_collection_n88N6i": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "agate-rings",
-            "title": "",
-            "url": "shopify://collections/agate-rings",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
         "featured_collection_8qyPM6": {
           "type": "featured_collection",
           "settings": {
@@ -373,7 +363,6 @@
         "featured_collection_hkbC9k",
         "featured_collection_TT4BRQ",
         "featured_collection_6gGDz4",
-        "featured_collection_n88N6i",
         "featured_collection_8qyPM6"
       ],
       "name": "t:sections.collection-list.presets.name",
@@ -423,7 +412,7 @@
             "text": "",
             "text_style": "body",
             "button_label_1": "Shop now",
-            "button_link_1": "shopify://products/yemeni-agate-ring-43",
+            "button_link_1": "shopify://collections/agate-rings",
             "link_window": true,
             "view_all_style": "solid",
             "button_label_11": "Know More",
@@ -614,6 +603,34 @@
             "color_scheme": "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26",
             "image_behavior": "none"
           }
+        },
+        "image_jUy6nK": {
+          "type": "image",
+          "settings": {
+            "enable_video_looping": false,
+            "auto_play_video": false,
+            "video_url": "",
+            "image_overlay_opacity": 0,
+            "subheading": "<p>Image banner</p>",
+            "heading": "Heading",
+            "heading_size": "h2",
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_style": "body",
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "link_window": true,
+            "view_all_style": "solid",
+            "button_label_11": "",
+            "button_link_11": "",
+            "link_window1": true,
+            "view_all_style1": "link",
+            "show_text_box": false,
+            "container_overlay_opacity": 40,
+            "desktop_content_position": "middle-left",
+            "desktop_content_alignment": "left",
+            "color_scheme": "background-1",
+            "image_behavior": "none"
+          }
         }
       },
       "block_order": [
@@ -623,7 +640,8 @@
         "image_4pRmay",
         "image_Kjedxm",
         "image_qNgyBz",
-        "image_iJ8epi"
+        "image_iJ8epi",
+        "image_jUy6nK"
       ],
       "settings": {
         "full_width": false,
