@@ -310,16 +310,6 @@
             "customb_style": "solid"
           }
         },
-        "featured_collection_hkbC9k": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "rings",
-            "title": "",
-            "url": "shopify://products/yemeni-agate-ring-43",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
         "featured_collection_TT4BRQ": {
           "type": "featured_collection",
           "disabled": true,
@@ -360,7 +350,6 @@
         "featured_collection_E6EWTn",
         "featured_collection_VHhDJm",
         "featured_collection_xAPQQj",
-        "featured_collection_hkbC9k",
         "featured_collection_TT4BRQ",
         "featured_collection_6gGDz4",
         "featured_collection_8qyPM6"
