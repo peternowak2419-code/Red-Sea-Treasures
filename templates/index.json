@@ -351,6 +351,9 @@
         "featured_collection_kRWPaP",
         "featured_collection_TT4BRQ"
       ],
+      "custom_css": [
+        ".card__media img {object-fit: cover; width: 100%; height: 100%;}"
+      ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "color_scheme": "",
