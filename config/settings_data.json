@@ -88,7 +88,7 @@
     "card_shadow_blur": 0,
     "collection_card_style": "standard",
     "show_collection_title": true,
-    "show_item_count": true,
+    "show_item_count": false,
     "collection_card_image_padding": 0,
     "collection_card_text_alignment": "left",
     "collection_card_color_scheme": "background-1",

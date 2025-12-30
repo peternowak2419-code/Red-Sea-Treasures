@@ -358,7 +358,7 @@
         "heading_size": "h2",
         "head_align": "center",
         "heading_color_scheme": "",
-        "head_space": true,
+        "head_space": false,
         "description": "",
         "description_style": "body",
         "view_button_pos": "top",
@@ -368,7 +368,7 @@
         "show_view_all": false,
         "arrow_position": "inline",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 6,
         "rows": 3,
         "card_flex_direction": "column",
         "design_type": "below",
@@ -376,7 +376,7 @@
         "show_circle": false,
         "catheading_size": "small",
         "blockcolor_scheme": "",
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "padding_top": 60,
         "padding_bottom": 60
       }
