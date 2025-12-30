@@ -370,7 +370,7 @@
         "image_ratio": "square",
         "columns_desktop": 6,
         "rows": 3,
-        "card_flex_direction": "column",
+        "card_flex_direction": "row",
         "design_type": "below",
         "design_align": "center",
         "show_circle": false,
