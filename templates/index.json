@@ -367,7 +367,7 @@
         "view_all_style": "link",
         "show_view_all": false,
         "arrow_position": "inline",
-        "image_ratio": "square",
+        "image_ratio": "portrait",
         "columns_desktop": 4,
         "rows": 3,
         "card_flex_direction": "row",
