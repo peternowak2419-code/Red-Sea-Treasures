@@ -376,7 +376,7 @@
         "show_circle": false,
         "catheading_size": "small",
         "blockcolor_scheme": "",
-        "columns_mobile": "3",
+        "columns_mobile": "1",
         "padding_top": 60,
         "padding_bottom": 60
       }
