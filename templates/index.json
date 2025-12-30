@@ -213,6 +213,16 @@
             "customb_style": "solid"
           }
         },
+        "featured_collection_8qEX4T": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yemeni-huwar-coffee",
+            "title": "",
+            "url": "shopify://products/yemeni-huwar-coffee-premium-roasted-beans",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
         "featured_collection_E6EWTn": {
           "type": "featured_collection",
           "settings": {
@@ -229,16 +239,6 @@
             "collection": "organics-species",
             "title": "",
             "url": "shopify://collections/organics-species",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
-        "featured_collection_8qEX4T": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "yemeni-huwar-coffee",
-            "title": "",
-            "url": "shopify://products/yemeni-huwar-coffee-premium-roasted-beans",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -338,9 +338,9 @@
       },
       "block_order": [
         "featured_collection_D64cEj",
+        "featured_collection_8qEX4T",
         "featured_collection_E6EWTn",
         "featured_collection_RqqYxq",
-        "featured_collection_8qEX4T",
         "featured_collection_VHhDJm",
         "featured_collection_kRWPaP",
         "featured_collection_N37MAh",
@@ -358,7 +358,7 @@
         "heading_size": "h2",
         "head_align": "center",
         "heading_color_scheme": "",
-        "head_space": false,
+        "head_space": true,
         "description": "",
         "description_style": "body",
         "view_button_pos": "top",
