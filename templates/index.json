@@ -223,22 +223,32 @@
             "customb_style": "solid"
           }
         },
+        "featured_collection_N37MAh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yemeni-jambiya",
+            "title": "",
+            "url": "shopify://products/yemeni-jambia",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
+        "featured_collection_8qyPM6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "agate-rings",
+            "title": "",
+            "url": "shopify://collections/agate-rings",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
         "featured_collection_E6EWTn": {
           "type": "featured_collection",
           "settings": {
             "collection": "yemeni-shawls",
             "title": "",
             "url": "",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
-        "featured_collection_RqqYxq": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "organics-species",
-            "title": "",
-            "url": "shopify://collections/organics-species",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -253,32 +263,32 @@
             "customb_style": "solid"
           }
         },
-        "featured_collection_kRWPaP": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "personal-care-essentials",
-            "title": "",
-            "url": "shopify://collections/personal-care-essentials",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
-        "featured_collection_N37MAh": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "yemeni-jambiya",
-            "title": "",
-            "url": "shopify://products/yemeni-jambia",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
         "featured_collection_xAPQQj": {
           "type": "featured_collection",
           "settings": {
             "collection": "traditional-kids-dress",
             "title": "",
             "url": "shopify://products/traditional-kids-dress",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
+        "featured_collection_tByVXg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "palestinian-heritage-collection",
+            "title": "",
+            "url": "shopify://collections/palestinian-heritage-collection",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
+        "featured_collection_6gGDz4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hijab",
+            "title": "",
+            "url": "",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -293,12 +303,22 @@
             "customb_style": "solid"
           }
         },
-        "featured_collection_8qyPM6": {
+        "featured_collection_RqqYxq": {
           "type": "featured_collection",
           "settings": {
-            "collection": "agate-rings",
+            "collection": "organics-species",
             "title": "",
-            "url": "shopify://collections/agate-rings",
+            "url": "shopify://collections/organics-species",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
+        "featured_collection_kRWPaP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "personal-care-essentials",
+            "title": "",
+            "url": "shopify://collections/personal-care-essentials",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -314,42 +334,22 @@
             "showtext": "",
             "customb_style": "solid"
           }
-        },
-        "featured_collection_6gGDz4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hijab",
-            "title": "",
-            "url": "",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
-        "featured_collection_tByVXg": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "palestinian-heritage-collection",
-            "title": "",
-            "url": "shopify://collections/palestinian-heritage-collection",
-            "showtext": "",
-            "customb_style": "solid"
-          }
         }
       },
       "block_order": [
         "featured_collection_D64cEj",
         "featured_collection_8qEX4T",
-        "featured_collection_E6EWTn",
-        "featured_collection_RqqYxq",
-        "featured_collection_VHhDJm",
-        "featured_collection_kRWPaP",
         "featured_collection_N37MAh",
-        "featured_collection_xAPQQj",
-        "featured_collection_jyVbEa",
         "featured_collection_8qyPM6",
-        "featured_collection_TT4BRQ",
+        "featured_collection_E6EWTn",
+        "featured_collection_VHhDJm",
+        "featured_collection_xAPQQj",
+        "featured_collection_tByVXg",
         "featured_collection_6gGDz4",
-        "featured_collection_tByVXg"
+        "featured_collection_jyVbEa",
+        "featured_collection_RqqYxq",
+        "featured_collection_kRWPaP",
+        "featured_collection_TT4BRQ"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
