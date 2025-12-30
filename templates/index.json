@@ -387,6 +387,35 @@
     "collage_FXfDCd": {
       "type": "collage",
       "blocks": {
+        "image_Tfiakw": {
+          "type": "image",
+          "settings": {
+            "enable_video_looping": false,
+            "auto_play_video": false,
+            "video_url": "",
+            "image": "shopify://shop_images/IMG_4918.jpg",
+            "image_overlay_opacity": 0,
+            "subheading": "",
+            "heading": "Ramadan & Eid",
+            "heading_size": "h2",
+            "text": "",
+            "text_style": "body",
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections/ramadan-collection",
+            "link_window": true,
+            "view_all_style": "solid",
+            "button_label_11": "",
+            "button_link_11": "",
+            "link_window1": true,
+            "view_all_style1": "link",
+            "show_text_box": false,
+            "container_overlay_opacity": 40,
+            "desktop_content_position": "middle-left",
+            "desktop_content_alignment": "left",
+            "color_scheme": "background-1",
+            "image_behavior": "ambient"
+          }
+        },
         "image_RbBUrW": {
           "type": "image",
           "settings": {
@@ -595,6 +624,7 @@
         }
       },
       "block_order": [
+        "image_Tfiakw",
         "image_RbBUrW",
         "image_ky7Gt3",
         "image_ce33fh",
@@ -608,7 +638,7 @@
         "title": "",
         "heading_size": "h0",
         "head_align": "left",
-        "heading_color_scheme": "scheme-fe404675-b857-47d9-beb8-3438200d0cbe",
+        "heading_color_scheme": "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26",
         "head_space": true,
         "description": "",
         "description_style": "body",
