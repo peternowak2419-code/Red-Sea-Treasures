@@ -369,7 +369,7 @@
         "arrow_position": "inline",
         "image_ratio": "square",
         "columns_desktop": 4,
-        "rows": 2,
+        "rows": 1,
         "card_flex_direction": "column",
         "design_type": "below",
         "design_align": "center",
