@@ -352,11 +352,7 @@
         "featured_collection_TT4BRQ"
       ],
       "custom_css": [
-        ".collection-list .slider__grid,.collection-list .collection-list__items{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:16px}",
-        "@media(min-width:990px){.collection-list .slider__grid,.collection-list .collection-list__items{grid-template-columns:repeat(4,1fr)!important}}",
-        ".collection-list .slider-buttons,.collection-list .slider-button{display:none!important}",
-        ".collection-list .slider__slide{width:auto!important}",
-        ".collection-list .card__media img{object-fit:cover;width:100%;height:100%}"
+        ".card__media img {object-fit: cover; width: 100%; height: 100%;}"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
