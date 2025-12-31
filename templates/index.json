@@ -369,7 +369,7 @@
         "button_url": "",
         "view_all_style": "link",
         "show_view_all": false,
-        "arrow_position": "inline",
+        "arrow_position": "top",
         "image_ratio": "square",
         "columns_desktop": 4,
         "rows": 1,
@@ -378,7 +378,7 @@
         "design_align": "center",
         "show_circle": false,
         "catheading_size": "small",
-        "blockcolor_scheme": "",
+        "blockcolor_scheme": "scheme-fe3a5392-0e65-45b5-a85c-26bc2fa7af26",
         "columns_mobile": "1",
         "padding_top": 60,
         "padding_bottom": 60
