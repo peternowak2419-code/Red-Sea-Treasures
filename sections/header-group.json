@@ -14,6 +14,12 @@
     "cca77815-1089-4a83-a9c7-cb60f7be82d2": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_8fXp9W": {
+          "type": "announcement",
+          "settings": {
+            "text": "<a href=\"/collections/free-shipping-picks\" title=\"Free Shipping Picks\">Free Shipping on Select Items ( Limited Time )</a>"
+          }
+        },
         "bb5e6f3d-a11a-4482-9e0f-7aba68edd82a": {
           "type": "announcement",
           "disabled": true,
@@ -30,6 +36,7 @@
         }
       },
       "block_order": [
+        "announcement_8fXp9W",
         "bb5e6f3d-a11a-4482-9e0f-7aba68edd82a",
         "3db8a92a-5d1f-4f00-8648-d8e5f1c7bc4b"
       ],
