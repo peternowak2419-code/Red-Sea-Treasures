@@ -59,9 +59,9 @@
           "settings": {
             "heading": "Available Offers",
             "icon": "tag",
-            "content": "<p><strong> <br/>Free shipping</strong> on eligible orders</p><p><br/></p>",
+            "content": "<p><strong> <br/>Free shipping</strong> on eligible orders</p>",
             "icon2": "tag",
-            "content2": "<p><strong><br/>Secure</strong> <strong>checkout</strong> & trusted payment methods</p><p><br/></p>",
+            "content2": "<p><strong><br/>Secure</strong> <strong>checkout</strong> & trusted payment methods</p>",
             "icon_color": "#dd1d1d"
           }
         },
