@@ -59,7 +59,7 @@
           "settings": {
             "heading": "Available Offers",
             "icon": "tag",
-            "content": "<p><strong> Free shipping</strong> on eligible orders</p>",
+            "content": "<p><strong> Free shipping</strong> on eligible <a href=\"/collections/free-shipping-picks\" title=\"Free Shipping Picks\">orders</a></p>",
             "icon2": "tag",
             "content2": "<p><strong>Secure</strong> <strong>checkout</strong> & trusted payment methods</p>",
             "icon_color": "#dd1d1d"
