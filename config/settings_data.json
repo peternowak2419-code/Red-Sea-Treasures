@@ -190,7 +190,7 @@
     "wbprogscolor": "#00d964",
     "cart_drawer_collection": "yemeni-souvenirs",
     "show_cartpayment": true,
-    "upsellp": true,
+    "upsellp": false,
     "wbuphead": "You might like",
     "upsellcollection": "all",
     "upsell_to_show": 3,
