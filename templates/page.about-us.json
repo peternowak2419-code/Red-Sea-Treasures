@@ -28,8 +28,8 @@
           "type": "heading",
           "settings": {
             "subheading": "About Us",
-            "heading": "Red Sea Treasures – Where Heritage Meets Excellence",
-            "heading_size": "h1"
+            "heading": "Red Sea Treasures – Authentic Yemeni & Arabian Heritage Marketplace",
+            "heading_size": "h2"
           }
         },
         "template--16209783947321__da98eb36-c09b-44c2-ba56-446635fa3d53-text-1": {
@@ -37,7 +37,7 @@
           "settings": {
             "show_icon": "hide",
             "content_icon": "snowflake",
-            "text": "<p>Welcome to Red Sea Treasures, where tradition meets excellence. We are more than a store — we are a gateway to the rich heritage of Yemen and the Arab world. Every product we offer tells a story of authenticity, craftsmanship, and cultural pride.</p>",
+            "text": "<p>Red Sea Treasures is a Canada-based online marketplace dedicated to authentic Yemeni and Arabian heritage.<br/><br/>We bring together a carefully curated selection of traditional products — from pure Yemeni Sidr honey and Hawar coffee to handcrafted jambiyas, agate rings, traditional clothing, spices, and cultural essentials.<br/><br/>Each collection represents a piece of our culture, chosen for its authenticity, quality, and cultural value.<br/></p>",
             "text_style": "subtitle"
           }
         },
@@ -99,7 +99,7 @@
           "settings": {
             "show_icon": "present-icon",
             "content_icon": "none",
-            "text": "<p>From the golden sweetness of pure Yemeni Sidr honey to the deep aroma of Hawar coffee, from handcrafted Jambiyas to elegant shawls and men’s rings, each item in our collection reflects generations of skill and dedication. We work directly with local artisans and farmers to ensure that every drop reaches you in its purest and most authentic form.</p>",
+            "text": "<p>Rather than focusing on a single category, we aim to offer a diverse range of heritage products under one trusted platform.<br/><br/>This allows our customers to explore, experience, and connect with different aspects of Yemeni and Arabian culture in one place.<br/></p>",
             "text_style": "subtitle"
           }
         },
@@ -161,7 +161,7 @@
           "settings": {
             "show_icon": "present-icon",
             "content_icon": "none",
-            "text": "<p>Our mission is to preserve the legacy of Arabian artistry while presenting it with global quality and contemporary design. Through Red Sea Treasures, we bring the essence of Arabian culture into your hands — a blend of history, craftsmanship, and refinement.</p>",
+            "text": "<p>Red Sea Treasures was created with a clear purpose: <br/>to make authentic Yemeni and Arabian heritage products accessible to customers abroad.<br/><br/>We carefully curate each collection — from traditional foods and beverages to handcrafted items and cultural essentials — ensuring authenticity, quality, and respect for cultural origins.<br/><br/>Every order is prepared with care, reflecting our commitment to trust, transparency, and long-term relationships with our customers.<br/></p>",
             "text_style": "subtitle"
           }
         },
@@ -224,7 +224,7 @@
           "settings": {
             "show_icon": "present-icon",
             "content_icon": "none",
-            "text": "<p>We currently deliver across Canada and the United States, with plans to expand internationally. Secure online payments are accepted through Visa, MasterCard, PayPal, and other trusted methods.<br/><br/>We stand by the quality of our products. If your order arrives damaged or incorrect, please contact us within 7 days for an exchange or refund.</p>",
+            "text": "<p>Red Sea Treasures is proudly based in Canada, serving customers across Canada and the United States.<br/><br/>We are committed to offering a safe, transparent, and reliable shopping experience. <br/>All orders are handled with care, securely packaged, and shipped through trusted carriers.<br/><br/>If your order arrives damaged or incorrect, simply contact us within 7 days and we will make it right.<br/>Your satisfaction and trust are always our priority.<br/></p>",
             "text_style": "subtitle"
           }
         },
