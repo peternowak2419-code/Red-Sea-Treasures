@@ -164,6 +164,10 @@
             "content": "<ul><li>Orders are processed within 2–4 business days</li><li>Enjoy free delivery on your first order</li><li>Returns are accepted within 10 days of delivery, provided the item is unused and in original packaging</li><li>For returns or exchanges, please contact us at <a href=\"mailto:info@redseatreasures.ca\" target=\"_blank\">info@redseatreasures.ca</a> before sending your item back</li></ul>",
             "page": ""
           }
+        },
+        "judge_me_reviews_preview_badge_dX6gVb": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
@@ -183,7 +187,8 @@
         "share_button_YYPDhy",
         "description_WJ7LmT",
         "3f2119c3-4c6a-43f7-b988-831ab0996550",
-        "22aae836-e973-4b0c-a7d9-c9ae69669267"
+        "22aae836-e973-4b0c-a7d9-c9ae69669267",
+        "judge_me_reviews_preview_badge_dX6gVb"
       ],
       "settings": {
         "enable_sticky_info": true,
