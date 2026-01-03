@@ -231,6 +231,18 @@
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
+      },
+      "17127118858292894184": {
+        "type": "shopify://apps/aftership-tracking/blocks/protection/019a0a96-1a0c-71ad-8ce2-ce2d49c2d945",
+        "disabled": false,
+        "settings": {
+          "logo-display": true,
+          "title-text": "Checkout plus",
+          "title-color": "#232933",
+          "title-font-size": 14,
+          "desc-color": "#6C717A",
+          "desc-font-size": 12
+        }
       }
     },
     "color_schemes": {
