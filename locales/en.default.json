@@ -546,6 +546,7 @@
   "wbcustomlabel": {
   "wballtext": {
     "tag_organics": "Organics",
+    "tag_personal_care": "Personal Care",
     "account_login": "Account & List",
       "login_hello": "Hello,",
       "log__in": "sign in",
