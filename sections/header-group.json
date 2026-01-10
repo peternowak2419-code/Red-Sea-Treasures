@@ -208,7 +208,9 @@
         "megamenu_product_XYjMVN",
         "megamenu_gallery_Cqtkeg"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".localization-form,.header__localization,.localization-selector,.header-localization,.localization-wrapper {display: block !important; opacity: 1 !important;}"
+      ],
       "settings": {
         "logo_position": "middle-left",
         "color_scheme": "scheme-4027461c-8f6a-4193-bb14-c2898d8abe8c",
