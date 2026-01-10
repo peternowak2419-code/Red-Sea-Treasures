@@ -1342,13 +1342,13 @@
     "collapsible_content_MER3U4": {
       "type": "collapsible-content",
       "blocks": {
-        "collapsible_row_T8rhaY": {
+        "collapsible_row_XztMXc": {
           "type": "collapsible_row",
           "settings": {
-            "default_open": true,
-            "heading": "What types of products do you offer?",
+            "default_open": false,
+            "heading": "Is Red Sea Treasures legit?",
             "icon": "chat",
-            "row_content": "<p>At Red Sea Treasures, we offer a curated selection of authentic Arabian products inspired by heritage, tradition, and natural living. Our collection includes food specialties, wellness items, personal care products, and cultural goods. Carefully chosen for quality and authenticity.</p>",
+            "row_content": "<p>Yes. Red Sea Treasures is a Canadian Shopify store with verified customer reviews, secure payments, and active social media. WHOIS privacy is enabled by default through Shopify and Canadian (.ca) domain rules.</p>",
             "page": ""
           }
         },
@@ -1362,13 +1362,13 @@
             "page": ""
           }
         },
-        "collapsible_row_txBVJC": {
+        "collapsible_row_T8rhaY": {
           "type": "collapsible_row",
           "settings": {
-            "default_open": false,
-            "heading": "What payment methods do you accept?",
+            "default_open": true,
+            "heading": "What types of products do you offer?",
             "icon": "chat",
-            "row_content": "<p>We accept all major payment methods, including Visa, MasterCard, PayPal, and other secure online payment options.</p>",
+            "row_content": "<p>At Red Sea Treasures, we offer a curated selection of authentic Arabian products inspired by heritage, tradition, and natural living. Our collection includes food specialties, wellness items, personal care products, and cultural goods. Carefully chosen for quality and authenticity.</p>",
             "page": ""
           }
         },
@@ -1379,6 +1379,16 @@
             "heading": "Where do you deliver?",
             "icon": "chat",
             "row_content": "<p>Currently, we deliver within Canada and the United States, with plans to expand to other countries soon.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_txBVJC": {
+          "type": "collapsible_row",
+          "settings": {
+            "default_open": false,
+            "heading": "What payment methods do you accept?",
+            "icon": "chat",
+            "row_content": "<p>We accept all major payment methods, including Visa, MasterCard, PayPal, and other secure online payment options.</p>",
             "page": ""
           }
         },
@@ -1394,10 +1404,11 @@
         }
       },
       "block_order": [
-        "collapsible_row_T8rhaY",
+        "collapsible_row_XztMXc",
         "collapsible_row_izcPeR",
-        "collapsible_row_txBVJC",
+        "collapsible_row_T8rhaY",
         "collapsible_row_6GXkPB",
+        "collapsible_row_txBVJC",
         "collapsible_row_tmNeyN"
       ],
       "settings": {
