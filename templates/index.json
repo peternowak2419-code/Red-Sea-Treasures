@@ -253,32 +253,12 @@
             "customb_style": "solid"
           }
         },
-        "featured_collection_VHhDJm": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "thobe",
-            "title": "",
-            "url": "shopify://products/thobe",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
         "featured_collection_xAPQQj": {
           "type": "featured_collection",
           "settings": {
             "collection": "traditional-kids-dress",
             "title": "",
             "url": "shopify://products/traditional-kids-dress",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
-        "featured_collection_tByVXg": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "palestinian-heritage-collection",
-            "title": "",
-            "url": "shopify://collections/palestinian-heritage-collection",
             "showtext": "",
             "customb_style": "solid"
           }
@@ -313,16 +293,6 @@
             "customb_style": "solid"
           }
         },
-        "featured_collection_kRWPaP": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "personal-care-essentials",
-            "title": "",
-            "url": "shopify://collections/personal-care-essentials",
-            "showtext": "",
-            "customb_style": "solid"
-          }
-        },
         "featured_collection_TT4BRQ": {
           "type": "featured_collection",
           "disabled": true,
@@ -342,13 +312,10 @@
         "featured_collection_N37MAh",
         "featured_collection_8qyPM6",
         "featured_collection_E6EWTn",
-        "featured_collection_VHhDJm",
         "featured_collection_xAPQQj",
-        "featured_collection_tByVXg",
         "featured_collection_6gGDz4",
         "featured_collection_jyVbEa",
         "featured_collection_RqqYxq",
-        "featured_collection_kRWPaP",
         "featured_collection_TT4BRQ"
       ],
       "custom_css": [
