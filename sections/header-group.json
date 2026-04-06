@@ -130,18 +130,6 @@
             "megaicon_svg10": ""
           }
         },
-        "categories_6cLajc": {
-          "type": "categories",
-          "disabled": true,
-          "settings": {
-            "menu_heading": "All Categories",
-            "main_mega_menu": "main-menu",
-            "menu_style": "style-1",
-            "button_style_secondary": "link",
-            "menu_position": "left",
-            "drop_menu_open": "mouseover"
-          }
-        },
         "megamenu_product_q6yRDa": {
           "type": "megamenu-product",
           "disabled": true,
@@ -202,7 +190,6 @@
         "megamenu_gallery_rWHkEJ",
         "megamenu_product_T3mqTQ",
         "category_icon_Ym8fP6",
-        "categories_6cLajc",
         "megamenu_product_q6yRDa",
         "megamenu_product_YgeWY6",
         "megamenu_product_XYjMVN",
