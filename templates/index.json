@@ -203,6 +203,17 @@
     "collection_list_UxeKcb": {
       "type": "collection-list",
       "blocks": {
+        "featured_collection_q7p9kc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "prayer-mats",
+            "image": "shopify://shop_images/IMG-6111.webp",
+            "title": "",
+            "url": "",
+            "showtext": "",
+            "customb_style": "solid"
+          }
+        },
         "featured_collection_D64cEj": {
           "type": "featured_collection",
           "settings": {
@@ -307,6 +318,7 @@
         }
       },
       "block_order": [
+        "featured_collection_q7p9kc",
         "featured_collection_D64cEj",
         "featured_collection_8qEX4T",
         "featured_collection_N37MAh",
